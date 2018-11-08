@@ -1,0 +1,162 @@
+---
+css: app
+classOut: home-out
+title: Domain
+---
+{% extends "layouts/_layout.html" %}
+
+{% block content %}
+
+	{% include "partials/_sidebar.html" %}
+	<main>
+
+		<header class="header">
+			<div class="header__title">
+				<h2 class="title">Домен <span>domain.smartsender.pro</span></h2>
+			</div>
+			<div class="header__user-wrp">
+				<i class="icon-bell"></i>
+				<div class="header__user-text">
+					<span class="header__user-name">Андрей Збруцкий</span> <br>
+					<span class="header__user-descript">Проекты и параметры</span>
+				</div>
+				<img src="img/user.png" alt="user">
+			</div>
+		</header>
+		
+		<section class="domain">
+			<div class="container">
+				<div class="domain__row row">
+					<a href="#" class="domain__row-block">
+						<img src="img/html_icon.png" alt="">
+						<p>Редактировать шаблон</p>
+					</a>
+					<a href="#" class="domain__row-block">
+						<img src="img/text_icon.png" alt="">
+						<p>Редактировать договор оферты</p>
+					</a>
+					<a href="#" class="domain__row-block"><img src="img/guard_icon.png" alt=""><p>Редактировать политику конфиденциальности</p></a>
+				</div>
+				<div class="domain__row">
+					<p class="title-line">
+			        	<span>СИСТЕМЫ СТАТИСТИКИ И  ТРЕКЕРЫ</span>
+			        </p>
+				</div>
+				<div class="domain__row row">
+					<div class="domain__row-block">
+						<img src="img/ga_icon.png" alt="">
+						<div>
+							<p>Google Analytics</p>
+							<span>Подключено</span><span>UA-12345678-1</span>
+						</div>
+						{{mixins.icon('bin')}}
+						{{mixins.icon('pen')}}
+					</div>
+					<div class="domain__row-block"><img src="img/ya_icon.png" alt="">
+						<div>
+							<p>Яндекс.Метрика</p>
+							<span>Подключено</span><span>UA-12345678-1</span>
+						</div>
+						{{mixins.icon('bin')}}
+						{{mixins.icon('pen')}}
+					</div>
+					<div class="domain__row-block"><img src="img/ya_icon.png" alt="">
+						<div>
+							<p>Яндекс.Метрика</p>
+							<span>Подключено</span><span>UA-12345678-1</span>
+						</div>
+						{{mixins.icon('bin')}}
+						{{mixins.icon('pen')}}
+					</div>
+					<div class="domain__row-block"><img src="img/ya_icon.png" alt="">
+						<div>
+							<p>Яндекс.Метрика</p>
+							<span>Подключено</span><span>UA-12345678-1</span>
+						</div>
+						{{mixins.icon('bin')}}
+						{{mixins.icon('pen')}}
+					</div>
+					<div class="domain__row-block block--add">
+						{{mixins.icon('add-border')}}
+						<p>
+							Добавить код</p>
+					</div>
+				</div>
+				<div class="domain__row">
+					<p class="title-line">
+			        	<span>ПОДКЛЮЧЕННЫЕ ПЛАТЕЖНЫЕ СИСТЕМЫ</span>
+			        </p>
+				</div>
+				<div class="domain__row">
+					<div class="block--payment">
+						<img src="img/stripe_logo.png" alt="">
+						<div class="pay-container">
+							<h5>Stripe - USD</h5>
+							<hr>
+							<a>
+								{{mixins.icon('setting-2')}}
+								Параметры
+							</a>
+							<a>
+								{{mixins.icon('statistic')}}
+								Статистика
+							</a>
+						</div>
+					</div>
+					<div class="block--payment">
+						<img src="img/paypal_logo.png" alt="">
+						<div class="pay-container">
+							<h5>PayPal</h5>
+							<hr>
+							<a>
+								{{mixins.icon('setting-2')}}
+								Параметры
+							</a>
+							<a>
+								{{mixins.icon('statistic')}}
+								Статистика
+							</a>
+						</div>
+					</div>
+					<div class="block--payment">
+						<img src="img/yakassa_logo.png" alt="">
+						<div class="pay-container">
+							<h5>ЯКасса</h5>
+							<hr>
+							<a>
+								{{mixins.icon('setting-2')}}
+								Параметры
+							</a>
+							<a>
+								{{mixins.icon('statistic')}}
+								Статистика
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<footer class="home__footer">
+			<div class="container">
+				<a href="#">Политика конфиденциальности</a>
+			</div>
+		</footer>
+		
+
+	{% include "partials/_social.html" %}
+		
+	</main>
+	
+	<script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/jquery.slimscroll.js"></script>
+
+    <script>
+    	$(document).ready(function() {
+		  $('.sidebar').slimScroll({
+				height: '100%'
+			});
+		});
+    </script>
+
+{% endblock %}

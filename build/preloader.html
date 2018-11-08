@@ -1,0 +1,61 @@
+<!doctype html>
+<html>
+
+  <head>
+    <meta charset="utf-8">
+    <title>Preloader</title>
+    <!--   <meta http-equiv="X-UA-Compatible" content="IE=Edge"> -->
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1"> -->
+    <link rel="stylesheet" media="all" href="css/service.css">
+    <link rel="stylesheet" href="fonts/fontawesome/css/all.css">
+  </head>
+
+  <body>
+    <!-- BEGIN content -->
+    <div class="out ">
+      <div class="preloader">
+        <div class="preloader__wrp">
+          <div class="logo"><img id="logo" src="img/preloader_logo.png" alt=""></div>
+          <div class="loading">
+            <div id="bar" class="bar"></div>
+          </div>
+        </div>
+      </div>
+      <script>
+        let p = 0;
+        let force = true;
+        let way = "right";
+
+        function move(way)
+        {
+          if (way == "right")
+          {
+            p = p + 2;
+            document.getElementById('bar').style.margin = "18px 0px 0px " + p + "px";
+          }
+          else if (way == "left")
+          {
+            p = p - 2;
+            document.getElementById('bar').style.margin = "18px 0px 0px " + p + "px";
+          }
+        }
+        setInterval(function()
+        {
+          if (p == 0)
+          {
+            force = true;
+          }
+          else if (p == 320)
+          {
+            force = false;
+          }
+          force == true ? move("right") : move("left");
+        }, 5);
+
+      </script>
+    </div>
+    <!-- END content -->
+    <!-- BEGIN scripts -->
+    <!--  <script type="text/javascript" src="js/app.js"></script> -->
+    <!-- END scripts -->
+  </body>

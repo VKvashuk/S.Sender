@@ -1,0 +1,129 @@
+.domain
+	.container
+		display: -webkit-flex
+		display: -moz-flex
+		display: -ms-flex
+		display: -o-flex
+		display: flex
+		flex-direction: column
+		justify-content: space-between
+		height: 100%
+	&__row
+		display: flex
+		flex-wrap: wrap
+		position: relative
+		&:last-child
+			margin: 0
+		hr
+			height: 5px
+			width: 100%
+			background: #aaa
+		.icon-bin,
+		.icon-pen
+			width: 14px
+			height: 14px
+			fill: #BEBEBE
+			position: absolute
+			top: 14px
+			cursor: pointer
+		.icon-bin
+			right: 16px
+		.icon-pen
+			right: 43px
+		&-block 
+			width: 300px
+			height: 88px
+			background: #fff
+			margin-right: 12px
+			margin-bottom: 10px
+			margin-top: 10px
+			display: flex
+			justify-content: center
+			align-items: center
+			position: relative
+			border: 1px solid #E9ECEF
+			border-radius: 10px
+			filter: drop-shadow(0px 4px 10px #E9ECEF)
+			text-decoration: none
+			color: #000
+			img
+				width: 24px
+				height: 28px
+				margin-right: 20px
+			p
+				width: 200px
+				+font-family($mont-semibld)
+			span
+				+font-family($open-reg)
+				font-size: 13px
+				margin-right: 15px
+				color: #8C8C8C
+		.block--add
+			background: #E9ECEF
+			cursor: pointer
+			filter: none
+			display: -webkit-flex
+			display: -moz-flex
+			display: -ms-flex
+			display: -o-flex
+			display: flex
+			align-items: center
+			justify-content: center
+			svg
+				width: 24px
+				height: 24px
+				fill: #AAABAD
+				margin-right: 18px
+			p 
+				width: auto
+				color: #838485
+		.block--payment
+			width: 220px
+			height: 279px
+			margin-right: 20px
+			margin-top: 15px
+			margin-bottom: 15px
+			display: flex
+			flex-direction: column
+			background: #fff
+			border: 1px solid #E9ECEF
+			border-radius: 10px 
+			filter: drop-shadow(0 4px 10px #DEE2E6)
+			img
+				width: 100%
+				height: 110px
+				object-fit: cover
+				border-bottom: 1px solid #E9ECEF
+			.pay-container
+				width: 180px
+				padding: 10px auto
+				display: flex
+				flex-direction: column
+				h5
+    				+font-family($mont-semibld)
+    				font-size: 14px
+    				padding: 20px
+    				padding-bottom: 0
+				hr
+					height: 1px
+					border: none
+					background: #EEF1F3
+					margin: 22px 0px
+				a
+					display: flex
+					margin-bottom: 18px
+					margin-left: 18px
+					+font-family($open-reg)
+					cursor: pointer
+					svg
+						width: 18px
+						height: 18px
+						margin-right: 20px
+						fill: #8B8B8B
+	.row--between
+		justify-content: space-between
+		flex-wrap: wrap	
+.title
+	span
+		font-size: 24px
+		color: #8C8C8C

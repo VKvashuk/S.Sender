@@ -1,0 +1,296 @@
+<!doctype html>
+<html>
+
+  <head>
+    <meta charset="utf-8">
+    <title>add-ticket</title>
+    <!--   <meta http-equiv="X-UA-Compatible" content="IE=Edge"> -->
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1"> -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/css/select2.min.css" rel="stylesheet" />
+    <link rel="stylesheet" media="all" href="css/app.css">
+    <link rel="stylesheet" href="fonts/fontawesome/css/all.css">
+  </head>
+
+  <body>
+    <!-- BEGIN content -->
+    <div class="out add-ticket-out">
+      <aside class="sidebar">
+        <div class="sidebar__wrp">
+          <img src="img/logo.png" class="sidebar-cart" alt="sidebar-cart">
+          <ul class="line-bottom">
+            <li class="sidebar__link-active"><a href="#">
+                <svg class="icon icon-home">
+                  <use xlink:href="img/sprite.svg#icon-home"></use>
+                </svg> Консоль</a></li>
+            <li><a href="#">
+                <svg class="icon icon-basket">
+                  <use xlink:href="img/sprite.svg#icon-basket"></use>
+                </svg> Продукты</a></li>
+            <li><a href="#">
+                <svg class="icon icon-domen">
+                  <use xlink:href="img/sprite.svg#icon-domen"></use>
+                </svg> Домен</a></li>
+            <li><a href="#">
+                <svg class="icon icon-dollar">
+                  <use xlink:href="img/sprite.svg#icon-dollar"></use>
+                </svg> Платежные системы</a></li>
+          </ul>
+          <ul>
+            <li><a href="#">
+                <svg class="icon icon-rocket">
+                  <use xlink:href="img/sprite.svg#icon-rocket"></use>
+                </svg> Обновить до Pro</a></li>
+            <li><a href="#">
+                <svg class="icon icon-add-friends">
+                  <use xlink:href="img/sprite.svg#icon-add-friends"></use>
+                </svg> Пригласить друзей</a></li>
+          </ul>
+          <ul class="brdr-lines">
+            <li><a href="#">
+                <svg class="icon icon-support">
+                  <use xlink:href="img/sprite.svg#icon-support"></use>
+                </svg> Помощь</a></li>
+            <li><a href="#">
+                <svg class="icon icon-video-camera">
+                  <use xlink:href="img/sprite.svg#icon-video-camera"></use>
+                </svg> Видеоуроки</a></li>
+          </ul>
+          <ul>
+            <li><a href="#">
+                <!-- 
+<svg class="icon icon-support"><use xlink:href="img/sprite.svg#icon-support"></use></svg>
+  -->
+                <i class="icon-russia"></i> Русский</a></li>
+          </ul>
+        </div>
+      </aside>
+      <main class="">
+        <header class="header">
+          <div class="header__title">
+            <h2 class="title">Создание тикета</h2>
+          </div>
+          <button class="btn header__save">Вернуться обратно</button>
+          <div class="header__user-wrp">
+            <svg class="icon icon-search">
+              <use xlink:href="img/sprite.svg#icon-search"></use>
+            </svg>
+            <svg class="icon icon-apps">
+              <use xlink:href="img/sprite.svg#icon-apps"></use>
+            </svg>
+            <i class="icon-bell"></i>
+            <img src="img/user.png" alt="user">
+          </div>
+        </header>
+        <section class="add-ticket">
+          <div class="container">
+            <div class="add-ticket__wrp">
+              <table>
+                <tr>
+                  <td></td>
+                  <td>
+                    <div class="add-ticket__user">
+                      <img src="img/user.png" alt="user"> Андрей Збруцкий </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td>Проблема:</td>
+                  <td>
+                    <div class="add-ticket__select-wrp">
+                      <select name="" id="" class="select2">
+                        <option value="">Биллинг и тарифы</option>
+                        <option value="">Биллинг и тарифы</option>
+                        <option value="">Биллинг и тарифы</option>
+                        <option value="">Биллинг и тарифы</option>
+                        <option value="">Биллинг и тарифы</option>
+                        <option value="">Биллинг и тарифы</option>
+                        <option value="">Биллинг и тарифы</option>
+                        <option value="">Биллинг и тарифы</option>
+                      </select>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td>Сервис:</td>
+                  <td>
+                    <div class="add-ticket__select-wrp">
+                      <select name="" id="" class="select2">
+                        <option value="">Smart Messenger</option>
+                        <option value="">Smart Messenger</option>
+                        <option value="">Smart Messenger</option>
+                        <option value="">Smart Messenger</option>
+                        <option value="">Smart Messenger</option>
+                        <option value="">Smart Messenger</option>
+                        <option value="">Smart Messenger</option>
+                        <option value="">Smart Messenger</option>
+                      </select>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td>Тема:</td>
+                  <td class="add-ticket__textarea">
+                    <textarea name="theme" rows="1" placeholder="Введите текст"></textarea>
+                    <span>563 / 500 символов</span>
+                  </td>
+                </tr>
+                <tr>
+                  <td>Сообщение:</td>
+                  <td class="add-ticket__textarea">
+                    <textarea name="massage" rows="5" placeholder="Введите текст"></textarea>
+                    <span>563 / 5000 символов</span>
+                  </td>
+                </tr>
+                <tr>
+                  <td></td>
+                  <td class="add-ticket__file">
+                    <div>
+                      <p>attachment.png <span>(280 Kb)</span>
+                        <svg class="icon icon-clip">
+                          <use xlink:href="img/sprite.svg#icon-clip"></use>
+                        </svg>
+                      </p>
+                      <button class="btn btn-icon">
+                        <svg class="icon icon-error-3">
+                          <use xlink:href="img/sprite.svg#icon-error-3"></use>
+                        </svg> Удалить </button>
+                    </div>
+                    <div>
+                      <p>attachment.png <span>(280 Kb)</span>
+                        <svg class="icon icon-clip">
+                          <use xlink:href="img/sprite.svg#icon-clip"></use>
+                        </svg>
+                      </p>
+                      <button class="btn btn-icon">
+                        <svg class="icon icon-error-3">
+                          <use xlink:href="img/sprite.svg#icon-error-3"></use>
+                        </svg> Удалить </button>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td></td>
+                  <td class="add-ticket__btns">
+                    <button class="btn btn-icon btn--blue"> Отправить <svg class="icon icon-envelope">
+                        <use xlink:href="img/sprite.svg#icon-envelope"></use>
+                      </svg>
+                    </button>
+                    <label for="file" class="btn">
+                      <input type="file" id="file" name="file" multiple> Прикрепить файл </label>
+                  </td>
+                </tr>
+              </table>
+            </div>
+          </div>
+        </section>
+        <footer class="footer">
+          <div class="container">
+            <a href="/">Политика конфиденциальности</a>
+          </div>
+        </footer>
+        <div class="social">
+          <div class="social__wrp">
+            <ul>
+              <li>
+                <button class="btn-social btn-social--massenger">
+                  <svg class="icon icon-messenger">
+                    <use xlink:href="img/sprite.svg#icon-messenger"></use>
+                  </svg>
+                </button>
+                <button class="btn-social btn-social--massenger">
+                  <svg class="icon icon-messenger">
+                    <use xlink:href="img/sprite.svg#icon-messenger"></use>
+                  </svg>
+                </button>
+              </li>
+              <li>
+                <button class="btn-social btn-social--viber">
+                  <svg class="icon icon-viber">
+                    <use xlink:href="img/sprite.svg#icon-viber"></use>
+                  </svg>
+                </button>
+                <button class="btn-social btn-social--viber">
+                  <svg class="icon icon-viber">
+                    <use xlink:href="img/sprite.svg#icon-viber"></use>
+                  </svg>
+                </button>
+              </li>
+              <li>
+                <button class="btn-social btn-social--whatsapp">
+                  <svg class="icon icon-whatsapp">
+                    <use xlink:href="img/sprite.svg#icon-whatsapp"></use>
+                  </svg>
+                </button>
+                <button class="btn-social btn-social--whatsapp">
+                  <svg class="icon icon-whatsapp">
+                    <use xlink:href="img/sprite.svg#icon-whatsapp"></use>
+                  </svg>
+                </button>
+              </li>
+              <li>
+                <button class="btn-social btn-social--telegram">
+                  <svg class="icon icon-telegram">
+                    <use xlink:href="img/sprite.svg#icon-telegram"></use>
+                  </svg>
+                </button>
+                <button class="btn-social btn-social--telegram">
+                  <svg class="icon icon-telegram">
+                    <use xlink:href="img/sprite.svg#icon-telegram"></use>
+                  </svg>
+                </button>
+              </li>
+            </ul>
+          </div>
+          <button class="btn-social btn-social--open">
+            <svg class="icon icon-social-open">
+              <use xlink:href="img/sprite.svg#icon-social-open"></use>
+            </svg>
+            <svg class="icon icon-social-cross">
+              <use xlink:href="img/sprite.svg#icon-social-cross"></use>
+            </svg>
+          </button>
+        </div>
+      </main>
+      <script src="js/jquery-3.2.1.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/js/select2.min.js"></script>
+      <script src="js/jquery.slimscroll.js"></script>
+      <script src="js/TextAreaAutoResizer.js"></script>
+      <script>
+        $(document).ready(function()
+        {
+          $('.sidebar').slimScroll(
+          {
+            height: '100%'
+          });
+        });
+
+      </script>
+      <script>
+        $(document).ready(function()
+        {
+          $('.select2').select2();
+        });
+
+      </script>
+      <script>
+        $(document).ready(function()
+        {
+          $(".select2").on('select2:open', function()
+          {
+            $('.select2-results__options').slimScroll();
+          });
+        });
+
+      </script>
+      <script>
+        $(document).ready(function()
+        {
+          $('textarea').autosize();
+        });
+
+      </script>
+    </div>
+    <!-- END content -->
+    <!-- BEGIN scripts -->
+    <!--  <script type="text/javascript" src="js/app.js"></script> -->
+    <!-- END scripts -->
+  </body>

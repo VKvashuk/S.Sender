@@ -1,0 +1,265 @@
+---
+css: app
+classOut: support-out
+title: support-null
+---
+{% extends "layouts/_layout.html" %}
+
+{% block content %}
+
+	{% include "partials/_sidebar.html" %}
+	<main class="">
+
+		<header class="header">
+			<div class="header__title">
+				<h2 class="title">Центр поддержки</h2>
+			</div>
+			<button class="btn btn--blue header__save">Создать тикет</button>
+			<div class="header__user-wrp">
+				{{mixins.icon('search')}} 
+				{{mixins.icon('apps')}} 
+				<i class="icon-bell"></i>
+				<img src="img/user.png" alt="user">
+			</div>
+		</header>
+		
+		<section class="support">
+		<div class="container">
+			<p class="title-line">
+	        	<span>АКТИВНЫЕ ТИКЕТЫ (11)</span>
+	        </p>
+	        <div class="support__wrp">
+	        	<table>
+	        		<tr>
+	        			<th>Тема обращения</th>
+	        			<th>Дата создания</th>
+	        			<th>Проблема</th>
+	        			<th>Состояние</th>
+	        		</tr>
+	        		<tr>
+	        			<td>
+	        				<a href="#">
+	        				#025: Lorem ipsum dolor sit amet, consectetuer
+	        				</a>
+	        			</td>
+	        			<td>01.05.2018 в 21:51</td>
+	        			<td>Биллинг и тарифы</td>
+	        			<td>
+	        				<i class="circle circle--blue"></i>
+	        				В обработке
+	        			</td>
+	        		</tr>
+	        		<tr>
+	        			<td>
+	        				<a href="#">
+	        				#025: Lorem ipsum dolor sit amet, consectetuer
+							adipiscing elit. Aenean commodo ligula eget dolor.
+							Aenean massa.
+	        				</a>
+	        			</td>
+	        			<td>01.05.2018 в 21:51</td>
+	        			<td>Технические вопросы</td>
+	        			<td>
+	        				<i class="circle circle--green"></i>
+	        				Есть ответ
+	        			</td>
+	        		</tr>
+	        		<tr>
+	        			<td>
+	        				<a href="#">
+	        				#025: Lorem ipsum dolor sit amet, consectetuer
+	        				</a>
+	        			</td>
+	        			<td>01.05.2018 в 21:51</td>
+	        			<td>Биллинг и тарифы</td>
+	        			<td>
+	        				<i class="circle circle--blue"></i>
+	        				В обработке
+	        			</td>
+	        		</tr>
+	        		<tr>
+	        			<td>
+	        				<a href="#">
+	        				#025: Lorem ipsum dolor sit amet, consectetuer
+	        				</a>
+	        			</td>
+	        			<td>01.05.2018 в 21:51</td>
+	        			<td>Биллинг и тарифы</td>
+	        			<td>
+	        				<i class="circle circle--blue"></i>
+	        				В обработке
+	        			</td>
+	        		</tr>
+	        		<tr>
+	        			<td>
+	        				<a href="#">
+	        				#025: Lorem ipsum dolor sit amet, consectetuer
+	        				</a>
+	        			</td>
+	        			<td>01.05.2018 в 21:51</td>
+	        			<td>Биллинг и тарифы</td>
+	        			<td>
+	        				<i class="circle circle--blue"></i>
+	        				В обработке
+	        			</td>
+	        		</tr>
+	        		<tr>
+	        			<td>
+	        				<a href="#">
+	        				#025: Lorem ipsum dolor sit amet, consectetuer
+	        				</a>
+	        			</td>
+	        			<td>01.05.2018 в 21:51</td>
+	        			<td>Биллинг и тарифы</td>
+	        			<td>
+	        				<i class="circle circle--blue"></i>
+	        				В обработке
+	        			</td>
+	        		</tr>
+	        		<tr>
+	        			<td>
+	        				<a href="#">
+	        				#025: Lorem ipsum dolor sit amet, consectetuer
+	        				</a>
+	        			</td>
+	        			<td>01.05.2018 в 21:51</td>
+	        			<td>Биллинг и тарифы</td>
+	        			<td>
+	        				<i class="circle circle--blue"></i>
+	        				В обработке
+	        			</td>
+	        		</tr>
+	        		<tr>
+	        			<td>
+	        				<a href="#">
+	        				#025: Lorem ipsum dolor sit amet, consectetuer
+	        				</a>
+	        			</td>
+	        			<td>01.05.2018 в 21:51</td>
+	        			<td>Биллинг и тарифы</td>
+	        			<td>
+	        				<i class="circle circle--blue"></i>
+	        				В обработке
+	        			</td>
+	        		</tr>
+	        		<tr>
+	        			<td>
+	        				<a href="#">
+	        				#025: Lorem ipsum dolor sit amet, consectetuer
+	        				</a>
+	        			</td>
+	        			<td>01.05.2018 в 21:51</td>
+	        			<td>Биллинг и тарифы</td>
+	        			<td>
+	        				<i class="circle circle--blue"></i>
+	        				В обработке
+	        			</td>
+	        		</tr>
+	        		<tr>
+	        			<td>
+	        				<a href="#">
+	        				#025: Lorem ipsum dolor sit amet, consectetuer
+	        				</a>
+	        			</td>
+	        			<td>01.05.2018 в 21:51</td>
+	        			<td>Биллинг и тарифы</td>
+	        			<td>
+	        				<i class="circle circle--grey"></i>
+	        				Отправлено
+	        			</td>
+	        		</tr>
+	        	</table>
+	        	<div class="support__btns">
+	        		<button class="btn-numb btn-numb--active">1</button>
+				    <button class="btn-numb">2</button>
+				    <button class="btn-next">Следующая</button>
+	        	</div>
+
+	        </div>
+
+	        <p class="title-line">
+	        	<span>АРХИВ ТИКЕТОВ (3)</span>
+	        </p>
+
+	        <div class="support__wrp">
+	        	<table>
+	        		<tr>
+	        			<th>Тема обращения</th>
+	        			<th>Дата создания</th>
+	        			<th>Проблема</th>
+	        			<th>Состояние</th>
+	        		</tr>
+	        		<tr>
+	        			<td>
+	        				<a href="#">
+	        				#025: Lorem ipsum dolor sit amet, consectetuer
+	        				</a>
+	        			</td>
+	        			<td>01.05.2018 в 21:51</td>
+	        			<td>Биллинг и тарифы</td>
+	        			<td>
+	        				<i class="circle circle--green"></i>
+	        				Решено
+	        			</td>
+	        		</tr>
+	        		<tr>
+	        			<td>
+	        				<a href="#">
+	        				#025: Lorem ipsum dolor sit amet, consectetuer
+							adipiscing elit. Aenean commodo ligula eget dolor.
+							Aenean massa.
+	        				</a>
+	        			</td>
+	        			<td>01.05.2018 в 21:51</td>
+	        			<td>Технические вопросы</td>
+	        			<td>
+	        				<i class="circle circle--red"></i>
+	        				Истек срок
+	        			</td>
+	        		</tr>
+	        		<tr>
+	        			<td>
+	        				<a href="#">
+	        				#025: Lorem ipsum dolor sit amet, consectetuer
+	        				</a>
+	        			</td>
+	        			<td>01.05.2018 в 21:51</td>
+	        			<td>Биллинг и тарифы</td>
+	        			<td>
+	        				<i class="circle circle--red"></i>
+	        				Не решено
+	        			</td>
+	        		</tr>
+	        		
+	        	</table>
+	        	
+
+	        </div>
+
+			
+		</div>
+		</section>
+
+		<footer class="footer">
+			<div class="container">
+				<a href="/">Политика конфиденциальности</a>
+			</div>
+		</footer>
+
+		
+	
+	{% include "partials/_social.html" %}
+		
+	</main>
+	
+	<script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/jquery.slimscroll.js"></script>
+    <script>
+    	$(document).ready(function() {
+		  $('.sidebar').slimScroll({
+				height: '100%'
+			});
+		});
+    </script>
+
+{% endblock %}

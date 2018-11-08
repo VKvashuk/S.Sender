@@ -1,0 +1,82 @@
+---
+css: accounts
+classOut: out-registration
+title: registration
+---
+{% extends "layouts/_layout.html" %}
+
+{% block content %}
+
+	
+<main class="main-login">
+	<section class="login">	
+		<div class="login__left">
+			<img src="img/logo.png" alt="" class="login__logo">
+			<div class="login__block">
+				<h2 class="title">Регистрация</h2>
+				<!-- <p class="login__text-error">Неправильный email или пароль</p> -->
+				<form action="/">
+				<label class="label-text ">
+		            <input class="input-text" type="text" placeholder="&nbsp;">
+		            <span class="span-input-text">Your name</span>
+		        </label>
+				<label class="label-text ">
+		            <input class="input-text" type="text" placeholder="&nbsp;">
+		            <span class="span-input-text">Email</span>
+
+		            <span class="input-text-error">Некорректный формат ввода</span>
+		            <span class="input-text-success">Password is strong</span>
+		        </label>
+		        <label class="label-text">
+		            <input class="input-text" type="password" placeholder="&nbsp;">
+		            <span class="span-input-text">Password</span>
+			   
+		        </label>
+		        <label class="label-text">
+		            <input class="input-text" type="password" placeholder="&nbsp;">
+		            <span class="span-input-text">Confirm password</span>
+	 
+		        </label>
+		        <label class="label-checkbox">
+		            <input class="checkbox" type="checkbox">
+		            <span class="input-circle"></span>
+
+		            Я прочитал и принимаю <br>
+					<a href="">условия пользования сервисом</a>
+		        </label>
+		        
+		       
+		        <button class="btn btn-arrow-r btn--blue" type="submit">Регистрация</button>
+				</form>
+				<div class="login__sicial-wrp">
+					<p>
+						<span>или</span>
+					</p>
+					<div class="login__social-icons">
+						<a href="#">
+							<i class="icon-facebook-login"></i>
+						</a>
+						<a href="#">
+							<i class="icon-twitter-login"></i>
+						</a>
+						<a href="#">
+							<i class="icon-google-login"></i>
+						</a>
+					</div>
+				</div>
+			</div>
+			<div class="login__footer">
+				<a href="#">
+					<i class="icon-russia"></i> 
+				Русский</a>
+				<p>Уже зарегистрированы? &nbsp<a href="#" class="login__reg-link">Войти</a></p>
+			</div>
+		</div>
+		<div class="login__right" style="background-image: url('img/reset-password-img.jpg')">
+			<!-- <img src="img/login-img.jpg" alt="img"> -->
+		</div>
+	</section>			
+</main>
+	
+
+{% endblock %}

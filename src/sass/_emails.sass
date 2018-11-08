@@ -1,0 +1,107 @@
+.emails
+	&__block
+		padding: 15px
+		border-top: 1px solid #E9ECEF
+		border-bottom: 1px solid #E9ECEF
+		.emails__items
+			display: none
+		.mails__icon-apply
+			display: none
+			color: #1380F6
+			svg
+				fill: #1380F6
+		.mails__icon-setting
+			margin-left: 0
+		&--open
+			padding: 35px 30px
+			padding-bottom: 50px
+			padding-right: 23px
+			border: 1px solid #E9ECEF
+			border-radius: 10px
+			box-shadow: 0px 4px 10px rgba(222, 226, 230, 0.35)
+			.emails__items
+				display: flex
+			.mails__icon-setting
+				display: none
+				margin-left: 0
+			.mails__icon-apply
+				display: inline-block
+				margin-left: 0
+			.emails__marks
+				display: none
+	&__top
+		display: -webkit-flex
+		display: -moz-flex
+		display: -ms-flex
+		display: -o-flex
+		display: flex
+		p
+			padding-right: 30px
+			font-size: 14px
+			+font-family($mont-semibld)
+		span
+			display: inline-block
+			padding: 3px 20px
+			color: #515254
+			+font-family($open-reg)
+			font-size: 13px
+			margin: 0 4px
+			background: #E9ECEF
+			border-radius: 40px
+		a 
+			color: #595959
+			+font-family($open-reg)
+			font-size: 15px
+			text-decoration: none
+			margin-left: 30px
+		svg
+			fill: #8B8B8B
+			width: 18px
+			height: 18px
+			margin-right: 18px
+			vertical-align: middle
+	&__icons
+		margin-left: auto
+	&__items
+		display: -webkit-flex
+		display: -moz-flex
+		display: -ms-flex
+		display: -o-flex
+		display: flex
+		margin-top: 25px
+	&__item
+		padding: 10px
+		label
+			width: 100%
+		.title-line
+			padding-left: 10px
+		.label-checkbox--line
+			margin-bottom: 18px
+			position: relative
+			&:after
+				position: absolute
+				content: ''
+				border: 1px solid #E9ECEF
+				width: 100px
+				left: 30px
+				bottom: -10px
+	&__add-block
+		padding: 15px
+		border-top: 1px solid #E9ECEF
+		border-bottom: 1px solid #E9ECEF
+		text-align: center
+		a
+			display: inline-block
+			margin: 0 auto
+			+font-family($open-reg)
+			font-size: 15px
+			text-decoration: none
+			color: #262626
+			svg
+				width: 18px
+				height: 18px
+				vertical-align: text-bottom
+				margin-right: 13px
+				fill: #8B8B8B
+
+

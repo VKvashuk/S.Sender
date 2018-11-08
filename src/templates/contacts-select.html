@@ -1,0 +1,550 @@
+---
+css: app
+classOut: contacts-out
+title: contacts
+---
+{% extends "layouts/_layout.html" %}
+
+{% block styles %}
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/css/select2.min.css" rel="stylesheet" />
+{% endblock %}
+
+{% block content %}
+
+	{% include "partials/_sidebar-5.html" %}
+	<main class="main-home">
+
+		<header class="header">
+			<div class="header__title">
+				<h2 class="title">Контакты</h2>
+			</div>
+			<button class="btn btn--blue header__save">Добавить</button>
+			<div class="header__add-product">
+				<div class="header__add-wrp">
+					<i>{{mixins.icon('social-cross')}}</i>
+					
+					<span>Выбрано: 3</span>
+					<i>{{mixins.icon('Combined-Shape-1')}}</i>
+
+					<i>{{mixins.icon('folder-5')}}</i>
+					<i>{{mixins.icon('bin')}}
+						<span>Удалить</span>
+					</i>
+				</div>
+			</div>
+			
+			<div class="header__user-wrp">
+				<!-- {{mixins.icon('search')}}  -->
+				{{mixins.icon('apps')}} 
+				<i class="icon-bell"></i>
+				<img src="img/user.png" alt="user">
+			</div>
+		</header>
+		<div class="search">
+	         <div class="search__select-wrp">
+    			<select name="" id="" class="select2" >
+    				<option value="">20.00  -  35.00</option>
+        			<option value="">Выбрано 2 элемента</option>
+        			<option value="">Выбрано 2 элемента</option>
+        			<option value="">Выбрано 2 элемента</option>
+        			<option value="">Выбрано 2 элемента</option>
+        			<option value="">Выбрано 2 элемента</option>
+        			<option value="">Выбрано 2 элемента</option>
+        			<option value="">Выбрано 2 элемента</option>
+        			<option value="">Выбрано 2 элемента</option>
+        		</select>
+        		<div class="search__select-text">
+        		Есть сиквенсы
+        		</div>
+    		</div>
+    		 <div class="search__select-wrp">
+    			<select name="" id="" class="select2" >
+        			
+        			<option value="">—</option>
+        			<option value="">—</option>
+        			<option value="">—</option>
+        			<option value="">—</option>
+        			<option value="">—</option>
+        			<option value="">—</option>
+        			<option value="">—</option>
+        			<option value="">—</option>
+        		</select>
+        		<div class="search__select-text">
+        		Исключить сиквенсы
+        		</div>
+    		</div>
+    		 <div class="search__select-wrp">
+    			<select name="" id="" class="select2" >
+        			
+        			<option value="">Выбрано 3 элемента</option>
+        			<option value="">Создан</option>
+        			<option value="">Создан</option>
+        			<option value="">Создан</option>
+        			<option value="">Создан</option>
+        			<option value="">Создан</option>
+        			<option value="">Создан</option>
+        		</select>
+        		<div class="search__select-text">
+        		Есть теги
+        		</div>
+    		</div>
+    		<div class="search__select-wrp">
+    			<select name="" id="" class="select2" >
+        			
+        			<option value="">—</option>
+        			<option value="">Создан</option>
+        			<option value="">Создан</option>
+        			<option value="">Создан</option>
+        			<option value="">Создан</option>
+        			<option value="">Создан</option>
+        			<option value="">Создан</option>
+        		</select>
+        		<div class="search__select-text">
+        		Исключить теги
+        		</div>
+    		</div>
+    		<i>{{mixins.icon('outline')}}</i>
+		</div>
+		<section class="contacts">
+			<div class="container">
+				<div class="contacts__letters-wrp">
+					<div class="contacts__letters">
+						<a class="active" href="#">ВСЕ</a>
+						<a href="#">А</a>
+						<a href="#">Б</a>
+						<a href="#">В</a>
+						<a href="#">Г</a>
+						<a href="#">Д</a>
+						<a href="#">Е</a>
+						<a class="disabled" href="#">Ё</a>
+						<a href="#">Ж</a>
+						<a href="#">З</a>
+						<a href="#">И</a>
+						<a href="#">Й</a>
+						<a href="#">К</a>
+						<a href="#">Л</a>
+						<a href="#">М</a>
+						<a href="#">Н</a>
+						<a href="#">О</a>
+						<a href="#">П</a>
+						<a href="#">Р</a>
+						<a href="#">С</a>
+						<a href="#">Т</a>
+						<a href="#">У</a>
+						<a href="#">Ф</a>
+						<a class="disabled" href="#">Х</a>
+						<a class="disabled" href="#">Ш</a>
+						<a class="disabled" href="#">Щ</a>
+						<a href="#">Э</a>
+						<a href="#">Ю</a>
+						<a href="#">Я</a>
+					</div>
+					<button>
+						EN
+					</button>
+				</div>
+				<div class="contacts__items">
+					<table>
+						<tr>
+							<td>
+								<div class="contacts__contact">
+									<label class="label-checkbox">
+							            <input class="checkbox" type="checkbox">
+							            <span class="input-circle"></span>
+							        </label> 
+							        <div class="contacts__img">
+							        	<img src="img/user.png" alt="user">
+							        </div>
+							        <div class="contacts__text">
+							        	<p class="contacts__name">
+							        		Имя Фамилия
+							        	</p>
+							        	<div>
+							        		<p>+38099 123-45-67</p>
+							        		
+							        	</div>
+							        </div>
+								</div>
+							</td>
+							<td>
+								<div class="contacts__marks">
+									<i class="icon-mark-small-blue"></i>
+									<i class="icon-mark-small-red"></i>
+									<i class="icon-mark-small-yellow"></i>
+									<i class="icon-mark-small-green"></i>
+								</div>
+							</td>
+							<td>
+								<button>{{mixins.icon('edit-write')}} 
+									Редактировать
+								</button>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<div class="contacts__contact">
+									<label class="label-checkbox">
+							            <input class="checkbox" type="checkbox">
+							            <span class="input-circle"></span>
+							        </label> 
+							        <div class="contacts__img">
+							        	<img src="img/user.png" alt="user">
+							        </div>
+							        <div class="contacts__text">
+							        	<p class="contacts__name">
+							        		Имя Фамилия
+							        	</p>
+							        	<div>
+							        		<p>+38099 123-45-67</p>
+							        		<p>mail@email.com</p>
+							        		
+							        	</div>
+							        </div>
+								</div>
+							</td>
+							<td>
+								<div class="contacts__marks">
+									<i class="icon-mark-small-blue"></i>
+									<i class="icon-mark-small-red"></i>
+									
+								</div>
+							</td>
+							<td>
+								<button>{{mixins.icon('edit-write')}} 
+									Редактировать
+								</button>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<div class="contacts__contact">
+									<label class="label-checkbox">
+							            <input class="checkbox" type="checkbox">
+							            <span class="input-circle"></span>
+							        </label> 
+							        <div class="contacts__img">
+							        	<img src="img/user.png" alt="user">
+							        </div>
+							        <div class="contacts__text">
+							        	<p class="contacts__name">
+							        		Имя Фамилия
+							        	</p>
+							        	<div>
+							        		
+							        		<p>Подписчик</p>
+							        	</div>
+							        </div>
+								</div>
+							</td>
+							<td>
+								<div class="contacts__marks">
+									<i class="icon-mark-small-blue"></i>
+									
+								</div>
+							</td>
+							<td>
+								<button>{{mixins.icon('edit-write')}} 
+									Редактировать
+								</button>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<div class="contacts__contact">
+									<label class="label-checkbox">
+							            <input class="checkbox" type="checkbox">
+							            <span class="input-circle"></span>
+							        </label> 
+							        <div class="contacts__img">
+							        	<img src="img/user.png" alt="user">
+							        </div>
+							        <div class="contacts__text">
+							        	<p class="contacts__name">
+							        		Имя Фамилия
+							        	</p>
+							        	<div>
+							        		<p>+38099 123-45-67</p>
+							        		<p>mail@email.com</p>
+							        		<p>Подписчик</p>
+							        	</div>
+							        </div>
+								</div>
+							</td>
+							<td>
+								<div class="contacts__marks">
+									<i class="icon-mark-small-blue"></i>
+									<i class="icon-mark-small-red"></i>
+									<i class="icon-mark-small-yellow"></i>
+									<i class="icon-mark-small-green"></i>
+								</div>
+							</td>
+							<td>
+								<button>{{mixins.icon('edit-write')}} 
+									Редактировать
+								</button>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<div class="contacts__contact">
+									<label class="label-checkbox">
+							            <input class="checkbox" type="checkbox">
+							            <span class="input-circle"></span>
+							        </label> 
+							        <div class="contacts__img">
+							        	<img src="img/user.png" alt="user">
+							        </div>
+							        <div class="contacts__text">
+							        	<p class="contacts__name">
+							        		Имя Фамилия
+							        	</p>
+							        	<div>
+							        		<p>+38099 123-45-67</p>
+							        		<p>mail@email.com</p>
+							        		<p>Подписчик</p>
+							        	</div>
+							        </div>
+								</div>
+							</td>
+							<td>
+								<div class="contacts__marks">
+									<i class="icon-mark-small-blue"></i>
+									<i class="icon-mark-small-red"></i>
+									<i class="icon-mark-small-yellow"></i>
+									<i class="icon-mark-small-green"></i>
+								</div>
+							</td>
+							<td>
+								<button>{{mixins.icon('edit-write')}} 
+									Редактировать
+								</button>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<div class="contacts__contact">
+									<label class="label-checkbox">
+							            <input class="checkbox" type="checkbox">
+							            <span class="input-circle"></span>
+							        </label> 
+							        <div class="contacts__img">
+							        	<img src="img/user.png" alt="user">
+							        </div>
+							        <div class="contacts__text">
+							        	<p class="contacts__name">
+							        		Имя Фамилия
+							        	</p>
+							        	<div>
+							        		<p>+38099 123-45-67</p>
+							        		<p>mail@email.com</p>
+							        		<p>Подписчик</p>
+							        	</div>
+							        </div>
+								</div>
+							</td>
+							<td>
+								<div class="contacts__marks">
+									<i class="icon-mark-small-blue"></i>
+									<i class="icon-mark-small-red"></i>
+									<i class="icon-mark-small-yellow"></i>
+									<i class="icon-mark-small-green"></i>
+								</div>
+							</td>
+							<td>
+								<button>{{mixins.icon('edit-write')}} 
+									Редактировать
+								</button>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<div class="contacts__contact">
+									<label class="label-checkbox">
+							            <input class="checkbox" type="checkbox">
+							            <span class="input-circle"></span>
+							        </label> 
+							        <div class="contacts__img">
+							        	<img src="img/user.png" alt="user">
+							        </div>
+							        <div class="contacts__text">
+							        	<p class="contacts__name">
+							        		Имя Фамилия
+							        	</p>
+							        	<div>
+							        		<p>+38099 123-45-67</p>
+							        		<p>mail@email.com</p>
+							        		<p>Подписчик</p>
+							        	</div>
+							        </div>
+								</div>
+							</td>
+							<td>
+								<div class="contacts__marks">
+									<i class="icon-mark-small-blue"></i>
+									<i class="icon-mark-small-red"></i>
+									<i class="icon-mark-small-yellow"></i>
+									<i class="icon-mark-small-green"></i>
+								</div>
+							</td>
+							<td>
+								<button>{{mixins.icon('edit-write')}} 
+									Редактировать
+								</button>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<div class="contacts__contact">
+									<label class="label-checkbox">
+							            <input class="checkbox" type="checkbox">
+							            <span class="input-circle"></span>
+							        </label> 
+							        <div class="contacts__img">
+							        	<img src="img/user.png" alt="user">
+							        </div>
+							        <div class="contacts__text">
+							        	<p class="contacts__name">
+							        		Имя Фамилия
+							        	</p>
+							        	<div>
+							        		<p>+38099 123-45-67</p>
+							        		<p>mail@email.com</p>
+							        		<p>Подписчик</p>
+							        	</div>
+							        </div>
+								</div>
+							</td>
+							<td>
+								<div class="contacts__marks">
+									<i class="icon-mark-small-blue"></i>
+									<i class="icon-mark-small-red"></i>
+									<i class="icon-mark-small-yellow"></i>
+									
+								</div>
+							</td>
+							<td>
+								<button>{{mixins.icon('edit-write')}} 
+									Редактировать
+								</button>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<div class="contacts__contact">
+									<label class="label-checkbox">
+							            <input class="checkbox" type="checkbox">
+							            <span class="input-circle"></span>
+							        </label> 
+							        <div class="contacts__img">
+							        	<img src="img/user.png" alt="user">
+							        </div>
+							        <div class="contacts__text">
+							        	<p class="contacts__name">
+							        		Имя Фамилия
+							        	</p>
+							        	<div>
+							        		<p>+38099 123-45-67</p>
+							        		<p>mail@email.com</p>
+							        		<p>Подписчик</p>
+							        	</div>
+							        </div>
+								</div>
+							</td>
+							<td>
+								<div class="contacts__marks">
+									<i class="icon-mark-small-blue"></i>
+									<i class="icon-mark-small-red"></i>
+									
+								</div>
+							</td>
+							<td>
+								<button>{{mixins.icon('edit-write')}} 
+									Редактировать
+								</button>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<div class="contacts__contact">
+									<label class="label-checkbox">
+							            <input class="checkbox" type="checkbox">
+							            <span class="input-circle"></span>
+							        </label> 
+							        <div class="contacts__img">
+							        	<img src="img/user.png" alt="user">
+							        </div>
+							        <div class="contacts__text">
+							        	<p class="contacts__name">
+							        		Имя Фамилия
+							        	</p>
+							        	<div>
+							        		<p>+38099 123-45-67</p>
+							        		<p>mail@email.com</p>
+							        		<p>Подписчик</p>
+							        	</div>
+							        </div>
+								</div>
+							</td>
+							<td>
+								<div class="contacts__marks">
+									<i class="icon-mark-small-blue"></i>
+									
+								</div>
+							</td>
+							<td>
+								<button>{{mixins.icon('edit-write')}} 
+									Редактировать
+								</button>
+							</td>
+						</tr>
+					</table>
+				</div>
+				<div class="contacts__nav">
+		     		<button class="btn-numb btn-numb--active">1</button>
+				    <button class="btn-numb btn--border">2</button>
+				    <button class="btn-numb btn--border">3</button>
+				    <button class="btn-numb btn--border">4</button>
+				    <button class="btn-numb btn--border">5</button>
+				    <button class="btn-numb btn--border">6</button>
+				    <button class="btn-next btn--border">Следующая</button>
+		     	</div>
+			</div>
+		</section>
+
+		<footer class="footer">
+			<div class="container">
+				<a href="#">Политика конфиденциальности</a>
+			</div>
+		</footer>
+
+	{% include "partials/_social.html" %}
+
+	</main>
+
+	<script src="js/jquery-3.2.1.min.js"></script>
+	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/js/select2.min.js"></script>
+
+    <script src="js/jquery.slimscroll.js"></script>
+
+    <script>
+    	$(document).ready(function() {
+		    $('.sidebar').slimScroll({
+				height: '100%'
+			});
+		});
+    </script>
+    <script>
+    	$(document).ready(function() {
+        	$('.select2').select2();
+	    });
+    </script>
+    <script>
+    	$(document).ready(function(){
+	        $(".select2").on('select2:open', function () {
+	        	$('.select2-results__options').slimScroll();
+	  		});
+	    });
+    </script>
+
+{% endblock %}

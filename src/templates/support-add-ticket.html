@@ -1,0 +1,182 @@
+---
+css: app
+classOut: add-ticket-out
+title: add-ticket
+---
+{% extends "layouts/_layout.html" %}
+
+{% block styles %}
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/css/select2.min.css" rel="stylesheet" />
+{% endblock %}
+
+{% block content %}
+
+	{% include "partials/_sidebar.html" %}
+	<main class="">
+
+		<header class="header">
+			<div class="header__title">
+				<h2 class="title">Создание тикета</h2>
+			</div>
+			<button class="btn header__save">Вернуться обратно</button>
+			<div class="header__user-wrp">
+				{{mixins.icon('search')}} 
+				{{mixins.icon('apps')}} 
+				<i class="icon-bell"></i>
+				<img src="img/user.png" alt="user">
+			</div>
+		</header>
+		
+		<section class="add-ticket">
+			<div class="container">
+			<div class="add-ticket__wrp">
+			<table>
+				<tr>
+					<td></td>
+					<td>
+						<div class="add-ticket__user">
+							<img src="img/user.png" alt="user"> 
+							Андрей Збруцкий
+						</div>
+					</td>
+				</tr>
+				<tr>
+					<td>Проблема:</td>
+					<td>
+						<div class="add-ticket__select-wrp">
+		        			<select name="" id="" class="select2" >
+			        			<option value="">Биллинг и тарифы</option>
+			        			<option value="">Биллинг и тарифы</option>
+			        			<option value="">Биллинг и тарифы</option>
+			        			<option value="">Биллинг и тарифы</option>
+			        			<option value="">Биллинг и тарифы</option>
+			        			<option value="">Биллинг и тарифы</option>
+			        			<option value="">Биллинг и тарифы</option>
+			        			<option value="">Биллинг и тарифы</option>
+			        		</select>
+		        		</div>
+					</td>
+				</tr>
+				<tr>
+					<td>Сервис:</td>
+					<td>
+						<div class="add-ticket__select-wrp">
+		        			<select name="" id="" class="select2" >
+			        			<option value="">Smart Messenger</option>
+			        			<option value="">Smart Messenger</option>
+			        			<option value="">Smart Messenger</option>
+			        			<option value="">Smart Messenger</option>
+			        			<option value="">Smart Messenger</option>
+			        			<option value="">Smart Messenger</option>
+			        			<option value="">Smart Messenger</option>
+			        			<option value="">Smart Messenger</option>
+			        		</select>
+		        		</div>
+					</td>
+				</tr>
+				<tr>
+					<td>Тема:</td>
+					<td class="add-ticket__textarea">
+						<textarea name="theme" rows="1" placeholder="Введите текст"></textarea>
+						<span>563 / 500 символов</span>
+					</td>
+				</tr>
+				<tr>
+					<td>Сообщение:</td>
+					<td class="add-ticket__textarea">
+						<textarea name="massage" rows="5" placeholder="Введите текст"></textarea>
+						<span>563 / 5000 символов</span>
+					</td>
+				</tr>
+				<tr>
+					<td></td>
+					<td class="add-ticket__file">
+						<div>
+							<p>attachment.png
+								<span>(280 Kb)</span>
+								{{mixins.icon('clip')}}
+							</p>
+							<button class="btn btn-icon" >
+								{{mixins.icon('error-3')}}
+					        	Удалить
+					        </button>
+						</div>
+						<div>
+							<p>attachment.png
+								<span>(280 Kb)</span>
+								{{mixins.icon('clip')}}
+							</p>
+							<button class="btn btn-icon" >
+								{{mixins.icon('error-3')}}
+					        	Удалить
+					        </button>
+						</div>
+					</td>
+				</tr>
+				<tr>
+					<td></td>
+					<td class="add-ticket__btns">
+						<button class="btn btn-icon btn--blue" >
+				        	Отправить
+							{{mixins.icon('envelope')}}
+				        </button>
+				       
+				        <label for="file" class="btn">
+							<input type="file" id="file" name="file" multiple>
+				        	Прикрепить файл
+				        </label>
+					</td>
+				</tr>
+
+
+			</table>
+				
+
+			</div>
+			</div>
+		</section>
+
+		<footer class="footer">
+			<div class="container">
+				<a href="/">Политика конфиденциальности</a>
+			</div>
+		</footer>
+
+		
+	
+	{% include "partials/_social.html" %}
+		
+	</main>
+	
+	<script src="js/jquery-3.2.1.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/js/select2.min.js"></script>
+    <script src="js/jquery.slimscroll.js"></script>
+    <script src="js/TextAreaAutoResizer.js"></script>
+
+    <script>
+    	$(document).ready(function() {
+		  $('.sidebar').slimScroll({
+				height: '100%'
+			});
+		});
+    </script>
+
+    <script>
+    	$(document).ready(function() {
+        	$('.select2').select2();
+	    });
+    </script>
+    <script>
+    	$(document).ready(function(){
+	        $(".select2").on('select2:open', function () {
+	        	$('.select2-results__options').slimScroll();
+	  		});
+	    });
+    </script>
+    <script>
+		$( document ).ready( function() {
+			$('textarea').autosize();
+		});
+    </script>
+
+{% endblock %}

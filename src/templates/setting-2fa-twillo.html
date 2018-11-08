@@ -1,0 +1,84 @@
+---
+css: app
+classOut: home-out
+title: Setting
+---
+{% extends "layouts/_layout.html" %}
+
+{% block content %}
+
+	{% include "partials/_sidebar.html" %}
+	<main >
+
+		<header class="header">
+			<div class="header__title">
+				<h2 class="title">Настройки аккаунта <span>Кнопка</span></h2>
+			</div>
+			<div class="header__user-wrp">
+				<i class="icon-bell"></i>
+				<div class="header__user-text">
+					<span class="header__user-name">Андрей Збруцкий</span> <br>
+					<span class="header__user-descript">Проекты и параметры</span>
+				</div>
+				<img src="img/user.png" alt="user">
+			</div>
+		</header>
+		
+		<section class="setting2fatwillo home">
+			<div class="container">
+				<div class="setting2fatwillo__window">
+					<h4>Подключение Twilio</h4>
+					<ol>
+						<li>Введите ваш номер телефона ниже и нажмите кнопку "отправить код":
+							<div>
+								<label class="label-text ">
+				                	<input class="input-text" type="text" placeholder="&nbsp;">
+				                  	<span class="span-input-text">Номер телефона</span>
+				                  	<span class="input-text-error">Error</span>
+				                  	<span class="input-text-success">Success</span>
+				                </label>
+				                <button class="btn btn--blue">Отправить код</button>
+							</div>
+						</li>
+						<li>На ваш номер телефона будет отправлено SMS-сообщение с 6-значным кодом верификации, введите его в поле ниже:
+							<div>
+								<label class="label-text ">
+				                	<input class="input-text" type="text" placeholder="&nbsp;">
+				                  	<span class="span-input-text">Код верификации</span>
+				                  	<span class="input-text-error">Error</span>
+				                  	<span class="input-text-success">Success</span>
+				                </label>
+							</div>
+						</li>
+					</ol>
+
+	                <button class="btn btn-icon btn--blue" type="submit">Подтвердить{{mixins.icon('check-3')}}
+	                </button>
+
+				</div>
+			</div>
+			
+
+		</section>
+		<footer class="footer">
+          <div class="container">
+            <a href="/">Политика конфиденциальности</a>
+          </div>
+        </footer>
+
+	{% include "partials/_social.html" %}
+		
+	</main>
+	
+	<script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/jquery.slimscroll.js"></script>
+
+    <script>
+    	$(document).ready(function() {
+		  $('.sidebar').slimScroll({
+				height: '100%'
+			});
+		});
+    </script>
+
+{% endblock %}

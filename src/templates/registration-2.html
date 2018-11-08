@@ -1,0 +1,75 @@
+---
+css: accounts
+classOut: out-registration
+title: registration
+---
+{% extends "layouts/_layout.html" %}
+
+{% block content %}
+
+	
+<main class="main-login">
+	<section class="login">	
+		<div class="login__left">
+			<img src="img/logo.png" alt="" class="login__logo">
+			<div class="login__block">
+				<h2 class="title">Введите ваш email</h2>
+				<p class="login__text-key">Это необходимо для безопасности <br>
+				вашего аккаунта</p>
+				<form action="/">
+				
+				<label class="label-text ">
+		            <input class="input-text" type="text" placeholder="&nbsp;">
+		            <span class="span-input-text">Email</span>
+
+		            <span class="input-text-error">Некорректный формат ввода</span>
+		            <span class="input-text-success">Password is strong</span>
+		        </label>
+		        
+		        
+		       
+		        <button class="btn btn-arrow-r btn--blue" type="submit">Далее</button>
+				</form>
+				<!-- <div class="login__sicial-wrp"> -->
+					<!-- <p>
+						<span>или</span>
+					</p> -->
+					
+				</div>
+			<!-- </div> -->
+			<div class="login__footer login__footer--center">
+				<div class="login__steps">
+						<div class="login__step login__step--check">
+							{{mixins.icon('check')}}
+							<span>
+								Регистрация
+							</span>
+						</div>
+						<div class="login__step login__step--current">
+							2
+							<span>
+								Email
+							</span>
+						</div>
+						<div class="login__step">
+							3
+							<span>
+								Условия
+								пользования
+							</span>
+						</div>
+					</div>
+				<a href="#">
+					<i class="icon-russia"></i> 
+				Русский</a>
+				<!-- <p>Уже зарегистрированы? &nbsp<a href="#" class="login__reg-link">Войти</a></p> -->
+			</div>
+		</div>
+		<div class="login__right" style="background-image: url('img/reset-password-img.jpg')">
+			<!-- <img src="img/login-img.jpg" alt="img"> -->
+		</div>
+	</section>			
+</main>
+	
+
+{% endblock %}

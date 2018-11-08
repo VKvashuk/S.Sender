@@ -1,0 +1,729 @@
+<!doctype html>
+<html>
+
+  <head>
+    <meta charset="utf-8">
+    <title>settings</title>
+    <!--   <meta http-equiv="X-UA-Compatible" content="IE=Edge"> -->
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1"> -->
+    <link rel="stylesheet" media="all" href="css/app.css">
+    <link rel="stylesheet" href="fonts/fontawesome/css/all.css">
+  </head>
+
+  <body>
+    <!-- BEGIN content -->
+    <div class="out settings-out">
+      <aside class="sidebar">
+        <div class="sidebar__wrp">
+          <img src="img/logo.png" class="sidebar-cart" alt="sidebar-cart">
+          <ul class="sidebar__link-back line-bottom">
+            <li><a href="#">
+                <svg class="icon icon-back-icon">
+                  <use xlink:href="img/sprite.svg#icon-back-icon"></use>
+                </svg> Вернуться назад</a></li>
+          </ul>
+          <ul class="">
+            <li class="sidebar__link-active"><a href="#">
+                <svg class="icon icon-user">
+                  <use xlink:href="img/sprite.svg#icon-user"></use>
+                </svg> Настройки аккаунта</a></li>
+            <li><a href="#">
+                <svg class="icon icon-wallet">
+                  <use xlink:href="img/sprite.svg#icon-wallet"></use>
+                </svg> Биллинг</a></li>
+            <li><a href="#">
+                <svg class="icon icon-shop-cart">
+                  <use xlink:href="img/sprite.svg#icon-shop-cart"></use>
+                </svg> Тарифы</a></li>
+            <li><a href="#">
+                <svg class="icon icon-email">
+                  <use xlink:href="img/sprite.svg#icon-email"></use>
+                </svg> Email-подписки</a></li>
+            <li><a href="#">
+                <svg class="icon icon-users">
+                  <use xlink:href="img/sprite.svg#icon-users"></use>
+                </svg> Права доступа</a></li>
+          </ul>
+          <ul class="brdr-lines">
+            <li><a href="#">
+                <svg class="icon icon-support">
+                  <use xlink:href="img/sprite.svg#icon-support"></use>
+                </svg> Помощь</a></li>
+            <li><a href="#">
+                <svg class="icon icon-video-camera">
+                  <use xlink:href="img/sprite.svg#icon-video-camera"></use>
+                </svg> Видеоуроки</a></li>
+          </ul>
+          <ul>
+            <li><a href="#">
+                <!-- 
+<svg class="icon icon-support"><use xlink:href="img/sprite.svg#icon-support"></use></svg>
+  -->
+                <i class="icon-russia"></i> Русский</a></li>
+          </ul>
+        </div>
+      </aside>
+      <main>
+        <header class="header">
+          <div class="header__title">
+            <h2 class="title">Права доступа</h2>
+          </div>
+          <button class="btn btn--blue header__save">Добавить пользователя</button>
+          <div class="header__user-wrp">
+            <svg class="icon icon-search">
+              <use xlink:href="img/sprite.svg#icon-search"></use>
+            </svg>
+            <svg class="icon icon-apps">
+              <use xlink:href="img/sprite.svg#icon-apps"></use>
+            </svg>
+            <i class="icon-bell"></i>
+            <img src="img/user.png" alt="user">
+          </div>
+        </header>
+        <section class="settings">
+          <div class="container">
+            <div class="settings__top">
+              <h3 class="subtitle">API key</h3>
+              <p class="settings__description"> Ваш персональный ключ для доступа к API Smart Sender </p>
+              <div class="settings__top-box">
+                <input type="text" value="c351eb5a7b0d926ce674b90967984c0302c11ca9b1e7ba1092aad9750a15">
+                <svg class="icon icon-copy">
+                  <use xlink:href="img/sprite.svg#icon-copy"></use>
+                </svg>
+              </div>
+              <button class="btn btn--blue">Скрыть ключ</button>
+              <button class="btn ">Сгеренировать новый</button>
+            </div>
+            <br>
+            <div class="settings__top">
+              <h3 class="subtitle">API key</h3>
+              <p class="settings__description"> Ваш персональный ключ для доступа к API Smart Sender </p>
+              <div class="settings__top-box">
+                <input type="password" value="c351eb5a7b0d926ce674b90967984c0302c11ca9b1e7ba1092aad9750a15">
+                <!-- 
+<svg class="icon icon-copy"><use xlink:href="img/sprite.svg#icon-copy"></use></svg>
+  -->
+              </div>
+              <button class="btn btn--blue">Показать ключ</button>
+            </div>
+            <p class="title-line">
+              <span>ПОДКЛЮЧЕННЫЕ ПОЛЬЗОВАТЕЛИ (3)</span>
+            </p>
+            <div class="settings__block">
+              <div class="settings__block-top">
+                <div class="settings__img">
+                  <img src="img/user.png" alt="user">
+                </div>
+                <div class="settings__text">
+                  <p class="settings__name"> Александр Сердюк </p>
+                  <p class="settings__email"> a.serdiuk@gmail.com </p>
+                </div>
+                <p class="settings__access">
+                  <i class="circle circle--red"></i> Доступ не активирован </p>
+                <button class="btn-small btn-icon">
+                  <svg class="icon icon-setting-2">
+                    <use xlink:href="img/sprite.svg#icon-setting-2"></use>
+                  </svg> Параметры </button>
+                <button class="btn-small btn-icon">
+                  <svg class="icon icon-bin">
+                    <use xlink:href="img/sprite.svg#icon-bin"></use>
+                  </svg> Удалить </button>
+              </div>
+              <table>
+                <tr class="settings__row1">
+                  <td>
+                    <p>Сервисы</p>
+                  </td>
+                  <td>
+                    <p>Smart Messenger</p>
+                  </td>
+                </tr>
+                <tr class="settings__row2">
+                  <td>
+                    <p>Настройки</p>
+                  </td>
+                  <td>
+                    <p>Биллинг</p>
+                    <p>Тарифные планы</p>
+                    <p>Email-подписки</p>
+                    <p>Права доступа</p>
+                  </td>
+                </tr>
+                <tr class="settings__row3">
+                  <td>
+                    <p>Продукты</p>
+                  </td>
+                  <td>
+                    <p>Продукт</p>
+                    <p class="settings__nothing">Ничего не выбрано</p>
+                  </td>
+                </tr>
+              </table>
+            </div>
+            <div class="settings__block">
+              <div class="settings__block-top">
+                <div class="settings__img">
+                  <img src="img/user.png" alt="user">
+                </div>
+                <div class="settings__text">
+                  <p class="settings__name"> Александр Сердюк </p>
+                  <p class="settings__email"> a.serdiuk@gmail.com </p>
+                </div>
+                <p class="settings__access">
+                  <i class="circle circle--red"></i> Доступ не активирован </p>
+                <button class="btn-small btn-icon">
+                  <svg class="icon icon-setting-2">
+                    <use xlink:href="img/sprite.svg#icon-setting-2"></use>
+                  </svg> Параметры </button>
+                <button class="btn-small btn-icon">
+                  <svg class="icon icon-bin">
+                    <use xlink:href="img/sprite.svg#icon-bin"></use>
+                  </svg> Удалить </button>
+              </div>
+              <table>
+                <tr class="settings__row1">
+                  <td>
+                    <p>Сервисы</p>
+                  </td>
+                  <td>
+                    <p>Smart Messenger</p>
+                  </td>
+                </tr>
+                <tr class="settings__row2">
+                  <td>
+                    <p>Настройки</p>
+                  </td>
+                  <td>
+                    <p>Биллинг</p>
+                    <p>Тарифные планы</p>
+                    <p>Email-подписки</p>
+                    <p>Права доступа</p>
+                  </td>
+                </tr>
+                <tr class="settings__row3">
+                  <td>
+                    <p>Продукты</p>
+                  </td>
+                  <td>
+                    <p>Продукт</p>
+                    <p class="settings__nothing">Ничего не выбрано</p>
+                  </td>
+                </tr>
+              </table>
+            </div>
+            <div class="settings__block">
+              <div class="settings__block-top">
+                <div class="settings__img">
+                  <img src="img/user.png" alt="user">
+                </div>
+                <div class="settings__text">
+                  <p class="settings__name"> Александр Сердюк </p>
+                  <p class="settings__email"> a.serdiuk@gmail.com </p>
+                </div>
+                <p class="settings__access">
+                  <i class="circle circle--red"></i> Доступ не активирован </p>
+                <button class="btn-small btn-icon">
+                  <svg class="icon icon-setting-2">
+                    <use xlink:href="img/sprite.svg#icon-setting-2"></use>
+                  </svg> Параметры </button>
+                <button class="btn-small btn-icon">
+                  <svg class="icon icon-bin">
+                    <use xlink:href="img/sprite.svg#icon-bin"></use>
+                  </svg> Удалить </button>
+              </div>
+              <table>
+                <tr class="settings__row1">
+                  <td>
+                    <p>Сервисы</p>
+                  </td>
+                  <td>
+                    <p>Smart Messenger</p>
+                  </td>
+                </tr>
+                <tr class="settings__row2">
+                  <td>
+                    <p>Настройки</p>
+                  </td>
+                  <td>
+                    <p>Биллинг</p>
+                    <p>Тарифные планы</p>
+                    <p>Email-подписки</p>
+                    <p>Права доступа</p>
+                  </td>
+                </tr>
+                <tr class="settings__row3">
+                  <td>
+                    <p>Продукты</p>
+                  </td>
+                  <td>
+                    <p>Продукт</p>
+                    <p class="settings__nothing">Ничего не выбрано</p>
+                  </td>
+                </tr>
+              </table>
+            </div>
+            <div class="settings__block">
+              <div class="settings__block-top">
+                <div class="settings__img">
+                  <img src="img/user.png" alt="user">
+                </div>
+                <div class="settings__text">
+                  <p class="settings__name"> Александр Сердюк </p>
+                  <p class="settings__email"> a.serdiuk@gmail.com </p>
+                </div>
+                <p class="settings__access">
+                  <i class="circle circle--red"></i> Доступ не активирован </p>
+                <button class="btn-small btn-icon">
+                  <svg class="icon icon-setting-2">
+                    <use xlink:href="img/sprite.svg#icon-setting-2"></use>
+                  </svg> Параметры </button>
+                <button class="btn-small btn-icon">
+                  <svg class="icon icon-bin">
+                    <use xlink:href="img/sprite.svg#icon-bin"></use>
+                  </svg> Удалить </button>
+              </div>
+              <table>
+                <tr class="settings__row1">
+                  <td>
+                    <p>Сервисы</p>
+                  </td>
+                  <td>
+                    <p>Smart Messenger</p>
+                  </td>
+                </tr>
+                <tr class="settings__row2">
+                  <td>
+                    <p>Настройки</p>
+                  </td>
+                  <td>
+                    <p>Биллинг</p>
+                    <p>Тарифные планы</p>
+                    <p>Email-подписки</p>
+                    <p>Права доступа</p>
+                  </td>
+                </tr>
+                <tr class="settings__row3">
+                  <td>
+                    <p>Продукты</p>
+                  </td>
+                  <td>
+                    <p>Продукт</p>
+                    <p class="settings__nothing">Ничего не выбрано</p>
+                  </td>
+                </tr>
+              </table>
+            </div>
+            <div class="settings__block">
+              <div class="settings__block-top">
+                <div class="settings__img">
+                  <img src="img/user.png" alt="user">
+                </div>
+                <div class="settings__text">
+                  <p class="settings__name"> Александр Сердюк </p>
+                  <p class="settings__email"> a.serdiuk@gmail.com </p>
+                </div>
+                <p class="settings__access">
+                  <i class="circle circle--red"></i> Доступ не активирован </p>
+                <button class="btn-small btn-icon">
+                  <svg class="icon icon-setting-2">
+                    <use xlink:href="img/sprite.svg#icon-setting-2"></use>
+                  </svg> Параметры </button>
+                <button class="btn-small btn-icon">
+                  <svg class="icon icon-bin">
+                    <use xlink:href="img/sprite.svg#icon-bin"></use>
+                  </svg> Удалить </button>
+              </div>
+              <table>
+                <tr class="settings__row1">
+                  <td>
+                    <p>Сервисы</p>
+                  </td>
+                  <td>
+                    <p>Smart Messenger</p>
+                  </td>
+                </tr>
+                <tr class="settings__row2">
+                  <td>
+                    <p>Настройки</p>
+                  </td>
+                  <td>
+                    <p>Биллинг</p>
+                    <p>Тарифные планы</p>
+                    <p>Email-подписки</p>
+                    <p>Права доступа</p>
+                  </td>
+                </tr>
+                <tr class="settings__row3">
+                  <td>
+                    <p>Продукты</p>
+                  </td>
+                  <td>
+                    <p>Продукт</p>
+                    <p class="settings__nothing">Ничего не выбрано</p>
+                  </td>
+                </tr>
+              </table>
+            </div>
+            <div class="settings__block">
+              <div class="settings__block-top">
+                <div class="settings__img">
+                  <img src="img/user.png" alt="user">
+                </div>
+                <div class="settings__text">
+                  <p class="settings__name"> Александр Сердюк </p>
+                  <p class="settings__email"> a.serdiuk@gmail.com </p>
+                </div>
+                <p class="settings__access">
+                  <i class="circle circle--red"></i> Доступ не активирован </p>
+                <button class="btn-small btn-icon">
+                  <svg class="icon icon-setting-2">
+                    <use xlink:href="img/sprite.svg#icon-setting-2"></use>
+                  </svg> Параметры </button>
+                <button class="btn-small btn-icon">
+                  <svg class="icon icon-bin">
+                    <use xlink:href="img/sprite.svg#icon-bin"></use>
+                  </svg> Удалить </button>
+              </div>
+              <table>
+                <tr class="settings__row1">
+                  <td>
+                    <p>Сервисы</p>
+                  </td>
+                  <td>
+                    <p>Smart Messenger</p>
+                  </td>
+                </tr>
+                <tr class="settings__row2">
+                  <td>
+                    <p>Настройки</p>
+                  </td>
+                  <td>
+                    <p>Биллинг</p>
+                    <p>Тарифные планы</p>
+                    <p>Email-подписки</p>
+                    <p>Права доступа</p>
+                  </td>
+                </tr>
+                <tr class="settings__row3">
+                  <td>
+                    <p>Продукты</p>
+                  </td>
+                  <td>
+                    <p>Продукт</p>
+                    <p class="settings__nothing">Ничего не выбрано</p>
+                  </td>
+                </tr>
+              </table>
+            </div>
+            <div class="settings__block">
+              <div class="settings__block-top">
+                <div class="settings__img">
+                  <img src="img/user.png" alt="user">
+                </div>
+                <div class="settings__text">
+                  <p class="settings__name"> Александр Сердюк </p>
+                  <p class="settings__email"> a.serdiuk@gmail.com </p>
+                </div>
+                <p class="settings__access">
+                  <i class="circle circle--red"></i> Доступ не активирован </p>
+                <button class="btn-small btn-icon">
+                  <svg class="icon icon-setting-2">
+                    <use xlink:href="img/sprite.svg#icon-setting-2"></use>
+                  </svg> Параметры </button>
+                <button class="btn-small btn-icon">
+                  <svg class="icon icon-bin">
+                    <use xlink:href="img/sprite.svg#icon-bin"></use>
+                  </svg> Удалить </button>
+              </div>
+              <table>
+                <tr class="settings__row1">
+                  <td>
+                    <p>Сервисы</p>
+                  </td>
+                  <td>
+                    <p>Smart Messenger</p>
+                  </td>
+                </tr>
+                <tr class="settings__row2">
+                  <td>
+                    <p>Настройки</p>
+                  </td>
+                  <td>
+                    <p>Биллинг</p>
+                    <p>Тарифные планы</p>
+                    <p>Email-подписки</p>
+                    <p>Права доступа</p>
+                  </td>
+                </tr>
+                <tr class="settings__row3">
+                  <td>
+                    <p>Продукты</p>
+                  </td>
+                  <td>
+                    <p>Продукт</p>
+                    <p class="settings__nothing">Ничего не выбрано</p>
+                  </td>
+                </tr>
+              </table>
+            </div>
+            <div class="settings__block">
+              <div class="settings__block-top">
+                <div class="settings__img">
+                  <img src="img/user.png" alt="user">
+                </div>
+                <div class="settings__text">
+                  <p class="settings__name"> Александр Сердюк </p>
+                  <p class="settings__email"> a.serdiuk@gmail.com </p>
+                </div>
+                <p class="settings__access">
+                  <i class="circle circle--red"></i> Доступ не активирован </p>
+                <button class="btn-small btn-icon">
+                  <svg class="icon icon-setting-2">
+                    <use xlink:href="img/sprite.svg#icon-setting-2"></use>
+                  </svg> Параметры </button>
+                <button class="btn-small btn-icon">
+                  <svg class="icon icon-bin">
+                    <use xlink:href="img/sprite.svg#icon-bin"></use>
+                  </svg> Удалить </button>
+              </div>
+              <table>
+                <tr class="settings__row1">
+                  <td>
+                    <p>Сервисы</p>
+                  </td>
+                  <td>
+                    <p>Smart Messenger</p>
+                  </td>
+                </tr>
+                <tr class="settings__row2">
+                  <td>
+                    <p>Настройки</p>
+                  </td>
+                  <td>
+                    <p>Биллинг</p>
+                    <p>Тарифные планы</p>
+                    <p>Email-подписки</p>
+                    <p>Права доступа</p>
+                  </td>
+                </tr>
+                <tr class="settings__row3">
+                  <td>
+                    <p>Продукты</p>
+                  </td>
+                  <td>
+                    <p>Продукт</p>
+                    <p class="settings__nothing">Ничего не выбрано</p>
+                  </td>
+                </tr>
+              </table>
+            </div>
+            <div class="settings__block">
+              <div class="settings__block-top">
+                <div class="settings__img">
+                  <img src="img/user.png" alt="user">
+                </div>
+                <div class="settings__text">
+                  <p class="settings__name"> Александр Сердюк </p>
+                  <p class="settings__email"> a.serdiuk@gmail.com </p>
+                </div>
+                <p class="settings__access">
+                  <i class="circle circle--red"></i> Доступ не активирован </p>
+                <button class="btn-small btn-icon">
+                  <svg class="icon icon-setting-2">
+                    <use xlink:href="img/sprite.svg#icon-setting-2"></use>
+                  </svg> Параметры </button>
+                <button class="btn-small btn-icon">
+                  <svg class="icon icon-bin">
+                    <use xlink:href="img/sprite.svg#icon-bin"></use>
+                  </svg> Удалить </button>
+              </div>
+              <table>
+                <tr class="settings__row1">
+                  <td>
+                    <p>Сервисы</p>
+                  </td>
+                  <td>
+                    <p>Smart Messenger</p>
+                  </td>
+                </tr>
+                <tr class="settings__row2">
+                  <td>
+                    <p>Настройки</p>
+                  </td>
+                  <td>
+                    <p>Биллинг</p>
+                    <p>Тарифные планы</p>
+                    <p>Email-подписки</p>
+                    <p>Права доступа</p>
+                  </td>
+                </tr>
+                <tr class="settings__row3">
+                  <td>
+                    <p>Продукты</p>
+                  </td>
+                  <td>
+                    <p>Продукт</p>
+                    <p class="settings__nothing">Ничего не выбрано</p>
+                  </td>
+                </tr>
+              </table>
+            </div>
+            <div class="settings__block">
+              <div class="settings__block-top">
+                <div class="settings__img">
+                  <img src="img/user.png" alt="user">
+                </div>
+                <div class="settings__text">
+                  <p class="settings__name"> Александр Сердюк </p>
+                  <p class="settings__email"> a.serdiuk@gmail.com </p>
+                </div>
+                <p class="settings__access">
+                  <i class="circle circle--red"></i> Доступ не активирован </p>
+                <button class="btn-small btn-icon">
+                  <svg class="icon icon-setting-2">
+                    <use xlink:href="img/sprite.svg#icon-setting-2"></use>
+                  </svg> Параметры </button>
+                <button class="btn-small btn-icon">
+                  <svg class="icon icon-bin">
+                    <use xlink:href="img/sprite.svg#icon-bin"></use>
+                  </svg> Удалить </button>
+              </div>
+              <table>
+                <tr class="settings__row1">
+                  <td>
+                    <p>Сервисы</p>
+                  </td>
+                  <td>
+                    <p>Smart Messenger</p>
+                  </td>
+                </tr>
+                <tr class="settings__row2">
+                  <td>
+                    <p>Настройки</p>
+                  </td>
+                  <td>
+                    <p>Биллинг</p>
+                    <p>Тарифные планы</p>
+                    <p>Email-подписки</p>
+                    <p>Права доступа</p>
+                  </td>
+                </tr>
+                <tr class="settings__row3">
+                  <td>
+                    <p>Продукты</p>
+                  </td>
+                  <td>
+                    <p>Продукт</p>
+                    <p class="settings__nothing">Ничего не выбрано</p>
+                  </td>
+                </tr>
+              </table>
+            </div>
+            <div class="settings__btns">
+              <button class="btn-numb btn-numb--active">1</button>
+              <button class="btn-numb">2</button>
+              <button class="btn-next">Следующая</button>
+            </div>
+          </div>
+        </section>
+        <footer class="footer">
+          <div class="container">
+            <a href="/">Политика конфиденциальности</a>
+          </div>
+        </footer>
+        <div class="mod__modal-delete">
+          <div class="mod__delete-block">
+            <span class="mod__btn-close">
+              <svg class="icon icon-close">
+                <use xlink:href="img/sprite.svg#icon-close"></use>
+              </svg>
+            </span>
+            <h2 class="title">Внимание</h2>
+            <p>Вы действительно хотите удалить пользователя?</p>
+            <div class="mod__modal-btns">
+              <button class="btn btn--blue">Удалить</button>
+              <button class="btn">Отменить </button>
+            </div>
+          </div>
+        </div>
+        <div class="social">
+          <div class="social__wrp">
+            <ul>
+              <li>
+                <button class="btn-social btn-social--massenger">
+                  <svg class="icon icon-messenger">
+                    <use xlink:href="img/sprite.svg#icon-messenger"></use>
+                  </svg>
+                </button>
+                <button class="btn-social btn-social--massenger">
+                  <svg class="icon icon-messenger">
+                    <use xlink:href="img/sprite.svg#icon-messenger"></use>
+                  </svg>
+                </button>
+              </li>
+              <li>
+                <button class="btn-social btn-social--viber">
+                  <svg class="icon icon-viber">
+                    <use xlink:href="img/sprite.svg#icon-viber"></use>
+                  </svg>
+                </button>
+                <button class="btn-social btn-social--viber">
+                  <svg class="icon icon-viber">
+                    <use xlink:href="img/sprite.svg#icon-viber"></use>
+                  </svg>
+                </button>
+              </li>
+              <li>
+                <button class="btn-social btn-social--whatsapp">
+                  <svg class="icon icon-whatsapp">
+                    <use xlink:href="img/sprite.svg#icon-whatsapp"></use>
+                  </svg>
+                </button>
+                <button class="btn-social btn-social--whatsapp">
+                  <svg class="icon icon-whatsapp">
+                    <use xlink:href="img/sprite.svg#icon-whatsapp"></use>
+                  </svg>
+                </button>
+              </li>
+              <li>
+                <button class="btn-social btn-social--telegram">
+                  <svg class="icon icon-telegram">
+                    <use xlink:href="img/sprite.svg#icon-telegram"></use>
+                  </svg>
+                </button>
+                <button class="btn-social btn-social--telegram">
+                  <svg class="icon icon-telegram">
+                    <use xlink:href="img/sprite.svg#icon-telegram"></use>
+                  </svg>
+                </button>
+              </li>
+            </ul>
+          </div>
+          <button class="btn-social btn-social--open">
+            <svg class="icon icon-social-open">
+              <use xlink:href="img/sprite.svg#icon-social-open"></use>
+            </svg>
+            <svg class="icon icon-social-cross">
+              <use xlink:href="img/sprite.svg#icon-social-cross"></use>
+            </svg>
+          </button>
+        </div>
+      </main>
+      <script src="js/jquery-3.2.1.min.js"></script>
+      <script src="js/jquery.slimscroll.js"></script>
+      <script>
+        $(document).ready(function()
+        {
+          $('.sidebar').slimScroll(
+          {
+            height: '100%'
+          });
+        });
+
+      </script>
+    </div>
+    <!-- END content -->
+    <!-- BEGIN scripts -->
+    <!--  <script type="text/javascript" src="js/app.js"></script> -->
+    <!-- END scripts -->
+  </body>

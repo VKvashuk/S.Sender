@@ -1,0 +1,75 @@
+---
+css: accounts
+classOut: login-out
+title: login
+---
+{% extends "layouts/_layout.html" %}
+
+{% block content %}
+
+	
+<main class="main-login">
+	<section class="login">	
+		<div class="login__left">
+			<img src="img/logo.png" alt="" class="login__logo">
+			<div class="login__block">
+				<h2 class="title">Авторизация</h2>
+				<p class="login__text-error">Неправильный email или пароль</p>
+				<form action="/">
+					<label class="label-text ">
+		            <input class="input-text" type="text" placeholder="&nbsp;">
+		            <span class="span-input-text">Email</span>
+
+		            <span class="input-text-error">Некорректный формат ввода</span>
+		            <span class="input-text-success">Password is strong</span>
+		        </label>
+		        <label class="label-text label-text--password">
+		            <input class="input-text" type="password" placeholder="&nbsp;">
+
+		            <span class="span-input-text">Пароль</span>
+					<span class="login__btn-eye">
+						<!-- изменить цвет ионки добавь icon-eye--active -->
+						{{mixins.icon('eye ')}}
+					</span>
+		            
+		            
+		        </label>
+		        <p  class="login__forget">
+	            	<a href="">Забыли пароль?</a>
+	            </p> 
+		        <button class="btn btn-arrow-r btn--blue" type="submit">Войти</button>
+					
+				</form>
+				<div class="login__sicial-wrp">
+					<p>
+						<span>или</span>
+					</p>
+					<div class="login__social-icons">
+						<a href="#">
+							<i class="icon-facebook-login"></i>
+						</a>
+						<a href="#">
+							<i class="icon-twitter-login"></i>
+						</a>
+						<a href="#">
+							<i class="icon-google-login"></i>
+						</a>
+					</div>
+				</div>
+				
+			</div>
+			<div class="login__footer">
+				<a href="#">
+					<i class="icon-russia"></i> 
+				Русский</a>
+				<p>Нет аккаунта? &nbsp<a href="#" class="login__reg-link">Регистрация</a></p>
+			</div>
+		</div>
+		<div class="login__right" style="background-image: url('img/login-img.jpg')">
+			<!-- <img src="img/login-img.jpg" alt="img"> -->
+		</div>
+	</section>			
+</main>
+	
+
+{% endblock %}

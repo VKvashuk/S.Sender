@@ -1,0 +1,816 @@
+html
+	height: 100%
+body
+	background: #FFF
+	// +css-lock(16, 50, 600, 1000)
+	line-height: 1.4
+	min-height: 100%
+	min-width: 1200px
+.out
+    min-height: 100%
+    display: flex
+    flex-direction: row
+    flex-wrap: wrap
+main
+	width: 100%
+	margin-left: 280px
+section
+    min-height: calc(100vh - 172px)
+.container
+	padding: 30px
+	padding-top: 40px
+	width: 1000px
+	margin: 0 auto
+.title
+    +font-family($mont-semibld)
+    font-size: 24px
+    font-weight: 600
+    color: #000
+    line-height: 1.6
+    +r(1200)
+        font-size: 22px
+    +r(768)
+        font-size: 18px
+.subtitle
+    +font-family($mont-semibld)
+    font-size: 18px
+    font-weight: 600
+    color: #000
+    line-height: 1.6
+
+    +r(1200)
+        font-size: 17px
+
+    +r(768)
+        font-size: 16px
+
+.text,
+p
+    +font-family($open-reg)
+    font-size: 15px
+    line-height: 20px
+    color: #000
+
+    +r(768)
+        font-size: 14px
+
+
+// checkbox + label
+
+.label-checkbox
+    display: inline-block
+    +font-family($open-reg)
+    font-size: 15px
+    cursor: pointer
+    position: relative
+    padding: 10px
+    padding-left: 40px
+
+
+.checkbox[type=checkbox] 
+    display: none
+
+
+.checkbox + .input-circle
+    display: inline-block
+    position: relative
+    text-align: center
+    background-color: #FFF
+    border: 2px solid #ADB5BD
+    margin-right: 10px
+    width: 20px
+    height: 20px
+    box-sizing: border-box
+    border-radius: 1000px
+    vertical-align: bottom
+    transition: all 0.2s
+    position: absolute
+    left: 10px
+    top: 10px
+
+.label-checkbox:hover .input-circle
+    border: 2px solid #1380F6
+
+.checkbox:checked+.input-circle
+    background-color: #1380F6
+    border: 2px solid #1380F6
+    color: #fff
+
+.checkbox:checked+.input-circle:before 
+    content: '\f00c'
+    position: absolute
+    display: inline-block
+    font-family: 'Font Awesome 5 Free'
+    font-weight: 900
+    font-size: 10px
+    line-height: 1
+    left: 3px
+    top: 4px
+
+.label-checkbox--disabled
+    color: #737373
+    cursor: default
+    pointer-events: none
+
+    .checkbox + .input-circle
+        background-color: #E9ECEF
+        border: 2px solid #E9ECEF
+
+
+// radio + label
+
+.label-radio
+    display: inline-block
+    +font-family($open-reg)
+    font-size: 15px
+    cursor: pointer
+
+
+.radio[type=radio] 
+    display: none
+
+
+.radio + .input-circle
+    display: inline-block
+    position: relative
+    text-align: center
+    background-color: #FFF
+    border: 2px solid #ADB5BD
+    margin-right: 10px
+    width: 16px
+    height: 16px
+    box-sizing: border-box
+    border-radius: 1000px
+    vertical-align: sub
+    transition: all 0.2s
+
+.label-radio:hover .input-circle
+    border: 3px solid #fff
+    background-color: #DEE2E6
+    box-shadow: 0px 0px 0px 2px #1380F6
+
+.radio:checked+.input-circle
+    border: 3px solid #fff
+    background-color: #1380F6
+    box-shadow: 0px 0px 0px 2px #1380F6
+
+
+
+.label-radio--disabled
+    cursor: default
+    pointer-events: none
+
+    .radio + .input-circle
+        background-color: #DEE2E6
+        border: 4px solid #E9ECEF
+
+
+// label + input(text)
+
+.label-text
+    display: inline-block
+    padding: 10px
+    padding-top: 30px
+    border-radius: 10px
+    position: relative
+    +font-family($open-reg)
+    width: 320px                               /////////// забрати
+
+.input-text
+    font-size: 15px
+    +font-family($open-reg)
+    background: none
+    border: none
+    padding-bottom: 4px
+    // border-bottom: 1px solid rgba(0, 0, 0, 0)
+    // box-shadow: 0px 2px 0px #1380F6
+    outline: none
+    width: 100%
+    box-sizing: border-box
+    box-shadow: 0px 1px 0px #D9D9D9
+
+    &:focus 
+        // border-bottom: 1px solid #1380F6 !important
+        box-shadow: 0px 2px 0px #1380F6 !important
+
+
+        + .span-input-text
+            top: 9px
+            font-size: 13px
+            opacity: 0.5
+
+    &:not(:placeholder-shown) 
+        // border-bottom: 1px solid #D3D4D5
+        box-shadow: 0px 1px 0px #D3D4D5
+        + .span-input-text
+            top: 9px
+            font-size: 13px
+            opacity: 0.5
+
+.label-text:hover 
+    background: #F8F9FA 
+
+    .input-text
+        // border-bottom: 1px solid #D3D4D5 
+        box-shadow: 0px 1px 0px #D3D4D5
+    
+.span-input-text
+    font-size: 15px
+    font-weight: 400
+    position: absolute
+    top: 33px
+    left: 10px
+    transition: all .2s
+
+.input-text-error,
+.input-text-success
+    display: none
+    width: 100%
+    padding-right: 20px
+    box-sizing: border-box
+    position: relative
+    font-size: 13px
+    +font-family($mont-md)
+
+.input-text-error
+    color: $red
+
+    &:before
+        content: '\f12a'
+        position: absolute
+        background: $red
+        color: #fff
+        width: 16px
+        height: 16px
+        border-radius: 16px
+        top: 4px
+        right: 2px
+        display: inline-block
+        font-family: 'Font Awesome 5 Free'
+        font-weight: 900
+        font-size: 10px
+        line-height: 1.7
+        text-align: center
+
+
+
+.input-text-success
+    color: $green
+
+    &:before
+        content: '\f00c'
+        position: absolute
+        background: $green
+        color: #fff
+        width: 16px
+        height: 16px
+        border-radius: 16px
+        top: 4px
+        right: 2px
+        display: inline-block
+        font-family: 'Font Awesome 5 Free'
+        font-weight: 900
+        font-size: 10px
+        line-height: 1.7
+        text-align: center
+
+.label-text--success 
+    .input-text
+        // border-bottom: 2px solid $green
+        box-shadow: 0px 2px 0px $green
+
+
+    .input-text-success
+        display: inline-block
+
+.label-text--error
+    .input-text
+        // border-bottom: 2px solid $red
+        box-shadow: 0px 2px 0px $red
+
+
+    .input-text-error
+        display: inline-block
+
+
+
+// Button
+.btn,
+.btn-small,
+.btn-prew,
+.btn-next,// Buttons prev/next
+.btn-numb
+    border: none
+    background: #E9ECEF
+    width: 200px
+    outline: none
+    +font-family($mont-semibld)
+    font-size: 14px
+    color: #515254
+    padding: 12px 20px
+    box-sizing: border-box
+    border-radius: 200px
+    text-align: center
+    cursor: pointer
+    transition: all .2s
+    min-height: 42px
+
+    &:hover
+        color: #000
+        background: #DEE2E6
+
+        &:after
+            color: #000
+
+.btn-arrow-r
+    text-align: left
+    position: relative
+    transition: all .2s
+
+    &:after
+        content: "\f061"
+        position: absolute
+        right: 20px
+        top: 14px
+        color: #515254
+        font-family: 'Font Awesome 5 Free'
+        font-weight: 900
+        margin-left: auto
+
+.btn--blue
+    background: $blue-main
+    color: #fff
+    box-shadow: 0 3px 6px rgba(0,0,0,0.2)
+
+    &:hover
+        background: $blue-light
+        color: #fff
+
+        &:after
+            color: #fff
+
+    &:after
+        color: #fff
+
+.btn-small
+    width: 150px
+    font-weight: 500
+    min-height: 36px
+    padding: 9px 20px
+
+    &.btn-arrow-r:after
+        top: 11px
+
+
+
+
+.btn-prew,// Buttons prev/next
+.btn-next
+    width: 169px
+    font-weight: 500
+    position: relative
+    min-height: 36px
+    padding: 8px 20px
+.btn-numb
+    width: 36px
+    height: 36px
+    min-height: 36px
+    padding: 0
+    box-sizing: border-box
+
+    &.btn-numb--active
+        background: $blue-main
+        color: #fff
+        cursor: default
+
+.btn-prew
+    text-align: right
+
+    &:before
+        content: "\f060"
+        position: absolute
+        left: 20px
+        top: 11px
+        color: #515254
+        font-family: 'Font Awesome 5 Free'
+        font-weight: 900
+        margin-left: auto
+
+.btn-next
+    text-align: left
+
+    &:after
+        content: "\f061"
+        position: absolute
+        right: 20px
+        top: 11px
+        color: #515254
+        font-family: 'Font Awesome 5 Free'
+        font-weight: 900
+        margin-left: auto
+.btn--red
+    background: #F03E3E
+    color: #fff
+    &:hover
+        background: #ED5E5E
+        color: #fff
+
+.select2
+    width: 300px
+    display: inline-block
+    font-size: 15px
+    font-family: 'Open Sans', sans-serif
+    font-weight: 400
+
+.select2-results__option
+    font-size: 15px
+    font-family: 'Open Sans', sans-serif
+    font-weight: 400
+    border-bottom: 1px solid #E9ECEF
+    margin: 0 10px
+
+.select2-name
+    display: block
+
+.select2-search--dropdown
+    display: none
+.select2-container--default .select2-selection--single
+    border: none
+    outline: none
+    border-bottom: 1px solid #BEBEBE
+
+    &:hover
+        border-bottom: 1px solid #D3D4D5
+
+.select2-container--open .select2-selection--single
+    border-bottom: 2px solid #1380F6
+
+    &:hover
+        border-bottom: 2px solid #1380F6
+
+
+.select2-selection__arrow
+    &:after
+        content: "\f107"
+        position: absolute
+        right: 2px
+        top: -4px
+        color: #BEBEBE
+        font-family: 'Font Awesome 5 Free'
+        font-weight: 900
+        margin-left: auto
+        font-size: 23px
+
+
+    [role=presentation]
+        display: none
+// .select2-container--open .select2-container--default .select2-selection--single
+//     border-bottom: 1px solid red
+
+// .select2-container--open .select2-container--default .select2-selection--single
+//     border-bottom: 2px solid #1380F6
+
+.select2-container--open .select2-selection__arrow
+    &:after
+        color: #1380F6
+
+.select2-container--open .select2-dropdown--below
+    border: none
+
+.select2-container--open .select2-results
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15)
+    border: none
+    border-radius: 8px
+    border: 1px solid #E9ECEF
+    overflow: hidden
+
+.select2-dropdown
+    border: none
+
+.select2-container--default .select2-results__option[aria-selected=true]
+    font-weight: 700
+    color: #000
+    background: none
+    position: relative
+    padding-right: 20px
+
+    &:after
+        content: '\f00c'
+        position: absolute
+        color: #1380F6
+        top: 8px
+        right: 5px
+        font-family: 'Font Awesome 5 Free'
+        font-weight: 900
+        font-size: 15px
+
+.select2-container--default .select2-results__option--highlighted[aria-selected]
+    font-weight: 700
+    color: #000
+    background: none   
+
+.select2-container .select2-selection--single .select2-selection__rendered
+    padding-left: 0
+
+.label-select
+    padding: 10px
+    display: inline-block
+    border-radius: 10px
+    // width: 300px
+    // box-sizing: border-box
+
+    &:hover
+        background: #F8F9FA 
+
+.select2-name
+    font-size: 13px
+    font-family: 'Open Sans', sans-serif
+    font-weight: 400
+    color: #7F7F7F
+
+.select2-container--default .select2-selection--single 
+    border-radius: 0
+
+.select2-container--default .select2-selection--single 
+    background-color: inherit
+.select2-container .slimScrollDiv
+    position: relative !important
+    width: auto !important
+    height: auto !important
+.slimScrollDiv .select2-results__options
+    max-height: 250px !important
+    height: auto !important
+
+.btn-icon
+    display: -webkit-flex
+    display: -moz-flex
+    display: -ms-flex
+    display: -o-flex
+    display: flex
+    align-items: center
+    justify-content: space-between
+
+.btn--border
+	border: 2px solid #DEE2E6
+	background: #fff
+	color: #868E96
+	&:hover
+		color: #515254
+		background: #e9ecef
+
+.circle
+    width: 10px 
+    height: 10px
+    display: inline-block
+    border-radius: 50%
+    margin-right: 28px
+    margin-left: 4px
+    &--green
+        background: #66A80F
+    &--red
+        background: #F03E3E
+    &--blue
+        background: #1380F6
+    &--grey
+        background: #CED4DA
+    &--red-2
+        background: #FA5252
+    &--pink
+        background: #F06595
+    &--purple
+        background: #CC5DE8
+    &--purple-2
+        background: #845EF7
+    &--blue-2
+        background: #5C7CFA
+    &--blue-3
+        background: #339AF0
+    &--turquoise
+        background: #22B8CF
+    &--green-2
+        background: #20C997
+    &--green-3
+        background: #51CF66
+    &--green-4
+        background: #94D82D
+    &--yellow
+        background: #FCC419
+    &--yellow-2
+        background: #FF922B
+.header
+    display: -webkit-flex
+    display: -moz-flex
+    display: -ms-flex
+    display: -o-flex
+    display: flex
+    flex-direction: row
+    background: #fff 
+    padding: 20px 30px 
+    align-items: center
+    box-shadow: 1px 1px 2px rgba(0,0,0,.12)
+    &__user-wrp
+        display: -webkit-flex
+        display: -moz-flex
+        display: -ms-flex
+        display: -o-flex
+        display: flex
+        align-items: center
+        margin-left: auto
+        i 
+            cursor: pointer
+            margin: 0 13px
+            margin-right: 30px
+        svg
+            margin: 0 13px
+            cursor: pointer
+            fill: #A5A5A5
+        img
+            width: 40px
+            height: 40px
+            border-radius: 50px
+            object-fit: cover
+            cursor: pointer
+    &__user-text
+        +font-family($mont-semibld)
+        font-size: 14px
+        margin-right: 16px
+    &__user-descript
+        +font-family($open-reg)
+        color: #8C8C8C
+    &__name-product
+        max-width: 270px
+        color: #8C8C8C
+        margin-left: 20px
+        text-overflow: ellipsis
+        overflow: hidden
+        height: 30px
+    &__save.btn
+        width: 124px
+        margin: 0 20px
+    &__search
+        margin-left: 30px
+        margin-right: 12px
+        flex-grow: 1
+        position: relative
+        label
+            padding: 10px
+            padding-left: 20px
+            padding-right: 40px
+            border: 2px solid #1380F6
+            border-radius: 100px
+            display: block
+            width: 100%
+            svg
+                position: absolute
+                right: 14px
+                top: 14px 
+                width: 18px
+                height: 18px
+                fill: #1380F6
+                cursor: pointer
+        input
+            +font-family($mont-semibld)
+            font-size: 14px
+            width: 100%
+        button
+            display: block
+            position: absolute
+            right: 0
+            padding: 8px
+            background: none
+            cursor: pointer
+            +font-family($open-reg)
+            font-size: 13px
+            svg
+                width: 9px
+                height: 6px
+    .search-simple
+        display: none
+        svg
+            transform: rotate(180deg)
+    &__search--more
+        button
+            display: none
+        .search-simple
+            display: block
+    &__add-product
+        display: -webkit-flex
+        display: -moz-flex
+        display: -ms-flex
+        display: -o-flex
+        display: flex
+        align-items: center
+        flex-grow: 1
+        i 
+            width: 32px
+            height: 32px
+            padding: 7px
+            border-radius: 100px
+            text-align: center
+            display: inline-block
+            cursor: pointer
+            position: relative
+            font-style: normal
+            &:hover
+                background: #156ECE
+                span 
+                    display: block
+            span 
+                display: none
+                position: absolute
+                background: rgba(0,0,0,0.5)
+                border: none
+                +font-family($open-reg)
+                font-size: 13px
+                padding: 5px 13px
+                border-radius: 50px
+                bottom: -40px
+                left: 50%
+                transform: translateX(-50%)
+        svg
+            fill: #fff
+            width: 100%
+    &__add-wrp
+        background: #1380F6
+        border-radius: 100px
+        padding: 9px 12px
+        margin-left: auto
+        span
+            +font-family($mont-semibld)
+            color: #fff
+            vertical-align: text-bottom
+            padding-right: 20px
+            padding-left: 20px
+            border-right: 1px solid #156ECE
+            margin-right: 10px
+    &__csv-wrp
+        display: -webkit-flex
+        display: -moz-flex
+        display: -ms-flex
+        display: -o-flex
+        display: flex
+        button
+            padding: 5px
+            +font-family($open-reg)
+            font-size: 13px
+            color: #8C8C8C
+            display: -webkit-flex
+            display: -moz-flex
+            display: -ms-flex
+            display: -o-flex
+            display: flex
+            align-items: center
+            margin: 0 20px
+            background: none
+            svg
+                width: 24px
+                height: 24px
+                fill: #A5A5A5
+                margin-right: 10px
+    .search__select-wrp
+        display: -webkit-flex
+        display: -moz-flex
+        display: -ms-flex
+        display: -o-flex
+        display: flex
+        width: 350px
+        margin-left: auto
+        p 
+            margin-right: 20px
+        .select2,
+        select
+            width: 100% !important
+
+    .search__select-wrp + .header__user-wrp
+        margin-left: 10px
+    
+
+
+.title-line
+    position: relative
+    +font-family($mont-semibld)
+    font-size: 13px
+    margin-top: 30px
+    margin-bottom: 15px
+    width: 100%
+
+    &:before
+        position: absolute
+        content: ''
+        width: 100%
+        border-bottom: 1px solid #E9ECEF
+        top: 50%
+        z-index: 1
+
+    span
+        background: #fff
+        z-index: 2
+        position: relative
+        padding-right: 20px
+        color: #A3A6A9
+.footer
+    a
+        +font-family($open-reg)
+        text-decoration: none
+        color: #848586
+

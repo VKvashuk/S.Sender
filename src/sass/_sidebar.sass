@@ -1,0 +1,292 @@
+.sidebar
+	width: 280px !important
+	+font-family($mont-semibld)
+	font-size: 14px
+	position: fixed
+	z-index: 2
+    height: 100vh
+	top: 0
+	left: 0
+	box-shadow: 0px 1px 2px rgba(0,0,0,.12)
+	padding-bottom: 15px
+	box-sizing: border-box
+	&__wrp
+		display: -webkit-flex
+		display: -moz-flex
+		display: -ms-flex
+		display: -o-flex
+		display: flex
+		flex-direction: column
+		height: 100%
+	&-cart
+		display: block
+		padding-left: 65px
+		padding-top: 27px
+		padding-right: 72px
+		padding-bottom: 28px
+	ul
+		ul
+			a 
+				padding-left: 38px
+			svg
+				fill: #979EA5
+	li 
+		a
+			// display: block
+			display: -webkit-flex
+			display: -moz-flex
+			display: -ms-flex
+			display: -o-flex
+			display: flex
+			align-items: end
+			text-overflow: ellipsis
+			border-left: 3px solid #fff
+			padding: 15px 24px 15px 24px
+			color: #000
+			text-decoration: none
+			transition: all .2s
+			&:hover
+				border-left: 3px solid #F8F9FA
+				color: #1380F6
+				background: #F8F9FA
+				svg
+					fill: #1380F6
+			svg, i
+				margin-right: 24px
+				width: 18px
+				height: 18px
+				flex-shrink: 0
+			i
+				width: 20px
+				height: 20px
+				display: inline-block
+			span
+				margin-left: auto
+				svg
+					fill: #A0A1A2 !important
+					margin: 0 
+					margin-left: 16px
+					&:hover
+						fill: #000 !important
+		p 
+			padding-left: 66px
+			padding-right: 20px
+	&__link-back
+		padding-bottom: 25px
+		&.line-bottom
+			margin-bottom: 24px
+			&:after
+				bottom: 0
+	&__block-name
+		display: -webkit-flex
+		display: -moz-flex
+		display: -ms-flex
+		display: -o-flex
+		display: flex	
+		color: #A3A6A9
+		font-size: 13px
+		padding: 15px
+		padding-left: 66px
+		padding-right: 20px
+		svg
+			margin-left: auto
+			fill: #A5A5A5
+			width: 16px
+			height: 16px
+			cursor: pointer
+			&:hover
+				fill: #000
+	&__shops
+		margin-top: 20px
+		li
+			display: -webkit-flex
+			display: -moz-flex
+			display: -ms-flex
+			display: -o-flex
+			display: flex
+			align-items: center
+			padding: 7px 13px
+			p 
+				padding: 0
+			a 
+				padding: 0
+				margin: 0
+				&:hover
+					color: #7F7F7F
+					background: none 
+	&__shops-img
+		width: 40px
+		height: 40px
+		background: #E9ECEF
+		border-radius: 50%
+		margin-right: 13px
+		img
+			object-fit: cover
+	&__shops-text
+		p 
+			+font-family($mont-semibld)
+			font-size: 14px
+		a 
+			+font-family($open-reg)
+			font-size: 13px
+			color: #7F7F7F
+			text-decoration: none
+			
+.sidebar .sidebar__link-active a
+	border-left: 3px solid #1380F6 !important
+	color: #1380F6
+	background: #F8F9FA
+	svg
+		fill: #1380F6
+.sidebar .sidebar__show-all
+	a
+		align-items: center
+		text-align: center
+		color: #8B8B8B !important
+		&:hover svg
+			fill: #8B8B8B !important
+	svg
+		margin: 0 8px
+		width: 10px !important
+		height: 7px !important
+		fill: #8B8B8B
+		vertical-align: baseline !important
+.sidebar .circle
+    width: 10px !important
+    height: 10px !important			
+.line-bottom
+	position: relative
+	margin-bottom: 50px
+	&:after
+		position: absolute
+		content: ''
+		width: 142px
+		height: 0
+		border-bottom: 1px solid #E9ECEF
+		left: 50%
+		transform: translateX(-50%)
+		bottom: -25px
+.brdr-lines
+	border-top: 1px solid #E9ECEF
+	border-bottom: 1px solid #E9ECEF
+	padding-top: 15px
+	padding-bottom: 15px
+	margin-bottom: 15px
+	margin-top: auto
+.slimScrollDiv
+	position: fixed !important
+	width: 280px !important
+.sidebar-5
+	li 
+		a
+			+font-family($mont-md)
+		b
+			color: #868E96
+			+font-family($mont-md)
+			margin-left: 5px
+			font-weight: 500
+	.icon-infinity
+		width: 24px
+		height: 11px
+	.sidebar__link-active
+		b
+			color: #1380f6
+			+font-family($mont-md)
+	.sidebar__show-all 
+		a 
+			+font-family($mont-md)
+			color: #000 !important
+		svg
+			margin: 0 3px
+			margin-right: 20px
+			width: 14px !important
+			height: 7px !important
+	.sidebar__block-icons
+		margin-left: auto
+		svg
+			width: 15px
+			height: 15px
+			margin-left: 8px
+	.sidebar
+		
+		&__tags
+			.icon-add,
+			.icon-pen
+				display: none
+			&:hover
+				background: #f8f9fa
+				.icon-add,
+				.icon-pen
+					display: inline-block
+		&__tag-search,
+		&__tag-new
+			display: -webkit-flex
+			display: -moz-flex
+			display: -ms-flex
+			display: -o-flex
+			display: flex
+			align-items: center
+			padding: 15px 24px
+			.icon-search
+				fill: #1380F6
+			.icon-close-2
+				fill: #868E96
+
+			.icon-check-3
+				fill: #1380F6
+				margin-right: 10px
+			svg
+				width: 20px
+				height: 20px
+				cursor: pointer
+				flex-shrink: 0
+			.label-text
+				width: auto
+				padding: 10px
+				margin: 0 10px
+			input
+				font-size: 14px
+		&__color-wrp
+			position: relative
+			display: inline-block
+			span
+				display: none
+				position: absolute
+				content: ''
+				left: -10px
+				width: 180px
+				background: #fff
+				box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12)
+				border-radius: 10px
+				z-index: 101
+				padding: 5px
+				top: 30px
+				
+				i
+					margin: 5px
+			b
+				display: none
+				position: absolute
+				width: 14px
+				height: 14px
+				background: #fff
+				top: 27px
+				left: 0px
+				transform: rotate(-45deg)
+				box-shadow: -1px 1px 3px 
+			i
+				width: 14px !important
+				height: 14px !important
+				border: 2px solid #fff
+				cursor: pointer
+				margin: 5px
+				&:hover
+				    box-shadow: 0 0 0 2px #DEE2E6
+			.circle-active
+				box-shadow: 0 0 0 2px #DEE2E6
+			&:hover 
+				span
+					display: block
+				b
+					display: block
+

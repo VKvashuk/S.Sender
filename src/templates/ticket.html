@@ -1,0 +1,219 @@
+---
+css: app
+classOut: add-ticket-out
+title: add-ticket
+---
+{% extends "layouts/_layout.html" %}
+
+{% block styles %}
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/css/select2.min.css" rel="stylesheet" />
+{% endblock %}
+
+{% block content %}
+
+	{% include "partials/_sidebar.html" %}
+	<main class="">
+
+		<header class="header">
+			<div class="header__title">
+				<h2 class="title">Тикет #025</h2>
+			</div>
+			<button class="btn header__save">Вернуться обратно</button>
+			<div class="header__user-wrp">
+				{{mixins.icon('search')}} 
+				{{mixins.icon('apps')}} 
+				<i class="icon-bell"></i>
+				<img src="img/user.png" alt="user">
+			</div>
+		</header>
+		
+		<section class="add-ticket">
+			<div class="container">
+				<div class="ticket__wrp">
+					<div class="ticket__block">
+						<div class="ticket__autor">
+							<div class="ticket__img">
+								<img src="img/user.png" alt="user">
+							</div>
+							
+							<div class="ticket__user-text">
+								<span class="ticket__user-name">Андрей Збруцкий</span> <br>
+							<!-- 	<span class="ticket__user-descript">Проекты и параметры</span> -->
+							</div>
+						</div>
+						<table>
+							<tr>
+								<td>Проблема:</td>
+								<td>Биллинг и тарифы</td>
+								<td>ID тикета:</td>
+								<td>02255664</td>
+							</tr>
+							<tr>
+								<td>Сервис:</td>
+								<td>Smart Messenger</td>
+								<td>Создан:</td>
+								<td>24 мая 2018 в 21:55</td>
+							</tr>
+							<tr>
+								<td>Тема:</td>
+								<td>Нужна помощь с выбором тарифа</td>
+								<td>Статус:</td>
+								<td>
+									<i class="circle circle--green"></i>
+								Есть ответ
+								</td>
+							</tr>
+
+						</table>
+					</div>
+					<div class="ticket__block">
+						<div class="ticket__autor">
+							<div class="ticket__img">
+								<img src="img/user.png" alt="user">
+							</div>
+							
+							<div class="ticket__user-text">
+								<span class="ticket__user-name">Аксенов Павел</span> <br>
+								<!-- <span class="ticket__user-descript">Агент поддержки #031</span> -->
+							</div>
+							<div class="ticket__date">
+								24 мая 2018 в 21:55
+							</div>
+						</div>
+						<div class="ticket__description">
+							<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum
+							sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec,
+							pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.</p>
+							<div class="ticket__files">
+								<p>attachment.png
+									<span>(280 Kb)</span>
+									{{mixins.icon('clip')}}
+								</p>
+								<p>attachment.png
+									<span>(280 Kb)</span>
+									{{mixins.icon('clip')}}
+								</p>
+								<p>attachment.png
+									<span>(280 Kb)</span>
+									{{mixins.icon('clip')}}
+								</p>
+								<p>attachment.png
+									<span>(280 Kb)</span>
+									{{mixins.icon('clip')}}
+								</p>
+							</div>
+						</div>
+					</div>
+					<div class="ticket__block ticket__block--bg">
+						<div class="ticket__autor">
+							<div class="ticket__img">
+								<img src="img/user.png" alt="user">
+							</div>
+							
+							<div class="ticket__user-text">
+								<span class="ticket__user-name">Аксенов Павел</span> <br>
+								<span class="ticket__user-descript">Агент поддержки #031</span>
+							</div>
+							<div class="ticket__date">
+								24 мая 2018 в 21:55
+							</div>
+						</div>
+						<div class="ticket__description">
+							<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum
+							sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec,
+							pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.</p>
+							
+						</div>
+					</div>
+					<div class="ticket__block ticket__block--answer">
+						<p class="ticket__answer-text">Ответить:</p>
+
+						<div class="ticket__answer">
+							<div class="ticket__textarea">
+								<textarea name="theme" rows="5" placeholder="Введите текст"></textarea>
+								<span>563 / 500 символов</span>
+							</div>
+							<div class="ticket__answer-file">
+								<p>attachment.png
+									<span>(280 Kb)</span>
+									{{mixins.icon('clip')}}
+								</p>
+								<button class="btn btn-icon" >
+									{{mixins.icon('error-3')}}
+						        	Удалить
+						        </button>
+							</div>
+							<div class="ticket__btns">
+								<button class="btn btn-icon btn--blue" >
+						        	Отправить
+									{{mixins.icon('envelope')}}
+						        </button>
+						        <label for="file" class="btn">
+									<input type="file" id="file" name="file" multiple>
+						        	Прикрепить файл
+						        </label>
+							</div>
+						</div>
+					</div>
+					<div class="ticket__block ticket__block--decision">
+						<p>Ваш вопрос решен?</p>
+						<button class="btn btn-icon btn--border ticket__yes" >
+				        	Да
+							{{mixins.icon('check-3')}}
+				        </button>
+				        <button class="btn btn-icon btn--border ticket__no" >
+				        	Нет
+							{{mixins.icon('error-3')}}
+				        </button>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<footer class="footer">
+			<div class="container">
+				<a href="/">Политика конфиденциальности</a>
+			</div>
+		</footer>
+
+		
+	
+	{% include "partials/_social.html" %}
+		
+	</main>
+	
+	<script src="js/jquery-3.2.1.min.js"></script>
+	
+    <script src="js/jquery.slimscroll.js"></script>
+    <script src="js/TextAreaAutoResizer.js"></script>
+
+    <script>
+    	$(document).ready(function() {
+		  $('.sidebar').slimScroll({
+				height: '100%'
+			});
+		});
+
+    </script>
+
+   <!--  <script>
+    	$(document).ready(function() {
+        $('.select2').select2();
+
+	    // $('.select2').styler();  
+	    });
+    </script> -->
+    <!-- <script>
+    	$(document).ready(function(){
+	        $(".select2").on('select2:open', function () {
+	        	$('.select2-results__options').slimScroll();
+	  		});
+	    });
+    </script> -->
+    <script>
+		$( document ).ready( function() {
+			$('textarea').autosize();
+		});
+    </script>
+
+{% endblock %}

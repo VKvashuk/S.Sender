@@ -1,0 +1,407 @@
+---
+css: app
+classOut: products-out
+title: products
+---
+{% extends "layouts/_layout.html" %}
+
+{% block styles %}
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/css/select2.min.css" rel="stylesheet" />
+{% endblock %}
+
+{% block content %}
+
+	{% include "partials/_sidebar-2.html" %}
+	<main class="main-home">
+
+		<header class="header">
+			<div class="header__title">
+				<h2 class="title">Продукты</h2>
+			</div>
+			<div class="header__name-product title">
+				Xiaomi Mi Notebook...
+			</div>
+			<button class="btn btn--blue header__save">Сохранить</button>
+			<div class="header__user-wrp">
+				{{mixins.icon('search')}} 
+				{{mixins.icon('apps')}} 
+				<i class="icon-bell"></i>
+				
+				<img src="img/user.png" alt="user">
+			</div>
+		</header>
+		
+		<section class="products">
+			<div class="container">
+				<label class="label-text products__label-name">
+		            <input class="input-text" type="text" placeholder="&nbsp;">
+		            <span class="span-input-text">Название</span>
+		        </label>
+		        <p class="title-line">
+		        	<span>ЦЕНЫ</span>
+		        </p>
+		        <table class="products__table-first">
+		        	<tr>
+		        		<th>Название</th>
+		        		<th>
+		        			<div class="products__select-wrp">
+			        			<select name="" id="" class="select2" >
+				        			<option value="">Создан</option>
+				        			<option value="">Создан</option>
+				        			<option value="">Создан</option>
+				        			<option value="">Создан</option>
+				        			<option value="">Создан</option>
+				        			<option value="">Создан</option>
+				        			<option value="">Создан</option>
+				        			<option value="">Создан</option>
+				        		</select>
+			        		</div>
+		        		</th>
+		        		<th>Цена </th>
+		        	</tr>
+		        	<tr>
+		        		<td>Цена - обычная</td>
+		        		<td>20.03.2018</td>
+		        		<td>
+		        			$ 20.55
+							{{mixins.icon('edit-write')}} 
+							{{mixins.icon('bin')}} 
+		        		</td>
+		        	</tr>
+		        	<tr>
+		        		<td>Цена - обычная</td>
+		        		<td>20.03.2018</td>
+		        		<td>
+		        			$ 20.55
+							{{mixins.icon('edit-write')}} 
+							{{mixins.icon('bin')}} 
+		        		</td>
+		        	</tr>
+		        	<tr>
+		        		<td>Цена - обычная</td>
+		        		<td>20.03.2018</td>
+		        		<td>
+		        			$ 20.55
+							{{mixins.icon('edit-write')}} 
+							{{mixins.icon('bin')}} 
+		        		</td>
+		        	</tr>
+		        	<tr class="products__last-row">
+		        		<td  colspan="3">
+		        			<a href="#">
+		        				{{mixins.icon('add-pluss')}}
+		        				Добавить цену</td>
+		        			</a>
+		        			
+		        		</td>
+		        	</tr>
+		        	<tr class="products__add-price">
+		        		<td  colspan="3">
+		        			<label class="label-text ">
+					            <input class="input-text" type="text" placeholder="&nbsp;">
+					            <span class="span-input-text">Название</span>
+					        </label>
+		        		
+		        			<label class="label-text ">
+					            <input class="input-text" type="text" placeholder="&nbsp;">
+					            <span class="span-input-text">Цена</span>
+					        </label>
+		        		
+		        			<div class="products__select-wrp">
+			        			<select name="" id="" class="select2">
+				        			<option value="">USD ($)</option>
+				        			<option value="">USD ($)</option>
+				        		</select>
+				        		<span class="products__select-name">Валюта</span>
+			        		</div>
+		        			
+		        		
+		        			<button class="btn btn--blue">Добавить</button>
+		        		</td>
+		        	</tr>
+		        	
+		        </table>
+
+		        <p class="title-line">
+		        	<span>ПЛАТЕЖНЫЕ СИСТЕМЫ</span>
+		        </p>
+		        <table class="products__table-second">
+		        	<tr>
+		        		<td>
+					        <label class="label-checkbox">
+					            <input class="checkbox" type="checkbox">
+					            <span class="input-circle"></span>
+					            Stripe - USDl
+					        </label>  
+		        		</td>
+		        		<td>Stripe</td>
+		        	</tr>
+		        	<tr>
+		        		<td>
+					        <label class="label-checkbox">
+					            <input class="checkbox" type="checkbox">
+					            <span class="input-circle"></span>
+					            Stripe - USDl
+					        </label>  
+		        		</td>
+		        		<td>Stripe</td>
+		        	</tr>
+		        	<tr>
+		        		<td>
+					        <label class="label-checkbox">
+					            <input class="checkbox" type="checkbox">
+					            <span class="input-circle"></span>
+					            Stripe - USDl
+					        </label>  
+		        		</td>
+		        		<td>Stripe</td>
+		        	</tr>
+		        	
+		        </table>
+
+		        <p class="title-line">
+		        	<span>КАТЕГОРИИ И МЕТКИ</span>
+		        </p>
+		        <div class="products__blocks">
+		        	<div class="products__block">
+		        		<p class="products__block-name">Категории 
+						{{mixins.icon('setting')}}
+		        		</p>
+		        		<label class="label-radio products__label-left">
+
+		        			Все продукты
+				            <input class="radio" name="radio" type="radio">
+				            <span class="input-circle"></span>
+				            {{mixins.icon('folder-open')}} 
+				        </label>  
+				        <label class="label-radio">
+				        	
+				        	Смартфоны и мобильн...
+				            <input class="radio" name="radio" type="radio">
+				            <span class="input-circle"></span>
+				            {{mixins.icon('folder')}}
+				        </label>
+				        <label class="label-radio">
+				        	
+				        	Планшеты
+				            <input class="radio" name="radio" type="radio">
+				            <span class="input-circle"></span>
+							{{mixins.icon('folder')}}
+				        </label>  
+				        <label class="label-radio">
+				        	
+				        	Ноутбуки
+				            <input class="radio" name="radio" type="radio">
+				            <span class="input-circle"></span>
+				            {{mixins.icon('folder')}}
+				        </label>
+				        <label class="label-radio">
+				        	
+				        	Мониторы
+				            <input class="radio" name="radio" type="radio">
+				            <span class="input-circle"></span>
+				            {{mixins.icon('folder')}}
+				        </label>  
+				        <label class="label-radio">
+				        	
+				        	Чехлы, аккумуляторы
+				            <input class="radio" name="radio" type="radio">
+				            <span class="input-circle"></span>
+				            {{mixins.icon('folder')}}
+				        </label>
+		        		<a href="#">
+						{{mixins.icon('add-circle')}}
+		        		Добавить категорию</a>
+		        	</div>
+		        	<div class="products__block products__block--right">
+		        		<p class="products__block-name">Метки 
+						{{mixins.icon('setting')}}
+		        		</p>
+		        		 <label class="label-checkbox">
+		        		 	<i class="circle circle--green"></i>
+		        		 	Checkbox label
+				            <input class="checkbox" type="checkbox">
+				            <span class="input-circle"></span>
+
+				            
+				        </label>
+				        <label class="label-checkbox">
+				        	<i class="circle circle--red"></i>
+				        	Checkbox label
+				            <input class="checkbox" type="checkbox">
+				            <span class="input-circle"></span>
+
+				            
+				        </label>
+				        <label class="label-checkbox">
+				        	<i class="circle circle--blue"></i>
+				        	Checkbox labedfl
+
+				            <input class="checkbox" type="checkbox">
+				            <span class="input-circle"></span>
+
+				            
+				        </label>
+		        		
+		        		<a href="#">
+						{{mixins.icon('add-circle')}}
+		        		Добавить категорию</a>
+		        	</div>
+		        </div>
+			</div>
+		</section>
+
+		<footer class="footer">
+			<div class="container">
+				<a href="#">Политика конфиденциальности</a>
+			</div>
+		</footer>
+
+		
+
+		
+	
+	{% include "partials/_social.html" %}
+
+	<div class="mod__modal mod__modal--products" >
+		<div class="mod__modal-block">
+			<span class="mod__btn-close">
+				{{mixins.icon('close')}}
+			</span>
+			<h2 class="title">Метки</h2>
+				
+			<div class="mod-products__block">		
+				<ul>
+					<li><a href="#"><i class="circle circle--green"></i> Новые товары
+						<span>
+							{{mixins.icon('pen')}} 
+							{{mixins.icon('basket-2')}} 
+						</span>
+					</a></li>
+					<li><a href="#"><i class="circle circle--red"></i> Скидки
+						<span>
+							{{mixins.icon('pen')}} 
+							{{mixins.icon('basket-2')}} 
+						</span>
+					</a></li>
+					<li><a href="#"><i class="circle circle--blue"></i> Ожидаем поставки
+						<span>
+							{{mixins.icon('pen')}} 
+							{{mixins.icon('basket-2')}} 
+						</span>
+					</a></li>
+				</ul>
+				<a href="#" class="mod-products__show-all">
+					{{mixins.icon('add-circle')}}
+	        		Добавить метку</a>
+	        	<div class="mod-products__add-mark">
+	        		<div class="mod-products__color-wrp">
+	        			<i class="circle circle--green"></i>
+	        			<span>
+	        				<i class="circle circle--red-2"></i>
+	        				<i class="circle circle--pink"></i>
+	        				
+	        				<i class="circle circle--purple"></i>
+	        				<i class="circle circle--purple-2"></i>
+	        				<i class="circle circle--blue-2"></i>
+	        				<i class="circle circle--blue-3"></i>
+	        				
+	        				<i class="circle circle--turquoise"></i>
+	        				<i class="circle circle--green-2"></i>
+	        				<i class="circle circle--green-3"></i>
+	        				<i class="circle circle--green-4"></i>
+	        				<i class="circle circle--yellow"></i>
+	        				<i class="circle circle--yellow-2"></i>
+
+	        			</span>
+	        			<b class="mod-products__rect"></b>
+	        		</div>
+	        		
+	        		<label class="label-text ">
+			            <input class="input-text" type="text" placeholder="&nbsp;">
+			            <span class="span-input-text">Название метки</span>
+			        </label>
+			        {{mixins.icon('add-circle')}}
+	        	</div>
+			</div>
+			<button class="btn btn-arrow-r btn--blue">Сохранить</button>
+		</div>
+	</div>
+
+	<div class="mod__modal mod__modal--products">
+		<div class="mod__modal-block">
+			<span class="mod__btn-close">
+				{{mixins.icon('close')}}
+			</span>
+			<h2 class="title">Категории</h2>
+				
+			<div class="mod-products__block">		
+		        <ul>
+					<li > 
+						<a href="#">{{mixins.icon('folder-open')}} Все продукты
+							<span>
+								{{mixins.icon('pen')}} 
+								{{mixins.icon('basket-2')}} 
+							</span>
+						</a>
+					</li>
+					<ul>
+						<li><a href="#">{{mixins.icon('folder')}} Смартфоны и моби...
+							<span>
+								{{mixins.icon('pen')}} 
+								{{mixins.icon('basket-2')}} 
+							</span>
+						</a></li>
+						<li><a href="#">{{mixins.icon('folder')}} Планшеты
+							<span>
+								{{mixins.icon('pen')}} 
+								{{mixins.icon('basket-2')}} 
+							</span>
+						</a></li>
+						<li><a href="#">{{mixins.icon('folder')}} Ноутбуки
+							<span>
+								{{mixins.icon('pen')}} 
+								{{mixins.icon('basket-2')}} 
+							</span>
+						</a></li>
+					</ul>
+				</ul>
+				<a href="#" class="mod-products__show-all">
+					{{mixins.icon('add-circle')}}
+	        		Добавить категорию</a>
+
+			</div>
+			<button class="btn btn-arrow-r btn--blue">Сохранить</button>
+		</div>
+	</div>
+
+		
+	</main>
+
+
+	
+	<script src="js/jquery-3.2.1.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/js/select2.min.js"></script>
+    <script src="js/jquery.slimscroll.js"></script>
+
+    <script>
+    	$(document).ready(function() {
+		    $('.sidebar').slimScroll({
+				height: '100%'
+			});
+		});
+    </script>
+    <script>
+    	$(document).ready(function() {
+        	$('.select2').select2();
+	    });
+    </script>
+    <script>
+    	$(document).ready(function(){
+	        $(".select2").on('select2:open', function () {
+	        	$('.select2-results__options').slimScroll();
+	  		});
+	    });
+    </script>
+
+{% endblock %}

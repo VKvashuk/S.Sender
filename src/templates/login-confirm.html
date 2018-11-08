@@ -1,0 +1,46 @@
+---
+css: accounts
+classOut: login-confirm-out
+title: login-confirm
+---
+{% extends "layouts/_layout.html" %}
+
+{% block content %}
+
+	
+<main class="main-login">
+	<section class="login">	
+		<div class="login__left">
+			<img src="img/logo.png" alt="" class="login__logo">
+			<div class="login__block">
+				<h2 class="title">Подтверждение входа</h2>
+				<p class="login__text-key">Введите код из приложения Google Auth</p>
+				<form action="/">
+					<label class="label-text ">
+		            <input class="input-text" type="text" placeholder="&nbsp;">
+		            <span class="span-input-text">6-значный код</span>
+
+		            <span class="input-text-error">Некорректный формат ввода</span>
+		            <span class="input-text-success">Password is strong</span>
+		        </label>
+		        <button class="btn btn-icon btn--blue" type="submit">Подтвердить
+					{{mixins.icon('lock')}}
+		        </button>
+					
+				</form>
+			</div>
+			<div class="login__footer">
+				<a href="#">
+					<i class="icon-russia"></i> 
+				Русский</a>
+				<!-- <p>Нет аккаунта? &nbsp<a href="#" class="login__reg-link">Регистрация</a></p> -->
+			</div>
+		</div>
+		<div class="login__right" style="background-image: url('img/login-img.jpg')">
+		<!-- 	<img src="img/login-img.jpg" alt="img"> -->
+		</div>
+	</section>			
+</main>
+	
+
+{% endblock %}

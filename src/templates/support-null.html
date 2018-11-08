@@ -1,0 +1,56 @@
+---
+css: app
+classOut: support-out
+title: support-null
+---
+{% extends "layouts/_layout.html" %}
+
+{% block content %}
+
+	{% include "partials/_sidebar.html" %}
+	<main class="">
+
+		<header class="header">
+			<div class="header__title">
+				<h2 class="title">Центр поддержки</h2>
+			</div>
+			<button class="btn btn--blue header__save">Создать тикет</button>
+			<div class="header__user-wrp">
+				{{mixins.icon('search')}} 
+				{{mixins.icon('apps')}} 
+				<i class="icon-bell"></i>
+				<img src="img/user.png" alt="user">
+			</div>
+		</header>
+		
+		<section class="">
+		<div class="container">
+			
+			
+		</div>
+		</section>
+
+		<footer class="footer">
+			<div class="container">
+				<a href="/">Политика конфиденциальности</a>
+			</div>
+		</footer>
+
+		
+	
+	{% include "partials/_social.html" %}
+		
+	</main>
+	
+	<script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/jquery.slimscroll.js"></script>
+
+    <script>
+    	$(document).ready(function() {
+		  $('.sidebar').slimScroll({
+				height: '100%'
+			});
+		});
+    </script>
+
+{% endblock %}

@@ -1,0 +1,779 @@
+---
+css: app
+classOut: rates-out
+title: rates
+---
+{% extends "layouts/_layout.html" %}
+
+{% block styles %}
+	<link rel="stylesheet" href="lib/slick.css">
+{% endblock %}
+
+{% block content %}
+
+	{% include "partials/_sidebar-3.html" %}
+	<main class="">
+
+		<header class="header">
+			<div class="header__title">
+				<h2 class="title">Тарифы</h2>
+			</div>
+			
+			<div class="header__user-wrp">
+				{{mixins.icon('apps')}} 
+				<i class="icon-bell"></i>
+				<img src="img/user.png" alt="user">
+			</div>
+		</header>
+		
+		<section class="rates">
+			<div class="container">
+				<div class="rates__wrp">
+					<div class="rates__container rates__container--top">
+						<h2 class="title">Ваш текущий пакет:  <span>Базовый</span></h2>
+						<p>It showed a lady fitted out with a fur hat and fur boa who sat upright,
+						raising a heavy fur muff that covered the whole of her lower arm towards the viewer.
+						Gregor then turned to look out the window at the dull weather. </p>
+						<p class="title-line">
+				        	<span>АКТИВНЫЕ СЕРВИСЫ</span>
+				        </p>
+					</div>
+					
+			        <div class="rates__services">
+			        	<div class="rates__service">
+			        		<div class="rates__mark-block">
+			        			<i class="icon-mark-big-blue"></i>
+			        			<div class="rates__mark-text">
+			        				<p>Smart Messenger</p>
+			        				<p>Базовый на 1 год</p>
+			        			</div>
+
+			        		</div>
+			        		<div class="rates__price-block rates__space-between">
+			        			<p>$240 в год</p>
+			        			<p>$20 в месяц</p>
+			        		</div>
+			        		{{mixins.icon('pen')}} 
+			        	</div>
+			        	<div class="rates__service">
+			        		<div class="rates__mark-block">
+			        			<i class="icon-mark-big-red"></i>
+			        			<div class="rates__mark-text ">
+			        				<p>Smart Push</p>
+			        				<p>Базовый на 1 год</p>
+			        			</div>
+
+			        		</div>
+			        		<div class="rates__price-block rates__center">
+			        			<p>Деактивирован</p>
+			        		</div>
+			        		{{mixins.icon('pen')}} 
+			        	</div>
+			        	<div class="rates__service rates__service--add">
+			        		<div class="rates__mark-add">
+			        			{{mixins.icon('add-border')}}
+								Подключить сервис
+			        		</div>
+			        		
+			        	</div>
+			        </div>
+				</div>	
+				<p class="title-line title-line--offer">
+		        	<span>ПАКЕТНЫЕ ПРЕДЛОЖЕНИЯ</span>
+		        </p>
+		        <div class="rates__wrp">
+					<div class="rates__items">
+						<div class="rates__item">
+							<h3 class="subtitle">Базовый Базовый Базовый
+							Базовый Базовый Базовый</h3>
+							<div class="rates__marks">
+								<i class="icon-mark-small-blue"></i>
+								<i class="icon-mark-small-red"></i>
+								<i class="icon-mark-small-yellow"></i>
+							</div>
+							<ul>
+								<li><i class="icon-check-blue"></i>One morning, when Gregor Samsa
+								woke from</li>
+								<li>His many legs, pitifully thin</li>
+								<li>One morning, when Gregor Samsa
+								woke from</li>
+								<li>One morning, when Gregor Samsa
+								woke from</li>
+							</ul>
+							<label class="label-radio">
+					            <input class="radio" name="radio" type="radio">
+					            <span class="input-circle"></span>
+					            $15 при оплате ежемесячно
+					        </label>
+					        <label class="label-radio">
+					            <input class="radio" name="radio" type="radio">
+					            <span class="input-circle"></span>
+					            $150 при оплате за год
+					        </label> 
+					        <div class="rates__btns">
+					        	<button class="btn btn-icon btn--blue" >
+						        	Выбрать
+									{{mixins.icon('basket')}}
+					        	</button>
+						        <button class="btn btn-icon " >
+						        	Подробнее
+									{{mixins.icon('info-1')}}
+						        </button>
+					        </div>
+						</div>
+						<div class="rates__item">
+							<h3 class="subtitle">Базовый Базовый Базовый
+							Базовый Базовый Базовый</h3>
+							<div class="rates__marks">
+								<i class="icon-mark-small-blue"></i>
+								<i class="icon-mark-small-red"></i>
+								<i class="icon-mark-small-yellow"></i>
+							</div>
+							<ul>
+								<li><i class="icon-check-blue"></i>One morning, when Gregor Samsa
+								woke from</li>
+								<li>His many legs, pitifully thin</li>
+								<li>One morning, when Gregor Samsa
+								woke from</li>
+								<li>One morning, when Gregor Samsa
+								woke from</li>
+							</ul>
+							<label class="label-radio">
+					            <input class="radio" name="radio" type="radio">
+					            <span class="input-circle"></span>
+					            $15 при оплате ежемесячно
+					        </label>
+					        <label class="label-radio">
+					            <input class="radio" name="radio" type="radio">
+					            <span class="input-circle"></span>
+					            $150 при оплате за год
+					        </label> 
+					        <div class="rates__btns">
+					        	<button class="btn btn-icon btn--blue" >
+						        	Выбрать
+									{{mixins.icon('basket')}}
+					        	</button>
+						        <button class="btn btn-icon " >
+						        	Подробнее
+									{{mixins.icon('info-1')}}
+						        </button>
+					        </div>
+						</div>
+						<div class="rates__item">
+							<h3 class="subtitle">Базовый Базовый Базовый
+							Базовый Базовый Базовый</h3>
+							<div class="rates__marks">
+								<i class="icon-mark-small-blue"></i>
+								<i class="icon-mark-small-red"></i>
+								<i class="icon-mark-small-yellow"></i>
+							</div>
+							<ul>
+								<li><i class="icon-check-blue"></i>One morning, when Gregor Samsa
+								woke from</li>
+								<li>His many legs, pitifully thin</li>
+								<li>One morning, when Gregor Samsa
+								woke from</li>
+								
+							</ul>
+							<label class="label-radio">
+					            <input class="radio" name="radio" type="radio">
+					            <span class="input-circle"></span>
+					            $15 при оплате ежемесячно
+					        </label>
+					        <label class="label-radio">
+					            <input class="radio" name="radio" type="radio">
+					            <span class="input-circle"></span>
+					            $150 при оплате за год
+					        </label> 
+					        <div class="rates__btns">
+					        	<button class="btn btn-icon btn--blue" >
+						        	Выбрать
+									{{mixins.icon('basket')}}
+					        	</button>
+						        <button class="btn btn-icon " >
+						        	Подробнее
+									{{mixins.icon('info-1')}}
+						        </button>
+					        </div>
+						</div>
+						<div class="rates__item">
+							<h3 class="subtitle">Базовый Базовый Базовый
+							Базовый Базовый Базовый</h3>
+							<div class="rates__marks">
+								<i class="icon-mark-small-blue"></i>
+								<i class="icon-mark-small-red"></i>
+								<i class="icon-mark-small-yellow"></i>
+							</div>
+							<ul>
+								<li><i class="icon-check-blue"></i>One morning, when Gregor Samsa
+								woke from</li>
+								<li>His many legs, pitifully thin</li>
+								<li>One morning, when Gregor Samsa
+								woke from</li>
+								
+							</ul>
+							<label class="label-radio">
+					            <input class="radio" name="radio" type="radio">
+					            <span class="input-circle"></span>
+					            $15 при оплате ежемесячно
+					        </label>
+					        <label class="label-radio">
+					            <input class="radio" name="radio" type="radio">
+					            <span class="input-circle"></span>
+					            $150 при оплате за год
+					        </label> 
+					        <div class="rates__btns">
+					        	<button class="btn btn-icon btn--blue" >
+						        	Выбрать
+									{{mixins.icon('basket')}}
+					        	</button>
+						        <button class="btn btn-icon " >
+						        	Подробнее
+									{{mixins.icon('info-1')}}
+						        </button>
+					        </div>
+						</div>
+						<div class="rates__item">
+							<h3 class="subtitle">Базовый Базовый Базовый
+							Базовый Базовый Базовый</h3>
+							<div class="rates__marks">
+								<i class="icon-mark-small-blue"></i>
+								<i class="icon-mark-small-red"></i>
+								<i class="icon-mark-small-yellow"></i>
+							</div>
+							<ul>
+								<li><i class="icon-check-blue"></i>One morning, when Gregor Samsa
+								woke from</li>
+								<li>His many legs, pitifully thin</li>
+								<li>One morning, when Gregor Samsa
+								woke from</li>
+								
+							</ul>
+							<label class="label-radio">
+					            <input class="radio" name="radio" type="radio">
+					            <span class="input-circle"></span>
+					            $15 при оплате ежемесячно
+					        </label>
+					        <label class="label-radio">
+					            <input class="radio" name="radio" type="radio">
+					            <span class="input-circle"></span>
+					            $150 при оплате за год
+					        </label> 
+					        <div class="rates__btns">
+					        	<button class="btn btn-icon btn--blue" >
+						        	Выбрать
+									{{mixins.icon('basket')}}
+					        	</button>
+						        <button class="btn btn-icon " >
+						        	Подробнее
+									{{mixins.icon('info-1')}}
+						        </button>
+					        </div>
+						</div>
+					</div>
+		        </div>
+			</div>
+		</section>
+
+		<footer class="footer">
+			<div class="container">
+				<a href="/">Политика конфиденциальности</a>
+			</div>
+		</footer>
+
+		<div class="mod__modal-info" style="display: none;">
+          <div class="mod__info-block">
+            <span class="mod__btn-close">
+				{{mixins.icon('close')}}
+			</span>
+            <h2 class="title">Поздравляем</h2>
+            <img src="img/rates.png" alt="rates">
+            <p>Услуга успешно подключена</p>
+            <button class="btn btn-arrow-r btn--blue">Продолжить</button>
+          </div>
+        </div>
+
+        <div class="mod__rates-add" style="display: none;">
+        	<div class="mod__rates-block m-right">
+        		<span class="mod__btn-close">
+					{{mixins.icon('close')}}
+				</span>
+	            <div class="mod__rates-top">
+	            	<h3 class="subtitle">Подключить сервис</h3>
+	            </div>
+	            <div class="mod__rates-item">
+	            	<div class="mod__rates-head">
+	        			<i class="icon-mark-big-blue"></i>
+	        			<div>
+	        				<p>Smart Messenger</p>
+	        				<p>Базовый на 1 год</p>
+	        			</div>
+						{{mixins.icon('arrow-big')}}
+	        		</div>
+	        		<p class="mod__rates-text">
+		    			Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+		    		</p>
+					<button class="btn btn-icon btn--border" >
+			        	Выбрать предложение
+						{{mixins.icon('basket')}}
+		        	</button>
+	            </div>
+	            <div class="mod__rates-item">
+	            	<div class="mod__rates-head">
+	        			<i class="icon-mark-big-red"></i>
+	        			<div>
+	        				<p>Smart Messenger</p>
+	        				<p>Базовый на 1 год</p>
+	        			</div>
+						{{mixins.icon('arrow-big')}}
+	        		</div>
+	        		<p class="mod__rates-text">
+		    			Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+		    		</p>
+					<button class="btn btn-icon btn--border" >
+			        	Выбрать предложение
+						{{mixins.icon('basket')}}
+		        	</button>
+	            </div>
+	            <div class="mod__rates-item">
+	            	<div class="mod__rates-head">
+	        			<i class="icon-mark-big-yellow"></i>
+	        			<div>
+	        				<p>Smart Messenger</p>
+	        				<p>Базовый на 1 год</p>
+	        			</div>
+						{{mixins.icon('arrow-big')}}
+	        		</div>
+	        		<p class="mod__rates-text">
+		    			Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+		    		</p>
+					<button class="btn btn-icon btn--border" >
+			        	Выбрать предложение
+						{{mixins.icon('basket')}}
+		        	</button>
+	            </div>
+        	</div>
+        </div>
+        <div class="mod__msngr" style="display: none;">
+        	<div class="mod__msngr-block m-right">
+        		<span class="mod__btn-close">
+					{{mixins.icon('close')}}
+				</span>
+	            <div class="mod__msngr-top">
+	            	<h3 class="subtitle">Smart Messenger</h3>
+	            </div>
+	            <div class="mod__msngr-wrp">
+	            	<div class="mod__msngr-name">
+		            	<i class="icon-paсkage"></i>
+		            	Пакетные предложения
+		            </div>
+		            <ul class="mod__msngr-items">
+		            	<li class="mod__msngr-item">
+		            		<p class="mod__msngr-title">
+		            			Название пакета Название пакета Название пакета Название пакета
+		            		</p>
+		            		<div class="mod__msngr-btns">
+		            			<p>от $20 / мес.</p>
+		            			<!-- <div> -->
+		            				<i class="icon-mark-small-blue"></i>
+									<i class="icon-mark-small-red"></i>
+									<i class="icon-mark-small-yellow"></i>
+									<i class="icon-mark-small-green"></i>
+									<button class="btn-small btn-icon">
+										{{mixins.icon('basket')}}
+									</button>
+									<button class="btn-small btn-icon">
+										{{mixins.icon('arrow-r')}}
+									</button>
+		            			<!-- </div> -->
+		            		</div>
+		            		<p class="mod__msngr-text">
+		            			Lorem ipsum dolor sit amet, consectetuer adipiscing elit. 
+								Aenean commodo ligula eget dolor. Aenean massa. Cum 
+								sociis natoque penatibus et magnis. Подробное описание
+								<a href="#">Подробное описание</a>
+		            		</p>
+		            	</li>
+		            	<li class="mod__msngr-item">
+		            		<p class="mod__msngr-title">
+		            			Название пакета Название пакета Название пакета Название пакета
+		            		</p>
+		            		<div class="mod__msngr-btns">
+		            			<p>от $20 / мес.</p>
+		            			<!-- <div> -->
+		            				<i class="icon-mark-small-blue"></i>
+									<i class="icon-mark-small-red"></i>
+									<i class="icon-mark-small-yellow"></i>
+									<i class="icon-mark-small-green"></i>
+									<button class="btn-small btn-icon">
+										{{mixins.icon('basket')}}
+									</button>
+									<button class="btn-small btn-icon">
+										{{mixins.icon('arrow-r')}}
+									</button>
+		            			<!-- </div> -->
+		            		</div>
+		            		<p class="mod__msngr-text">
+		            			Lorem ipsum dolor sit amet, consectetuer adipiscing elit. 
+								Aenean commodo ligula eget dolor. Aenean massa. Cum 
+								sociis natoque penatibus et magnis. Подробное описание
+								<a href="#">Подробное описание</a>
+		            		</p>
+		            	</li>
+		            	<li class="mod__msngr-item">
+		            		<p class="mod__msngr-title">
+		            			Название пакета Название пакета Название пакета Название пакета
+		            		</p>
+		            		<div class="mod__msngr-btns">
+		            			<p>от $20 / мес.</p>
+		            			<!-- <div> -->
+		            				<i class="icon-mark-small-blue"></i>
+									<i class="icon-mark-small-red"></i>
+									<i class="icon-mark-small-yellow"></i>
+									<i class="icon-mark-small-green"></i>
+									<button class="btn-small btn-icon">
+										{{mixins.icon('basket')}}
+									</button>
+									<button class="btn-small btn-icon">
+										{{mixins.icon('arrow-r')}}
+									</button>
+		            			<!-- </div> -->
+		            		</div>
+		            		<p class="mod__msngr-text">
+		            			Lorem ipsum dolor sit amet, consectetuer adipiscing elit. 
+								Aenean commodo ligula eget dolor. Aenean massa. Cum 
+								sociis natoque penatibus et magnis. Подробное описание
+								<a href="#">Подробное описание</a>
+		            		</p>
+		            	</li>
+
+		            </ul>
+            	</div>
+	            <div class="mod__msngr-wrp">
+	            	<div class="mod__msngr-name">
+		            	<i class="icon-mark-big-blue"></i>
+		            	Пакетные предложения
+		            </div>
+		            <ul class="mod__msngr-items">
+		            	<li class="mod__msngr-item">
+		            		<p class="mod__msngr-title">
+		            			Название пакета
+		            		</p>
+		            		<div class="mod__msngr-btns">
+		            			<p>от $20 / мес.</p>
+		            		
+		            				<!-- <i class="icon-mark-small-blue"></i>
+									<i class="icon-mark-small-red"></i>
+									<i class="icon-mark-small-yellow"></i>
+									<i class="icon-mark-small-green"></i> -->
+									<button class="btn-small btn-icon">
+										{{mixins.icon('basket')}}
+									</button>
+									<button class="btn-small btn-icon">
+										{{mixins.icon('arrow-r')}}
+									</button>
+		            	
+		            		</div>
+		            		<p class="mod__msngr-text">
+		            			Lorem ipsum dolor sit amet, consectetuer adipiscing elit. 
+								Aenean commodo ligula eget dolor. Aenean massa. Cum 
+								sociis natoque penatibus et magnis. Подробное описание
+								<a href="#">Подробное описание</a>
+		            		</p>
+		            	</li>
+		            </ul>
+            	</div>
+        	</div>
+        </div>
+
+        <div class="mod__msngr" style="display: none;">
+        	<div class="mod__msngr-block m-right">
+        		<span class="mod__btn-close">
+					{{mixins.icon('close')}}
+				</span>
+				<span class="mod__btn-back">
+					{{mixins.icon('arrow-l')}}
+				</span>
+	            <div class="mod__msngr-top mod__msngr-top--big">
+	            	<h3 class="subtitle">Smart Messenger</h3>
+	            	<p class="mod__msngr-subtitle">
+	            		Smart Messenger Smart <br>
+	            		Messenger Smart Messenger
+	            	</p>
+	            	<p>Lorem ipsum dolor sit amet, consectetuer
+					adipiscing elit.  Aenean commodo ligula eget dolor.
+					Aenean massa. Cum  sociis natoque penatibus et
+					magnis.</p>
+	            </div>
+	            <div class="mod__msngr-wrp">
+		            <ul class="mod__msngr-list">
+		            	<li class="mod__msngr-ability">
+		            		<div class="mod__msngr-ability-wrp">
+		            			<i class="icon-mark-small-blue"></i>
+								Возможности Smart Messenger
+		            		</div>
+		            		<ul>
+		            			<li>One morning, when Gregor Samsa woke from</li>
+		            			<li>His many legs, pitifully thin</li>
+		            			<li>One morning, when Gregor Samsa woke from</li>
+		            			<li>One morning, when Gregor Samsa woke from</li>
+		            		</ul>
+		            	</li>
+		            	<li class="mod__msngr-ability">
+		            		<div class="mod__msngr-ability-wrp">
+		            			<i class="icon-mark-small-blue"></i>
+								Возможности Smart Messenger
+		            		</div>
+		            		<ul>
+		            			<li>One morning, when Gregor Samsa woke from</li>
+		            			<li>His many legs, pitifully thin</li>
+		            			<li>One morning, when Gregor Samsa woke from</li>
+		            			<li>One morning, when Gregor Samsa woke from</li>
+		            		</ul>
+		            	</li>
+		            	<li class="mod__msngr-ability">
+		            		<div class="mod__msngr-tariff">
+		            			<div class="mod__msngr-ratios">
+		            				<label class="label-radio">
+					            <input class="radio" name="radio" type="radio">
+					            <span class="input-circle"></span>
+					            $15 при оплате ежемесячно
+					        </label>
+					        <label class="label-radio">
+					            <input class="radio" name="radio" type="radio">
+					            <span class="input-circle"></span>
+					            $150 при оплате за год
+					        </label>
+		            			</div>
+						        <button class="btn btn-icon btn--blue" >
+						        	Выбрать тариф
+									{{mixins.icon('basket')}}
+					        	</button>
+		            		</div>
+		            	</li>
+		            	<li class="mod__msngr-ability">
+		            		<div class="mod__msngr-tariff">
+		            			<button class="btn btn-icon btn--red" >
+						        	Деактивировать пакет
+									{{mixins.icon('error-3')}}
+					        	</button>
+		            		</div>
+		            	</li>
+		            	<li class="mod__msngr-ability">
+		            		<div class="mod__msngr-tariff">
+		            			<button class="btn btn-icon btn--blue" >
+						        	Активировать пакет
+									{{mixins.icon('check-3')}}
+					        	</button>
+		            		</div>
+		            	</li>
+		            </ul>
+            	</div>
+            	<div class="mod__msngr-wrp">
+	            	<div class="mod__msngr-name">
+		            	<i class="icon-paсkage"></i>
+		            	Пакетные предложения
+		            </div>
+		            <ul class="mod__msngr-items">
+		            	<li class="mod__msngr-item">
+		            		<p class="mod__msngr-title">
+		            			Название пакета Название пакета Название пакета Название пакета
+		            		</p>
+		            		<div class="mod__msngr-btns">
+		            			<p>от $20 / мес.</p>
+		            				<i class="icon-mark-small-blue"></i>
+									<i class="icon-mark-small-red"></i>
+									<i class="icon-mark-small-yellow"></i>
+									<i class="icon-mark-small-green"></i>
+									<button class="btn-small btn-icon">
+										{{mixins.icon('basket')}}
+									</button>
+									<button class="btn-small btn-icon">
+										{{mixins.icon('arrow-r')}}
+									</button>
+		            		</div>
+		            		<p class="mod__msngr-text">
+		            			Lorem ipsum dolor sit amet, consectetuer adipiscing elit. 
+								Aenean commodo ligula eget dolor. Aenean massa. Cum 
+								sociis natoque penatibus et magnis. Подробное описание
+								<a href="#">Подробное описание</a>
+		            		</p>
+		            	</li>
+		            	<li class="mod__msngr-item">
+		            		<p class="mod__msngr-title">
+		            			Название пакета Название пакета Название пакета Название пакета
+		            		</p>
+		            		<div class="mod__msngr-btns">
+		            			<p>от $20 / мес.</p>
+		            				<i class="icon-mark-small-blue"></i>
+									<i class="icon-mark-small-red"></i>
+									<i class="icon-mark-small-yellow"></i>
+									<i class="icon-mark-small-green"></i>
+									<button class="btn-small btn-icon">
+										{{mixins.icon('basket')}}
+									</button>
+									<button class="btn-small btn-icon">
+										{{mixins.icon('arrow-r')}}
+									</button>
+		            		</div>
+		            		<p class="mod__msngr-text">
+		            			Lorem ipsum dolor sit amet, consectetuer adipiscing elit. 
+								Aenean commodo ligula eget dolor. Aenean massa. Cum 
+								sociis natoque penatibus et magnis. Подробное описание
+								<a href="#">Подробное описание</a>
+		            		</p>
+		            	</li>
+		            	<li class="mod__msngr-item">
+		            		<p class="mod__msngr-title">
+		            			Название пакета Название пакета Название пакета Название пакета
+		            		</p>
+		            		<div class="mod__msngr-btns">
+		            			<p>от $20 / мес.</p>
+		            				<i class="icon-mark-small-blue"></i>
+									<i class="icon-mark-small-red"></i>
+									<i class="icon-mark-small-yellow"></i>
+									<i class="icon-mark-small-green"></i>
+									<button class="btn-small btn-icon">
+										{{mixins.icon('basket')}}
+									</button>
+									<button class="btn-small btn-icon">
+										{{mixins.icon('arrow-r')}}
+									</button>
+		            		</div>
+		            		<p class="mod__msngr-text">
+		            			Lorem ipsum dolor sit amet, consectetuer adipiscing elit. 
+								Aenean commodo ligula eget dolor. Aenean massa. Cum 
+								sociis natoque penatibus et magnis. Подробное описание
+								<a href="#">Подробное описание</a>
+		            		</p>
+		            	</li>
+		            </ul>
+            	</div>
+        	</div>
+        </div>
+        <div class="mod__msngr fixed-price-block" style="display: none;">
+        	<div class="mod__msngr-block m-right">
+        		<span class="mod__btn-close">
+					{{mixins.icon('close')}}
+				</span>
+				<span class="mod__btn-back">
+					{{mixins.icon('arrow-l')}}
+				</span>
+	            <div class="mod__msngr-top mod__msngr-top--big">
+	            	<h3 class="subtitle">Smart Messenger</h3>
+	            	<p class="mod__msngr-subtitle">
+	            		Smart Messenger Smart <br>
+	            		Messenger Smart Messenger
+	            	</p>
+	            	<p>Lorem ipsum dolor sit amet, consectetuer
+					adipiscing elit.  Aenean commodo ligula eget dolor.
+					Aenean massa. Cum  sociis natoque penatibus et
+					magnis.</p>
+	            </div>
+	            <div class="mod__msngr-wrp">
+		            <ul class="mod__msngr-list">
+		            	<li class="mod__msngr-ability">
+		            		<div class="mod__msngr-ability-wrp">
+		            			<i class="icon-mark-small-blue"></i>
+								Возможности Smart Messenger
+		            		</div>
+		            		<ul>
+		            			<li>One morning, when Gregor Samsa woke from</li>
+		            			<li>His many legs, pitifully thin</li>
+		            			<li>One morning, when Gregor Samsa woke from</li>
+		            			<li>One morning, when Gregor Samsa woke from</li>
+		            		</ul>
+		            	</li>
+		            	<li class="mod__msngr-ability">
+		            		<div class="mod__msngr-ability-wrp">
+		            			<i class="icon-mark-small-blue"></i>
+								Возможности Smart Messenger
+		            		</div>
+		            		<ul>
+		            			<li>One morning, when Gregor Samsa woke from</li>
+		            			<li>His many legs, pitifully thin</li>
+		            			<li>One morning, when Gregor Samsa woke from</li>
+		            			<li>One morning, when Gregor Samsa woke from</li>
+		            		</ul>
+		            	</li>
+		            </ul>
+		            <div class="mod__msngr-ability fixed-price">
+	            		<div class="mod__msngr-tariff">
+	            			<div class="mod__msngr-ratios">
+	            				<label class="label-radio">
+						            <input class="radio" name="radio" type="radio">
+						            <span class="input-circle"></span>
+						            $15 при оплате ежемесячно
+						        </label>
+						        <label class="label-radio">
+						            <input class="radio" name="radio" type="radio">
+						            <span class="input-circle"></span>
+						            $150 при оплате за год
+						        </label>
+	            			</div>
+					        <button class="btn btn-icon btn--blue" >
+					        	Выбрать тариф
+								{{mixins.icon('basket')}}
+				        	</button>
+	            		</div>
+	            	</div>
+            	</div>
+        	</div>
+        </div>
+
+        
+	
+	{% include "partials/_social.html" %}
+		
+	</main>
+	
+	<script src="js/jquery-3.2.1.min.js"></script>
+	
+    <script src="js/jquery.slimscroll.js"></script>
+    <!-- <script src="js/TextAreaAutoResizer.js"></script> -->
+	<script src="lib/slick.min.js"></script>
+    <script>
+    	$(document).ready(function() {
+		  $('.sidebar').slimScroll({
+				height: '100%'
+			});
+		});
+    </script>
+    <script>
+    	$(document).ready(function() {
+		  $('.m-right').slimScroll({
+				height: '100%'
+			});
+		});
+    </script>
+    <script>
+    	$('.rates__items').slick({
+		  infinite: true,
+		  slidesToShow: 3,
+		  slidesToScroll: 1,
+		  infinite: true,
+          dots: true
+		});
+    </script>
+
+   <!--  <script>
+    	$(document).ready(function() {
+        $('.select2').select2();
+
+	    // $('.select2').styler();  
+	    });
+    </script> -->
+    <!-- <script>
+    	$(document).ready(function(){
+	        $(".select2").on('select2:open', function () {
+	        	$('.select2-results__options').slimScroll();
+	  		});
+	    });
+    </script> -->
+    <!-- <script>
+		$( document ).ready( function() {
+			$('textarea').autosize();
+		});
+    </script> -->
+
+{% endblock %}

@@ -1,0 +1,119 @@
+.notific
+	&__container
+		width: 100%
+		height: 100%
+		top: 0
+		left: 0
+		background: rgba(0, 0, 0, 0.1)
+		display: -webkit-flex
+		display: -moz-flex
+		display: -ms-flex
+		display: -o-flex
+		display: flex
+		position: fixed
+		z-index: 100
+	&__wrp
+		width: 400px
+		background: #F1F3F5
+		margin-left: auto
+		position: relative
+	&__top
+		padding: 20px
+		padding-bottom: 15px
+		padding-right: 45px
+		border-bottom: 1px solid #DEE2E6
+		.title
+			margin-bottom: 8px
+		.label-checkbox
+			padding-left: 30px
+			padding-right: 0
+			span
+				left: 0
+	&__block-top
+		+font-family($mont-semibld)
+		font-size: 14px
+		display: -webkit-flex
+		display: -moz-flex
+		display: -ms-flex
+		display: -o-flex
+		display: flex
+		align-items: center
+		margin: 20px
+		margin-top: 34px
+		i 
+			margin-right: 14px
+			display: inline-block
+		button
+			width: 98px
+			padding: 4px 12px
+			border-radius: 100px
+			color: #4D4E4E
+			font-size: 13px
+			+font-family($open-reg)
+			background: #DCDEDF
+			margin-left: auto
+			&:hover
+				background: #DEE0E1
+		svg
+			fill: #9A9C9B
+			width: 18px
+			height: 18px
+			margin-right: 14px
+	&__notice
+		box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.16)
+		background: #fff
+		border-radius: 10px
+		margin-bottom: 10px
+		position: relative
+		padding: 18px
+		padding-right: 42px
+		display: -webkit-flex
+		display: -moz-flex
+		display: -ms-flex
+		display: -o-flex
+		display: flex
+		align-items: flex-start
+		margin: 0 20px
+		margin-bottom: 10px
+		.notific__btn-close
+			position: absolute
+			top: 19px
+			right: 19px
+			cursor: pointer
+			svg
+				fill: #595959
+				width: 12px
+				height: 12px
+		.notific__time
+			position: absolute
+			bottom: 19px
+			right: 14px
+			color: #8C8C8C
+			font-size: 13px
+			+font-family($open-reg)
+		img
+			display: block
+			width: 52px
+			height: 52px
+			object-fit: cover
+			border-radius: 52px
+			margin-right: 10px
+			flex-shrink: 0
+	&__name
+		+font-family($mont-semibld)
+		font-size: 14px
+		margin-bottom: 8px
+	&__description
+		font-size: 13px
+		color: #595959
+		+font-family($open-semibld)
+
+.notific__container
+	.slimScrollDiv
+		width: 400px !important
+		margin-left: auto
+		position: relative !important
+
+
+
+

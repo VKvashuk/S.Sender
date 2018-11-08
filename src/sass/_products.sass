@@ -1,0 +1,391 @@
+.products
+
+	.label-text
+		width: 730px
+	&__label-name 
+		font-size: 16px
+		
+		input
+			font-size: 16px
+			+font-family($mont-md)
+
+
+	&__table-first
+		border: 2px solid #fff
+		width: 710px
+		border-bottom: 1px solid #E9ECEF
+		margin-bottom: 37px
+
+		td, th
+			border: 1px solid #E9ECEF
+			padding-top: 15px
+			padding-bottom: 17px
+
+			&:nth-child(1)
+				padding-left: 18px
+				padding-right: 18px
+				text-align: left
+				width: 40%
+			&:nth-child(2)
+				padding-left: 10px
+				padding-right: 10px
+				text-align: center
+				width: 20%
+			&:nth-child(3)
+				padding-left: 16px
+				padding-right: 16px
+				text-align: center
+				width: 40%
+		td
+			+font-family($open-reg)
+			font-size: 14px
+			&:nth-child(3)
+				text-align: right
+				svg
+					margin-left: 20px
+					width: 18px
+					height: 18px
+					fill: #8B8B8B
+					cursor: pointer
+				.icon-edit-write
+					margin-left: 35px
+		th 
+			color: #595959
+			.select2-container--default .select2-selection--single
+				border-bottom: none		
+		.products__select-wrp
+			width: 120px
+		th, select
+			+font-family($mont-semibld)
+			font-size: 15px
+
+		.select2-selection__rendered
+			+font-family($mont-semibld)
+	&__select-wrp
+		select
+			+font-family($mont-semibld)
+			width: 100%
+			padding: 0 25px
+			border: none
+			-moz-appearance: none
+			-webkit-appearance: none
+			appearance: none
+			background: rgba(0, 0, 0, 0)
+			position: relative
+			z-index: 2
+			cursor: pointer
+	&__last-row 
+		td
+			text-align: center !important
+			svg
+				width: 18px
+				height: 18px
+				fill: #8B8B8B
+				vertical-align: text-bottom
+			    margin-right: 14px
+			a 
+				+font-family($open-reg)
+				font-size: 14px
+				color: #262626
+				text-decoration: none
+				padding-top: 15px
+				padding-bottom: 17px
+	&__add-price
+		background: #F8F9FA
+		td
+			padding-top: 0
+			padding-bottom: 5px
+		.label-text
+			&:nth-child(1)
+				width: 270px
+				+font-family($mont-md)
+			&:nth-child(2)
+				width: 120px
+				+font-family($mont-md)
+		.products__select-wrp
+			width: 125px
+			display: inline-block
+			margin-right: 14px
+			position: relative
+			select
+				+font-family($mont-md)
+		.products__select-name
+			position: absolute
+			content: ''
+			top: -21px
+			left: 0
+			font-size: 13px
+			opacity: .5
+			+font-family($open-reg)
+		button
+			width: 130px
+			display: inline-block
+		.select2-selection__rendered
+			+font-family($mont-md)
+			color: #000 !important
+	&__table-second
+		width: 710px
+		tr
+			+font-family($open-reg)
+			font-size: 15px
+			border-bottom: 1px solid #E9ECEF
+
+			&:last-child
+				border: none
+		td
+			width: 50%
+			padding: 15px
+			padding-bottom: 17px
+
+		label.label-checkbox
+			+font-family($open-reg)
+	&__blocks 
+		display: -webkit-flex
+		display: -moz-flex
+		display: -ms-flex
+		display: -o-flex
+		display: flex
+		align-items: flex-start
+		padding-top: 23px
+	&__block 
+		width: 340px
+		padding: 25px 24px
+		border-radius: 10px
+		box-shadow: 0px 4px 10px rgba(222, 226, 230, 0.35)
+		margin-right: 30px
+		border: 1px solid #E9ECEF
+		.label-radio
+			display: -webkit-flex
+			display: -moz-flex
+			display: -ms-flex
+			display: -o-flex
+			display: flex
+			padding: 10px 0
+			padding-left: 42px
+			position: relative
+			margin-left: 14px
+			+font-family($mont-semibld)
+			font-size: 14px
+			svg
+				fill: #868E96
+		.input-circle
+			margin-left: auto
+		.icon-folder,
+		.icon-folder-open
+			position: absolute
+			left: 0
+		a 
+			+font-family($mont-semibld)
+			font-size: 14px
+			text-decoration: none
+			color: #A5A5A5
+			padding: 10px 0
+			display: inline-block
+			svg
+				fill: #A5A5A5
+				margin-left: 14px
+				margin-right: 24px
+				width: 16px
+				height: 16px
+		.radio + .input-circle
+			margin-right: 5px
+		.label-checkbox
+			width: 100%
+			padding-right: 20px
+			padding-left: 0
+			+font-family($mont-semibld)
+		.checkbox+.input-circle
+			left: auto
+			right: -10px
+	&__block--right	a svg
+		margin-left: 0px
+	&__label-left.label-radio
+		margin-left: 0
+	&__block-name
+		display: -webkit-flex
+		display: -moz-flex
+		display: -ms-flex
+		display: -o-flex
+		display: flex
+		align-items: center
+		+font-family($mont-semibld)
+		padding-bottom: 25px
+		border-bottom: 1px solid #E9ECEF
+		svg
+			width: 20px
+			height: 20px
+			fill: #BEBEBE
+			margin-left: auto
+			cursor: pointer
+	
+
+	&__table-list
+		.label-checkbox
+			padding: 10px
+			padding-left: 40px
+		.checkbox+.input-circle
+			right: auto
+			left: 10px 
+		tr 
+			border-bottom: 1px solid #E9ECEF
+		th,
+		td
+			padding: 10px
+			padding-bottom: 17px
+			padding-top: 14px
+			&:nth-child(1)
+				padding-left: 0
+				padding-right: 0
+				width: 238px
+				border-right: 1px solid #E9ECEF
+				text-align: left
+			&:nth-child(2)
+				width: 98px
+				border-right: 1px solid #E9ECEF
+				text-align: center
+			&:nth-child(3)
+				width: 98px
+				text-align: center
+			&:nth-child(4)
+				width: 168px
+				text-align: left
+			&:nth-child(5)
+				width: 168px
+				text-align: left
+			&:nth-child(6)
+				width: 184px
+				text-align: right
+		th
+			&:nth-child(2)
+				padding-left: 2px
+				padding-right: 2px
+		td
+			+font-family($open-reg)
+			.label-checkbox
+				+font-family($open-reg)
+			
+			a
+				color: #595959
+				text-decoration: none
+				svg
+					fill: #8B8B8B
+					width: 18px
+					height: 18px
+					margin-right: 19px
+					cursor: pointer
+					vertical-align: middle
+		.circle
+			margin-right: 4px
+		select,
+		.products__select-wrp
+			width: 120px
+		th 
+			+font-family($mont-semibld)
+		td
+			+font-family($open-reg)
+		.products__bld,
+			+font-family($mont-bld)
+		.select2-selection__rendered
+			+font-family($mont-bld)
+			color: #000 !important
+		.select2-container--default .select2-selection--single
+			border-bottom: none
+	&__nav
+		margin-top: 30px
+	.btn-numb
+		width: 42px
+		height: 42px
+		margin: 0 5px
+	.btn-next
+		height: 42px
+.products-search-out
+	.header
+		padding-bottom: 34px
+
+
+
+.radio:checked + .input-circle + .icon-folder,
+.radio:checked + .input-circle + .icon-folder-open
+	fill: #1380F6	
+
+			// background-image: url('../img/sprite.png')
+			// background-position: 0px -68px
+
+.search
+	display: -webkit-flex
+	display: -moz-flex
+	display: -ms-flex
+	display: -o-flex
+	display: flex
+	justify-content: space-between
+	align-items: center
+	padding: 30px
+	box-shadow: 1px 1px 2px rgba(0,0,0,.12)
+	svg
+		fill: #8A8A8A
+		width: 14px
+		height: 14px
+		cursor: pointer
+	.icon-outline
+		width: 18px
+		height: 18px
+	.select2
+		width: 100% !important
+
+	&__select-wrp
+		width: 240px
+		padding: 0 10px
+		position: relative
+	&__select-text
+		position: absolute
+		top: -15px
+		left: 10px
+		+font-family($open-reg)
+		font-size: 13px
+		color: #7F7F7F
+	&__hint
+		position: relative
+		font-style: normal
+		display: inline-block
+		width: 12px
+		height: 12px
+		border-radius: 20px
+		background: #B2B2B2
+		color: #fff
+		+font-family($mont-md)
+		font-size: 11px
+		text-align: center
+		cursor: pointer
+		&:hover
+			span
+				display: block
+		span
+			display: none
+			position: absolute
+			padding: 10px
+			width: 198px
+			height: auto
+			box-shadow: 0px 3px 6px rgba(0,0,0,.12)
+			border-radius: 4px
+			color: #000
+			background: #fff
+			+font-family($open-reg)
+			font-size: 13px
+			left: 50%
+			top: 20px
+			transform: translateX(-50%)
+
+	.select2-container--default .select2-selection--single .select2-selection__rendered
+		color: #000
+
+.products-null
+	&__wrp
+		text-align: center
+		padding-top: 77px
+		img
+			margin-bottom: 36px
+		button
+			+font-family($mont-md)
+			margin-top: 36px
+
+

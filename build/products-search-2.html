@@ -1,0 +1,520 @@
+<!doctype html>
+<html>
+
+  <head>
+    <meta charset="utf-8">
+    <title>products-search</title>
+    <!--   <meta http-equiv="X-UA-Compatible" content="IE=Edge"> -->
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1"> -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/css/select2.min.css" rel="stylesheet" />
+    <link rel="stylesheet" media="all" href="css/app.css">
+    <link rel="stylesheet" href="fonts/fontawesome/css/all.css">
+  </head>
+
+  <body>
+    <!-- BEGIN content -->
+    <div class="out products-search-out">
+      <aside class="sidebar">
+        <div class="sidebar__wrp">
+          <img src="img/logo.png" class="sidebar-cart" alt="sidebar-cart">
+          <ul class="sidebar__link-back line-bottom">
+            <li><a href="#">
+                <svg class="icon icon-back-icon">
+                  <use xlink:href="img/sprite.svg#icon-back-icon"></use>
+                </svg> Вернуться назад</a></li>
+          </ul>
+          <ul>
+            <li class="sidebar__block-name"> КАТЕГОРИИ </li>
+            <li class="sidebar__link-active">
+              <a href="#">
+                <svg class="icon icon-folder-open">
+                  <use xlink:href="img/sprite.svg#icon-folder-open"></use>
+                </svg> Все продукты <span>
+                  <svg class="icon icon-pen">
+                    <use xlink:href="img/sprite.svg#icon-pen"></use>
+                  </svg>
+                  <svg class="icon icon-basket-2">
+                    <use xlink:href="img/sprite.svg#icon-basket-2"></use>
+                  </svg>
+                </span>
+              </a>
+            </li>
+            <ul>
+              <li><a href="#">
+                  <svg class="icon icon-folder">
+                    <use xlink:href="img/sprite.svg#icon-folder"></use>
+                  </svg> Смартфоны и моби...</a></li>
+              <li><a href="#">
+                  <svg class="icon icon-folder">
+                    <use xlink:href="img/sprite.svg#icon-folder"></use>
+                  </svg> Планшеты</a></li>
+              <li><a href="#">
+                  <svg class="icon icon-folder">
+                    <use xlink:href="img/sprite.svg#icon-folder"></use>
+                  </svg> Ноутбуки</a></li>
+              <li class="sidebar__show-all"><a href="#"> Показать все (8) <svg class="icon icon-arrow-down ">
+                    <use xlink:href="img/sprite.svg#icon-arrow-down "></use>
+                  </svg>
+                </a></li>
+            </ul>
+          </ul>
+          <ul>
+            <li class="sidebar__block-name"> МЕТКИ <svg class="icon icon-add-circle">
+                <use xlink:href="img/sprite.svg#icon-add-circle"></use>
+              </svg>
+            </li>
+            <li><a href="#"><i class="circle circle--green"></i> Новые товары</a></li>
+            <li><a href="#"><i class="circle circle--red"></i> Скидки</a></li>
+            <li><a href="#"><i class="circle circle--blue"></i> Ожидаем поставки</a></li>
+          </ul>
+          <ul class="brdr-lines">
+            <li><a href="#">
+                <svg class="icon icon-support">
+                  <use xlink:href="img/sprite.svg#icon-support"></use>
+                </svg> Помощь</a></li>
+            <li><a href="#">
+                <svg class="icon icon-video-camera">
+                  <use xlink:href="img/sprite.svg#icon-video-camera"></use>
+                </svg> Видеоуроки</a></li>
+          </ul>
+          <ul>
+            <li><a href="#">
+                <!-- 
+<svg class="icon icon-support"><use xlink:href="img/sprite.svg#icon-support"></use></svg>
+  -->
+                <i class="icon-russia"></i> Русский</a></li>
+          </ul>
+        </div>
+      </aside>
+      <main class="main-home">
+        <header class="header">
+          <div class="header__title">
+            <h2 class="title">Продукты</h2>
+          </div>
+          <div class="header__add-product">
+            <button class="btn btn--blue header__save">Добавить</button>
+            <div class="header__add-wrp">
+              <i>
+                <svg class="icon icon-social-cross">
+                  <use xlink:href="img/sprite.svg#icon-social-cross"></use>
+                </svg>
+              </i>
+              <span>Выбрано: 3</span>
+              <i>
+                <svg class="icon icon-Combined-Shape-1">
+                  <use xlink:href="img/sprite.svg#icon-Combined-Shape-1"></use>
+                </svg>
+              </i>
+              <i>
+                <svg class="icon icon-folder-5">
+                  <use xlink:href="img/sprite.svg#icon-folder-5"></use>
+                </svg>
+              </i>
+              <i>
+                <svg class="icon icon-Combined-Shape">
+                  <use xlink:href="img/sprite.svg#icon-Combined-Shape"></use>
+                </svg>
+              </i>
+              <i>
+                <svg class="icon icon-box-3">
+                  <use xlink:href="img/sprite.svg#icon-box-3"></use>
+                </svg>
+              </i>
+              <i>
+                <svg class="icon icon-bin">
+                  <use xlink:href="img/sprite.svg#icon-bin"></use>
+                </svg>
+                <span>Удалить</span>
+              </i>
+            </div>
+          </div>
+          <!-- <div class="header__search">
+				<label class="">
+					<input type="text" placeholder="Поиск по продуктам">
+					
+<svg class="icon icon-search"><use xlink:href="img/sprite.svg#icon-search"></use></svg>
+
+				</label>
+				<button>Расширенный поиск 
+					
+<svg class="icon icon-arrow-down"><use xlink:href="img/sprite.svg#icon-arrow-down"></use></svg>
+
+				</button>
+			</div> -->
+          <!-- <div class="header__name-product title">
+				Xiaomi Mi Notebook...
+			</div> -->
+          <div class="header__user-wrp">
+            <!-- 
+<svg class="icon icon-search"><use xlink:href="img/sprite.svg#icon-search"></use></svg>
+  -->
+            <svg class="icon icon-apps">
+              <use xlink:href="img/sprite.svg#icon-apps"></use>
+            </svg>
+            <i class="icon-bell"></i>
+            <!-- <div class="header__user-text">
+					<span class="header__user-name">Андрей Збруцкий</span> <br>
+					<span class="header__user-descript">Проекты и параметры</span>
+				</div> -->
+            <img src="img/user.png" alt="user">
+          </div>
+        </header>
+        <section class="products">
+          <div class="container">
+            <table class="products__table-list">
+              <tr>
+                <th>
+                  <label class="label-checkbox">
+                    <input class="checkbox" type="checkbox">
+                    <span class="input-circle"></span> Название </label>
+                </th>
+                <th class="products__bld">
+                  <div class="products__select-wrp">
+                    <select name="" id="" class="select2">
+                      <option value="">Создан</option>
+                      <option value="">Создан</option>
+                      <option value="">Создан</option>
+                      <option value="">Создан</option>
+                      <option value="">Создан</option>
+                      <option value="">Создан</option>
+                      <option value="">Создан</option>
+                      <option value="">Создан</option>
+                    </select>
+                  </div>
+                </th>
+                <th>Цена</th>
+                <th>Метка</th>
+                <th>Категория</th>
+                <th class="products__bld">Товаров: 56</th>
+              </tr>
+              <tr>
+                <td>
+                  <label class="label-checkbox">
+                    <input class="checkbox" type="checkbox">
+                    <span class="input-circle"></span> Xiaomi Mi Notebook... </label>
+                </td>
+                <td>15.04.2018</td>
+                <td>$ 20.55</td>
+                <td>
+                  <i class="circle circle--green"></i> Новые товары </td>
+                <td>Ноутбуки</td>
+                <td>
+                  <a href="#">
+                    <svg class="icon icon-edit-write">
+                      <use xlink:href="img/sprite.svg#icon-edit-write"></use>
+                    </svg> Редактировать </a>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <label class="label-checkbox">
+                    <input class="checkbox" type="checkbox">
+                    <span class="input-circle"></span> Xiaomi Mi Notebook... </label>
+                </td>
+                <td>15.04.2018</td>
+                <td>$ 20.55</td>
+                <td>
+                  <i class="circle circle--green"></i> Новые товары </td>
+                <td>Ноутбуки</td>
+                <td>
+                  <a href="#">
+                    <svg class="icon icon-edit-write">
+                      <use xlink:href="img/sprite.svg#icon-edit-write"></use>
+                    </svg> Редактировать </a>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <label class="label-checkbox">
+                    <input class="checkbox" type="checkbox">
+                    <span class="input-circle"></span> Xiaomi Mi Notebook... </label>
+                </td>
+                <td>15.04.2018</td>
+                <td>$ 20.55</td>
+                <td>
+                  <i class="circle circle--green"></i> Новые товары </td>
+                <td>Ноутбуки</td>
+                <td>
+                  <a href="#">
+                    <svg class="icon icon-edit-write">
+                      <use xlink:href="img/sprite.svg#icon-edit-write"></use>
+                    </svg> Редактировать </a>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <label class="label-checkbox">
+                    <input class="checkbox" type="checkbox">
+                    <span class="input-circle"></span> Xiaomi Mi Notebook... </label>
+                </td>
+                <td>15.04.2018</td>
+                <td>$ 20.55</td>
+                <td>
+                  <i class="circle circle--green"></i> Новые товары </td>
+                <td>Ноутбуки</td>
+                <td>
+                  <a href="#">
+                    <svg class="icon icon-edit-write">
+                      <use xlink:href="img/sprite.svg#icon-edit-write"></use>
+                    </svg> Редактировать </a>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <label class="label-checkbox">
+                    <input class="checkbox" type="checkbox">
+                    <span class="input-circle"></span> Xiaomi Mi Notebook... </label>
+                </td>
+                <td>15.04.2018</td>
+                <td>$ 20.55</td>
+                <td>
+                  <i class="circle circle--green"></i> Новые товары </td>
+                <td>Ноутбуки</td>
+                <td>
+                  <a href="#">
+                    <svg class="icon icon-edit-write">
+                      <use xlink:href="img/sprite.svg#icon-edit-write"></use>
+                    </svg> Редактировать </a>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <label class="label-checkbox">
+                    <input class="checkbox" type="checkbox">
+                    <span class="input-circle"></span> Xiaomi Mi Notebook... </label>
+                </td>
+                <td>15.04.2018</td>
+                <td>$ 20.55</td>
+                <td>
+                  <i class="circle circle--green"></i> Новые товары </td>
+                <td>Ноутбуки</td>
+                <td>
+                  <a href="#">
+                    <svg class="icon icon-edit-write">
+                      <use xlink:href="img/sprite.svg#icon-edit-write"></use>
+                    </svg> Редактировать </a>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <label class="label-checkbox">
+                    <input class="checkbox" type="checkbox">
+                    <span class="input-circle"></span> Xiaomi Mi Notebook... </label>
+                </td>
+                <td>15.04.2018</td>
+                <td>$ 20.55</td>
+                <td>
+                  <i class="circle circle--green"></i> Новые товары </td>
+                <td>Ноутбуки</td>
+                <td>
+                  <a href="#">
+                    <svg class="icon icon-edit-write">
+                      <use xlink:href="img/sprite.svg#icon-edit-write"></use>
+                    </svg> Редактировать </a>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <label class="label-checkbox">
+                    <input class="checkbox" type="checkbox">
+                    <span class="input-circle"></span> Xiaomi Mi Notebook... </label>
+                </td>
+                <td>15.04.2018</td>
+                <td>$ 20.55</td>
+                <td>
+                  <i class="circle circle--green"></i> Новые товары </td>
+                <td>Ноутбуки</td>
+                <td>
+                  <a href="#">
+                    <svg class="icon icon-edit-write">
+                      <use xlink:href="img/sprite.svg#icon-edit-write"></use>
+                    </svg> Редактировать </a>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <label class="label-checkbox">
+                    <input class="checkbox" type="checkbox">
+                    <span class="input-circle"></span> Xiaomi Mi Notebook... </label>
+                </td>
+                <td>15.04.2018</td>
+                <td>$ 20.55</td>
+                <td>
+                  <i class="circle circle--green"></i> Новые товары </td>
+                <td>Ноутбуки</td>
+                <td>
+                  <a href="#">
+                    <svg class="icon icon-edit-write">
+                      <use xlink:href="img/sprite.svg#icon-edit-write"></use>
+                    </svg> Редактировать </a>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <label class="label-checkbox">
+                    <input class="checkbox" type="checkbox">
+                    <span class="input-circle"></span> Xiaomi Mi Notebook... </label>
+                </td>
+                <td>15.04.2018</td>
+                <td>$ 20.55</td>
+                <td>
+                  <i class="circle circle--green"></i> Новые товары </td>
+                <td>Ноутбуки</td>
+                <td>
+                  <a href="#">
+                    <svg class="icon icon-edit-write">
+                      <use xlink:href="img/sprite.svg#icon-edit-write"></use>
+                    </svg> Редактировать </a>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <label class="label-checkbox">
+                    <input class="checkbox" type="checkbox">
+                    <span class="input-circle"></span> Xiaomi Mi Notebook... </label>
+                </td>
+                <td>15.04.2018</td>
+                <td>$ 20.55</td>
+                <td>
+                  <i class="circle circle--green"></i> Новые товары </td>
+                <td>Ноутбуки</td>
+                <td>
+                  <a href="#">
+                    <svg class="icon icon-edit-write">
+                      <use xlink:href="img/sprite.svg#icon-edit-write"></use>
+                    </svg> Редактировать </a>
+                </td>
+              </tr>
+            </table>
+            <div class="products__nav">
+              <button class="btn-numb btn-numb--active">1</button>
+              <button class="btn-numb btn--border">2</button>
+              <button class="btn-numb btn--border">3</button>
+              <button class="btn-numb btn--border">4</button>
+              <button class="btn-numb btn--border">5</button>
+              <button class="btn-numb btn--border">6</button>
+              <button class="btn-next btn--border">Следующая</button>
+            </div>
+          </div>
+        </section>
+        <div class="mod__modal-delete">
+          <div class="mod__delete-block">
+            <span class="mod__btn-close">
+              <svg class="icon icon-close">
+                <use xlink:href="img/sprite.svg#icon-close"></use>
+              </svg>
+            </span>
+            <h2 class="title">Внимание</h2>
+            <p>Вы действительно хотите удалить продукт(ы)?</p>
+            <div class="mod__modal-btns">
+              <button class="btn btn--border">Отменить </button>
+              <button class="btn btn--blue">Удалить</button>
+            </div>
+          </div>
+        </div>
+        <!-- <footer class="home__footer">
+			<div class="container">
+				<a href="#">Политика конфиденциальности</a>
+			</div>
+		</footer> -->
+        <div class="social">
+          <div class="social__wrp">
+            <ul>
+              <li>
+                <button class="btn-social btn-social--massenger">
+                  <svg class="icon icon-messenger">
+                    <use xlink:href="img/sprite.svg#icon-messenger"></use>
+                  </svg>
+                </button>
+                <button class="btn-social btn-social--massenger">
+                  <svg class="icon icon-messenger">
+                    <use xlink:href="img/sprite.svg#icon-messenger"></use>
+                  </svg>
+                </button>
+              </li>
+              <li>
+                <button class="btn-social btn-social--viber">
+                  <svg class="icon icon-viber">
+                    <use xlink:href="img/sprite.svg#icon-viber"></use>
+                  </svg>
+                </button>
+                <button class="btn-social btn-social--viber">
+                  <svg class="icon icon-viber">
+                    <use xlink:href="img/sprite.svg#icon-viber"></use>
+                  </svg>
+                </button>
+              </li>
+              <li>
+                <button class="btn-social btn-social--whatsapp">
+                  <svg class="icon icon-whatsapp">
+                    <use xlink:href="img/sprite.svg#icon-whatsapp"></use>
+                  </svg>
+                </button>
+                <button class="btn-social btn-social--whatsapp">
+                  <svg class="icon icon-whatsapp">
+                    <use xlink:href="img/sprite.svg#icon-whatsapp"></use>
+                  </svg>
+                </button>
+              </li>
+              <li>
+                <button class="btn-social btn-social--telegram">
+                  <svg class="icon icon-telegram">
+                    <use xlink:href="img/sprite.svg#icon-telegram"></use>
+                  </svg>
+                </button>
+                <button class="btn-social btn-social--telegram">
+                  <svg class="icon icon-telegram">
+                    <use xlink:href="img/sprite.svg#icon-telegram"></use>
+                  </svg>
+                </button>
+              </li>
+            </ul>
+          </div>
+          <button class="btn-social btn-social--open">
+            <svg class="icon icon-social-open">
+              <use xlink:href="img/sprite.svg#icon-social-open"></use>
+            </svg>
+            <svg class="icon icon-social-cross">
+              <use xlink:href="img/sprite.svg#icon-social-cross"></use>
+            </svg>
+          </button>
+        </div>
+      </main>
+      <script src="js/jquery-3.2.1.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/js/select2.min.js"></script>
+      <script src="js/jquery.slimscroll.js"></script>
+      <script>
+        $(document).ready(function()
+        {
+          $('.sidebar').slimScroll(
+          {
+            height: '100%'
+          });
+        });
+
+      </script>
+      <script>
+        $(document).ready(function()
+        {
+          $('.select2').select2();
+          // $('.select2').styler();  
+        });
+
+      </script>
+      <script>
+        $(document).ready(function()
+        {
+          // $(".select2-container--default .select2-results>.select2-results__options").nanoScroller();
+          $(".select2").on('select2:open', function()
+          {
+            $('.select2-results__options').slimScroll();
+          });
+        });
+
+      </script>
+    </div>
+    <!-- END content -->
+    <!-- BEGIN scripts -->
+    <!--  <script type="text/javascript" src="js/app.js"></script> -->
+    <!-- END scripts -->
+  </body>

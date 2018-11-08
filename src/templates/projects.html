@@ -1,0 +1,57 @@
+---
+css: app
+classOut: projects-out
+title: projects
+---
+{% extends "layouts/_layout.html" %}
+
+{% block content %}
+
+
+	<main class="main-projects">
+
+		<header class="header">
+			<img src="img/logo.png" class="header__logo" alt="header__logo">
+			<div class="header__title">
+				<h2 class="title">Доброе утро, Андрей</h2>
+			</div>
+			<div class="header__user-wrp">
+				<!-- <i class="icon-bell"></i> -->
+				<div class="header__user-text">
+					<span class="header__user-name">Андрей Збруцкий</span> <br>
+					<span class="header__user-descript">Настройки акаунта</span>
+				</div>
+				<img src="img/user.png" alt="user">
+			</div>
+		</header>
+
+		<section class="projects">
+			<div class="projects__first">
+				<div class="projects__left-block">
+					<img src="img/projects.png" alt="projects">
+				</div>
+				<div class="projects__right-block">
+					<h2 class="title">Ваш первый проект</h2>
+					<p>One morning, when Gregor Samsa woke from troubled
+						dreams, he found himself transformed in his bed</p>
+					<form action="/">
+						<label class="label-text ">
+				            <input class="input-text" type="text" placeholder="&nbsp;">
+				            <span class="span-input-text">Название</span>
+				        </label>
+				        <button class="btn btn-arrow-r btn--blue" type="submit">Создать проект</button>
+					</form>
+				</div>
+			</div>
+			
+		</section>
+		
+		
+
+		
+	
+	{% include "partials/_social.html" %}
+		
+	</main>
+
+{% endblock %}.html

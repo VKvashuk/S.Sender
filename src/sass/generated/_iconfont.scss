@@ -1,0 +1,175 @@
+@font-face {
+  font-family: "iconfont";
+  src: url('fonts/iconfont.eot');
+  src: url('fonts/iconfont.eot?#iefix') format('eot'),
+    url('fonts/iconfont.woff2') format('woff2'),
+    url('fonts/iconfont.woff') format('woff'),
+    url('fonts/iconfont.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+$icon-Combined-Shape-1: "\EA01";
+$icon-Combined-Shape: "\EA02";
+$icon-add-border: "\EA03";
+$icon-add-circle: "\EA04";
+$icon-add-friends: "\EA05";
+$icon-add-pluss: "\EA06";
+$icon-add-thin: "\EA07";
+$icon-add: "\EA08";
+$icon-apps: "\EA09";
+$icon-arrow-big: "\EA0A";
+$icon-arrow-down-3: "\EA0B";
+$icon-arrow-down-4: "\EA0C";
+$icon-arrow-down: "\EA0D";
+$icon-arrow-l: "\EA0E";
+$icon-arrow-r: "\EA0F";
+$icon-back-icon: "\EA10";
+$icon-basket-2: "\EA11";
+$icon-basket: "\EA12";
+$icon-bin-2: "\EA13";
+$icon-bin: "\EA14";
+$icon-box-3: "\EA15";
+$icon-bubble-rounded-2: "\EA16";
+$icon-check-3: "\EA17";
+$icon-check: "\EA18";
+$icon-clip: "\EA19";
+$icon-close-2: "\EA1A";
+$icon-close: "\EA1B";
+$icon-copy: "\EA1C";
+$icon-csv-download: "\EA1D";
+$icon-csv-upload: "\EA1E";
+$icon-delete: "\EA1F";
+$icon-dollar: "\EA20";
+$icon-domen: "\EA21";
+$icon-edit-write: "\EA22";
+$icon-email: "\EA23";
+$icon-envelope: "\EA24";
+$icon-error-3: "\EA25";
+$icon-eye: "\EA26";
+$icon-facebook: "\EA27";
+$icon-folder-5: "\EA28";
+$icon-folder-open: "\EA29";
+$icon-folder: "\EA2A";
+$icon-home: "\EA2B";
+$icon-infinity: "\EA2C";
+$icon-info-1: "\EA2D";
+$icon-info-2: "\EA2E";
+$icon-lock: "\EA2F";
+$icon-logout: "\EA30";
+$icon-mail-at: "\EA31";
+$icon-mark-small-black: "\EA32";
+$icon-messenger: "\EA33";
+$icon-online-chat: "\EA34";
+$icon-outline: "\EA35";
+$icon-pen: "\EA36";
+$icon-power: "\EA37";
+$icon-present: "\EA38";
+$icon-rocket: "\EA39";
+$icon-search: "\EA3A";
+$icon-setting-2: "\EA3B";
+$icon-setting: "\EA3C";
+$icon-shop-cart: "\EA3D";
+$icon-shop-check: "\EA3E";
+$icon-social-cross: "\EA3F";
+$icon-social-open: "\EA40";
+$icon-statistic: "\EA41";
+$icon-support: "\EA42";
+$icon-telegram: "\EA43";
+$icon-user: "\EA44";
+$icon-users: "\EA45";
+$icon-viber: "\EA46";
+$icon-video-camera: "\EA47";
+$icon-wallet: "\EA48";
+$icon-whatsapp: "\EA49";
+
+
+%icon {
+  font-family: "iconfont";
+  font-style: normal;
+  font-weight: normal;
+  text-rendering: auto;
+  speak: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon {
+  @extend %icon;
+  display: inline-block;
+}
+
+.icon-Combined-Shape-1:before { content: $icon-Combined-Shape-1; }
+.icon-Combined-Shape:before { content: $icon-Combined-Shape; }
+.icon-add-border:before { content: $icon-add-border; }
+.icon-add-circle:before { content: $icon-add-circle; }
+.icon-add-friends:before { content: $icon-add-friends; }
+.icon-add-pluss:before { content: $icon-add-pluss; }
+.icon-add-thin:before { content: $icon-add-thin; }
+.icon-add:before { content: $icon-add; }
+.icon-apps:before { content: $icon-apps; }
+.icon-arrow-big:before { content: $icon-arrow-big; }
+.icon-arrow-down-3:before { content: $icon-arrow-down-3; }
+.icon-arrow-down-4:before { content: $icon-arrow-down-4; }
+.icon-arrow-down:before { content: $icon-arrow-down; }
+.icon-arrow-l:before { content: $icon-arrow-l; }
+.icon-arrow-r:before { content: $icon-arrow-r; }
+.icon-back-icon:before { content: $icon-back-icon; }
+.icon-basket-2:before { content: $icon-basket-2; }
+.icon-basket:before { content: $icon-basket; }
+.icon-bin-2:before { content: $icon-bin-2; }
+.icon-bin:before { content: $icon-bin; }
+.icon-box-3:before { content: $icon-box-3; }
+.icon-bubble-rounded-2:before { content: $icon-bubble-rounded-2; }
+.icon-check-3:before { content: $icon-check-3; }
+.icon-check:before { content: $icon-check; }
+.icon-clip:before { content: $icon-clip; }
+.icon-close-2:before { content: $icon-close-2; }
+.icon-close:before { content: $icon-close; }
+.icon-copy:before { content: $icon-copy; }
+.icon-csv-download:before { content: $icon-csv-download; }
+.icon-csv-upload:before { content: $icon-csv-upload; }
+.icon-delete:before { content: $icon-delete; }
+.icon-dollar:before { content: $icon-dollar; }
+.icon-domen:before { content: $icon-domen; }
+.icon-edit-write:before { content: $icon-edit-write; }
+.icon-email:before { content: $icon-email; }
+.icon-envelope:before { content: $icon-envelope; }
+.icon-error-3:before { content: $icon-error-3; }
+.icon-eye:before { content: $icon-eye; }
+.icon-facebook:before { content: $icon-facebook; }
+.icon-folder-5:before { content: $icon-folder-5; }
+.icon-folder-open:before { content: $icon-folder-open; }
+.icon-folder:before { content: $icon-folder; }
+.icon-home:before { content: $icon-home; }
+.icon-infinity:before { content: $icon-infinity; }
+.icon-info-1:before { content: $icon-info-1; }
+.icon-info-2:before { content: $icon-info-2; }
+.icon-lock:before { content: $icon-lock; }
+.icon-logout:before { content: $icon-logout; }
+.icon-mail-at:before { content: $icon-mail-at; }
+.icon-mark-small-black:before { content: $icon-mark-small-black; }
+.icon-messenger:before { content: $icon-messenger; }
+.icon-online-chat:before { content: $icon-online-chat; }
+.icon-outline:before { content: $icon-outline; }
+.icon-pen:before { content: $icon-pen; }
+.icon-power:before { content: $icon-power; }
+.icon-present:before { content: $icon-present; }
+.icon-rocket:before { content: $icon-rocket; }
+.icon-search:before { content: $icon-search; }
+.icon-setting-2:before { content: $icon-setting-2; }
+.icon-setting:before { content: $icon-setting; }
+.icon-shop-cart:before { content: $icon-shop-cart; }
+.icon-shop-check:before { content: $icon-shop-check; }
+.icon-social-cross:before { content: $icon-social-cross; }
+.icon-social-open:before { content: $icon-social-open; }
+.icon-statistic:before { content: $icon-statistic; }
+.icon-support:before { content: $icon-support; }
+.icon-telegram:before { content: $icon-telegram; }
+.icon-user:before { content: $icon-user; }
+.icon-users:before { content: $icon-users; }
+.icon-viber:before { content: $icon-viber; }
+.icon-video-camera:before { content: $icon-video-camera; }
+.icon-wallet:before { content: $icon-wallet; }
+.icon-whatsapp:before { content: $icon-whatsapp; }

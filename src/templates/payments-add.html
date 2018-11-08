@@ -1,0 +1,137 @@
+---
+css: app
+classOut: payments-add-out
+title: payments-add
+---
+{% extends "layouts/_layout.html" %}
+
+{% block styles %}
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/css/select2.min.css" rel="stylesheet" />
+{% endblock %}
+
+{% block content %}
+
+	{% include "partials/_sidebar.html" %}
+	<main>
+
+		<header class="header">
+			<div class="header__title">
+				<h2 class="title">Добавление платежной системы</h2>
+			</div>
+
+			<div class="header__user-wrp">
+				{{mixins.icon('search')}} 
+				{{mixins.icon('apps')}} 
+				<i class="icon-bell"></i>
+
+				<img src="img/user.png" alt="user">
+
+			</div>
+		</header>
+		
+		<section class="payments">
+			<div class="container">
+	       		<div class="payments__logo-list">
+	       			<div class="payments__logo payments__logo--active">
+	       				<i class="icon-stripe"></i>
+	       			</div>
+	       			<div class="payments__logo">
+	       				<i class="icon-PayPal"></i>
+	       			</div>
+	       			<div class="payments__logo ">
+	       				<i class="icon-yandex"></i>
+	       			</div>
+
+	       			<div class="payments__logo">
+	       				<i class="icon-stripe"></i>
+	       			</div>
+	       			
+	       		</div>
+	       		<p class="title-line">
+		        	<span>СЛУЖЕБНАЯ ИНФОРМАЦИЯ ДЛЯ ПЛАТЕЖНОЙ СИСТЕМЫ</span>
+		        </p>
+		        <p class="payments__subtitle">
+		        	Эти данные могут понадобиться вам при подключении платежной системы
+		        </p>
+		        <div class="payments__items">
+		        	<div class="payments__item">
+		        		<p class="payments__item-name">Cтраница для отправки данных платежной системы:</p>
+		        		<div class="payments__item-box">
+		        			<p>sub.smartsender.pro/frradokdfad.html</p>
+		        			{{mixins.icon('copy')}} 
+		        		</div>
+		        	</div>
+		        	<div class="payments__item">
+		        		<p class="payments__item-name">Cтраница при успешной оплате:</p>
+		        		<div class="payments__item-box">
+		        			<p>sub.smartsender.pro/frradokdfad.html</p>
+		        			{{mixins.icon('copy')}} 
+		        		</div>
+		        	</div>
+		        	<div class="payments__item">
+		        		<p class="payments__item-name">Cтраница при неуспешной оплате:</p>
+		        		<div class="payments__item-box">
+		        			<p>sub.smartsender.pro/frradokdfad.html</p>
+		        			{{mixins.icon('copy')}} 
+		        		</div>
+		        	</div>
+		        </div>
+		        <p class="title-line">
+		        	<span>СЛУЖЕБНАЯ ИНФОРМАЦИЯ ДЛЯ ПЛАТЕЖНОЙ СИСТЕМЫ</span>
+		        </p>
+		        <div class="payments__inputs">
+		        	<label class="label-text ">
+			            <input class="input-text" type="text" placeholder="&nbsp;">
+			            <span class="span-input-text">Название</span>
+			        </label>
+			        <label class="label-text ">
+			            <input class="input-text" type="text" placeholder="&nbsp;">
+			            <span class="span-input-text">Ключ авторизации</span>
+			        </label>
+		        </div>
+		        <div class="payments__btns">
+		        	<button class="btn btn--border">Отменить </button>
+              		<button class="btn btn--blue">Добавить</button>
+		        </div>
+			</div>
+		</section>
+		
+
+		<div class="mod__modal-delete">
+          <div class="mod__delete-block">
+            <span class="mod__btn-close">
+              <svg class="icon icon-close">
+                <use xlink:href="img/sprite.svg#icon-close"></use>
+              </svg>
+            </span>
+            <h2 class="title">Внимание</h2>
+            <p>Вы действительно хотите удалить элемент(ы)?</p>
+            <div class="mod__modal-btns">
+              <button class="btn btn--border">Отменить </button>
+              <button class="btn btn--blue">Удалить</button>
+            </div>
+          </div>
+        </div>
+
+
+
+	{% include "partials/_social.html" %}
+		
+	</main>
+	
+	<script src="js/jquery-3.2.1.min.js"></script>
+	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/js/select2.min.js"></script>
+
+    <script src="js/jquery.slimscroll.js"></script>
+
+    <script>
+    	$(document).ready(function() {
+		    $('.sidebar').slimScroll({
+				height: '100%'
+			});
+		});
+    </script>
+    
+
+{% endblock %}

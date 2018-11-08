@@ -1,0 +1,211 @@
+$icons: (0:0)
+$icons: map-merge($icons,('2000px-F_icon.svg': (X: -129px, Y:-65px, W: 30px, H: 30px, TW: 251px, TH: 221px, IMG: '../img/sprite.png')))
+$icons: map-merge($icons,('PayPal': (X: 0px, Y:-65px, W: 119px, H: 30px, TW: 251px, TH: 221px, IMG: '../img/sprite.png')))
+$icons: map-merge($icons,('arrow-bottom': (X: -240px, Y:-32px, W: 10px, H: 7px, TW: 251px, TH: 221px, IMG: '../img/sprite.png')))
+$icons: map-merge($icons,('bell--dot': (X: -77px, Y:-153px, W: 24px, H: 26px, TW: 251px, TH: 221px, IMG: '../img/sprite.png')))
+$icons: map-merge($icons,('bell': (X: -111px, Y:-153px, W: 24px, H: 25px, TW: 251px, TH: 221px, IMG: '../img/sprite.png')))
+$icons: map-merge($icons,('check-blue': (X: -189px, Y:-199px, W: 16px, H: 12px, TW: 251px, TH: 221px, IMG: '../img/sprite.png')))
+$icons: map-merge($icons,('facebook-login': (X: -240px, Y:0px, W: 11px, H: 22px, TW: 251px, TH: 221px, IMG: '../img/sprite.png')))
+$icons: map-merge($icons,('google-login': (X: -145px, Y:-153px, W: 22px, H: 22px, TW: 251px, TH: 221px, IMG: '../img/sprite.png')))
+$icons: map-merge($icons,('mark-big-blue': (X: -180px, Y:-46px, W: 30px, H: 36px, TW: 251px, TH: 221px, IMG: '../img/sprite.png')))
+$icons: map-merge($icons,('mark-big-red': (X: -180px, Y:-92px, W: 30px, H: 36px, TW: 251px, TH: 221px, IMG: '../img/sprite.png')))
+$icons: map-merge($icons,('mark-big-yellow': (X: 0px, Y:-153px, W: 30px, H: 36px, TW: 251px, TH: 221px, IMG: '../img/sprite.png')))
+$icons: map-merge($icons,('mark-small-blue': (X: -27px, Y:-199px, W: 17px, H: 20px, TW: 251px, TH: 221px, IMG: '../img/sprite.png')))
+$icons: map-merge($icons,('mark-small-green': (X: -54px, Y:-199px, W: 17px, H: 20px, TW: 251px, TH: 221px, IMG: '../img/sprite.png')))
+$icons: map-merge($icons,('mark-small-red': (X: -108px, Y:-199px, W: 17px, H: 20px, TW: 251px, TH: 221px, IMG: '../img/sprite.png')))
+$icons: map-merge($icons,('mark-small-yellow': (X: -81px, Y:-199px, W: 17px, H: 20px, TW: 251px, TH: 221px, IMG: '../img/sprite.png')))
+$icons: map-merge($icons,('mark-small': (X: 0px, Y:-199px, W: 17px, H: 22px, TW: 251px, TH: 221px, IMG: '../img/sprite.png')))
+$icons: map-merge($icons,('mastercard': (X: -180px, Y:0px, W: 50px, H: 36px, TW: 251px, TH: 221px, IMG: '../img/sprite.png')))
+$icons: map-merge($icons,('paсkage': (X: -40px, Y:-153px, W: 27px, H: 34px, TW: 251px, TH: 221px, IMG: '../img/sprite.png')))
+$icons: map-merge($icons,('russia': (X: -177px, Y:-153px, W: 20px, H: 20px, TW: 251px, TH: 221px, IMG: '../img/sprite.png')))
+$icons: map-merge($icons,('slider-next': (X: -162px, Y:-199px, W: 17px, H: 14px, TW: 251px, TH: 221px, IMG: '../img/sprite.png')))
+$icons: map-merge($icons,('slider-prev': (X: -135px, Y:-199px, W: 17px, H: 14px, TW: 251px, TH: 221px, IMG: '../img/sprite.png')))
+$icons: map-merge($icons,('stripe': (X: 0px, Y:-105px, W: 90px, H: 38px, TW: 251px, TH: 221px, IMG: '../img/sprite.png')))
+$icons: map-merge($icons,('twitter-login': (X: -207px, Y:-153px, W: 22px, H: 18px, TW: 251px, TH: 221px, IMG: '../img/sprite.png')))
+$icons: map-merge($icons,('visa': (X: -100px, Y:-105px, W: 50px, H: 36px, TW: 251px, TH: 221px, IMG: '../img/sprite.png')))
+$icons: map-merge($icons,('yandex': (X: 0px, Y:0px, W: 170px, H: 55px, TW: 251px, TH: 221px, IMG: '../img/sprite.png')))
+
+
+// Gets an attribute from the sass map
+@function icon-attr($icon, $attr)
+  $icon: map-get($icons, $icon)
+  @return map-get($icon, $attr)
+
+@mixin sprite($iconName)
+  background-image: url(icon-attr($iconName, IMG))
+  width: icon-attr($iconName, W)
+  height: icon-attr($iconName, H)
+  background-position: icon-attr($iconName, X) icon-attr($iconName, Y)
+@mixin sprite-position($iconName)
+  background-position: icon-attr($iconName, X) icon-attr($iconName, Y)
+@mixin sprite-retina($iconName)
+  background-image: url(icon-attr($iconName, IMG))
+  $width: icon-attr($iconName, W)
+  $height: icon-attr($iconName, H)
+  width: $width/2
+  height: $height/2
+  $x: icon-attr($iconName, X)
+  $y: icon-attr($iconName, Y)
+  background-position: $x/2 $y/2
+  $tw: icon-attr($iconName, TW)   
+  $th: icon-attr($iconName, TH)
+  background-size: $tw/2 $th/2    
+
+
+@mixin s($i)
+  +sprite($i)
+@mixin sp($i)
+  +sprite-position($i)
+@mixin sr($i)
+  +sprite-retina($i)  
+
+
+.icon-2000px-F_icon.svg
+  width: 30px
+  height: 30px
+  background-image: url('../img/sprite.png')
+  background-position: -129px -65px
+
+.icon-PayPal
+  width: 119px
+  height: 30px
+  background-image: url('../img/sprite.png')
+  background-position: 0px -65px
+
+.icon-arrow-bottom
+  width: 10px
+  height: 7px
+  background-image: url('../img/sprite.png')
+  background-position: -240px -32px
+
+.icon-bell--dot
+  width: 24px
+  height: 26px
+  background-image: url('../img/sprite.png')
+  background-position: -77px -153px
+
+.icon-bell
+  width: 24px
+  height: 25px
+  background-image: url('../img/sprite.png')
+  background-position: -111px -153px
+
+.icon-check-blue
+  width: 16px
+  height: 12px
+  background-image: url('../img/sprite.png')
+  background-position: -189px -199px
+
+.icon-facebook-login
+  width: 11px
+  height: 22px
+  background-image: url('../img/sprite.png')
+  background-position: -240px 0px
+
+.icon-google-login
+  width: 22px
+  height: 22px
+  background-image: url('../img/sprite.png')
+  background-position: -145px -153px
+
+.icon-mark-big-blue
+  width: 30px
+  height: 36px
+  background-image: url('../img/sprite.png')
+  background-position: -180px -46px
+
+.icon-mark-big-red
+  width: 30px
+  height: 36px
+  background-image: url('../img/sprite.png')
+  background-position: -180px -92px
+
+.icon-mark-big-yellow
+  width: 30px
+  height: 36px
+  background-image: url('../img/sprite.png')
+  background-position: 0px -153px
+
+.icon-mark-small-blue
+  width: 17px
+  height: 20px
+  background-image: url('../img/sprite.png')
+  background-position: -27px -199px
+
+.icon-mark-small-green
+  width: 17px
+  height: 20px
+  background-image: url('../img/sprite.png')
+  background-position: -54px -199px
+
+.icon-mark-small-red
+  width: 17px
+  height: 20px
+  background-image: url('../img/sprite.png')
+  background-position: -108px -199px
+
+.icon-mark-small-yellow
+  width: 17px
+  height: 20px
+  background-image: url('../img/sprite.png')
+  background-position: -81px -199px
+
+.icon-mark-small
+  width: 17px
+  height: 22px
+  background-image: url('../img/sprite.png')
+  background-position: 0px -199px
+
+.icon-mastercard
+  width: 50px
+  height: 36px
+  background-image: url('../img/sprite.png')
+  background-position: -180px 0px
+
+.icon-paсkage
+  width: 27px
+  height: 34px
+  background-image: url('../img/sprite.png')
+  background-position: -40px -153px
+
+.icon-russia
+  width: 20px
+  height: 20px
+  background-image: url('../img/sprite.png')
+  background-position: -177px -153px
+
+.icon-slider-next
+  width: 17px
+  height: 14px
+  background-image: url('../img/sprite.png')
+  background-position: -162px -199px
+
+.icon-slider-prev
+  width: 17px
+  height: 14px
+  background-image: url('../img/sprite.png')
+  background-position: -135px -199px
+
+.icon-stripe
+  width: 90px
+  height: 38px
+  background-image: url('../img/sprite.png')
+  background-position: 0px -105px
+
+.icon-twitter-login
+  width: 22px
+  height: 18px
+  background-image: url('../img/sprite.png')
+  background-position: -207px -153px
+
+.icon-visa
+  width: 50px
+  height: 36px
+  background-image: url('../img/sprite.png')
+  background-position: -100px -105px
+
+.icon-yandex
+  width: 170px
+  height: 55px
+  background-image: url('../img/sprite.png')
+  background-position: 0px 0px

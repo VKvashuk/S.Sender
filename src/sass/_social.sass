@@ -1,0 +1,74 @@
+.social
+	position: fixed
+	bottom: 14px
+	right: 14px
+	display: -webkit-flex
+	display: -moz-flex
+	display: -ms-flex
+	display: -o-flex
+	display: flex
+	flex-direction: column
+	align-items: flex-end
+	justify-content: flex-end
+	z-index: 99
+
+
+	ul
+		display: none
+
+	.icon-social-open
+		display: inline-block
+
+	.icon-social-cross
+		display: none
+
+	&--open
+		bottom: 0px
+		right: 0px
+		padding: 14px
+		background: rgba(0, 0, 0, 0.35)
+		width: 100%
+		height: 100%
+
+		ul
+			display: block
+
+		.icon-social-open
+			display: none
+
+		.icon-social-cross
+			display: inline-block
+
+
+.btn-social
+	width: 56px
+	height: 56px
+	background: #1380F6
+	border-radius: 56px
+	box-shadow: 0 5px 15px rgba(0, 0, 0, 0.25)
+	margin: 6px
+	font-size: 34px
+
+	&--massenger
+		background: #0084FF
+
+	&--viber
+		background: #8F5DB7
+
+	&--whatsapp
+		background: #128C7E
+	
+	&--telegram
+		background: #1492E6
+
+	svg
+		fill: #fff
+		width: 24px
+		height: 24px
+
+	&--open 
+		font-size: 30px
+
+		svg
+			width: 20px
+			height: 20px

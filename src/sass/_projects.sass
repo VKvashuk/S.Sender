@@ -1,0 +1,235 @@
+.main-projects
+	margin-left: 0
+
+	.header
+		margin: 0 30px
+		border-bottom: 1px solid #E9ECEF
+		box-shadow: none
+		padding: 20px 0
+	.header__logo
+    	margin-right: 35px
+    	display: inline-block
+.projects
+	display: -webkit-flex
+	display: -moz-flex
+	display: -ms-flex
+	display: -o-flex
+	display: flex
+	min-height: calc(100vh - 101px)
+	&__first
+		display: -webkit-flex
+		display: -moz-flex
+		display: -ms-flex
+		display: -o-flex
+		display: flex
+		justify-content: center
+		align-items: center
+		margin: auto
+		padding: 15px
+	&__left-block
+		width: 440px
+	&__right-block
+		width: 400px
+		margin-left: 80px
+		.title
+			padding: 0 10px
+			padding-bottom: 36px
+		p 
+			padding: 0 10px
+			padding-bottom: 14px
+		.label-text
+			margin-bottom: 15px
+		button
+			margin: 0 10px
+			width: 250px
+	&__list
+		margin: auto
+		padding: 30px
+		.title
+			margin-bottom: 74px
+			color: #8C8C8C
+			text-align: center
+	&__items
+		display: -webkit-flex
+		display: -moz-flex
+		display: -ms-flex
+		display: -o-flex
+		display: flex
+		align-items: center
+		flex-wrap: wrap
+		justify-content: flex-start
+		max-width: 1140px
+		.btn
+			width: 360px
+			padding: 22px 20px
+			display: -webkit-flex
+			display: -moz-flex
+			display: -ms-flex
+			display: -o-flex
+			display: flex
+			justify-content: center
+			align-items: center
+			color: #000
+			margin: 10px
+			margin-top: 0
+			svg
+				height: 26px
+				width: 26px
+				fill: rgba(0, 0, 0, 0.2)
+				margin-right: 20px
+	&__item
+		display: -webkit-flex
+		display: -moz-flex
+		display: -ms-flex
+		display: -o-flex
+		display: flex
+		align-items: center
+		width: 360px
+		margin: 10px
+		margin-top: 0
+
+	&__logo
+		width: 70px
+		height: 70px
+		background: #E9ECEF
+		border-radius: 70px
+		margin-right: 20px
+		position: relative
+		img
+			object-fit: cover
+			width: 100%
+		&--dot:before
+			position: absolute
+			content: ''
+			width: 14px
+			height: 14px
+			background: #F03E3E
+			border: 2px solid #fff
+			border-radius: 50%
+			top: 4px
+			right: 4px
+
+
+	&__item-text
+		p
+			+font-family($mont-semibld)
+			font-size: 14px
+		span, a
+			color: #8C8C8C
+			+font-family($open-reg)
+			font-size: 13px	
+		a
+			margin-right: 20px
+
+	&__modal,
+	&__modal-delete
+		position: fixed
+		z-index: 100
+		width: 100%
+		height: 100%
+		background: rgba(0, 0, 0, 0.35)
+		top: 0
+		left: 0
+		right: 0
+		display: -webkit-flex
+		display: -moz-flex
+		display: -ms-flex
+		display: -o-flex
+		display: flex
+	&__modal-block
+		width: 400px
+		background: #fff
+		margin-left: auto
+		position: relative
+		padding: 30px
+		padding-top: 60px
+		padding-bottom: 50px
+		display: -webkit-flex
+		display: -moz-flex
+		display: -ms-flex
+		display: -o-flex
+		display: flex
+		flex-direction: column
+
+		.title
+			margin-bottom: 24px
+		form
+			padding-top: 43px
+
+		.label-file
+			cursor: pointer
+			display: block
+			margin: 0 auto
+			width: 150px
+			height: 150px
+			border-radius: 150px
+			margin-bottom: 30px
+			input
+				display: none
+		.label-text
+			margin-bottom: 30px
+			input
+				+font-family($mont-md)
+				font-size: 16px
+		.btn--blue
+			width: 340px
+			display: block
+			margin: 0 auto
+			margin-bottom: 20px
+		.btn-icon
+			width: 340px
+			border: 2px solid #DEE2E6
+			margin-top: auto
+			color: #868E96
+			svg
+				fill: #8B8B8B
+	&__delete-block
+		width: 500px
+		background: #fff
+		margin: auto
+		text-align: center
+		position: relative
+		padding: 30px
+		padding-top: 60px
+		padding-bottom: 64px
+		border-radius: 10px
+		box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15)
+		.title
+			margin-bottom: 32px
+
+		.projects__modal-btns
+			margin-top: 42px
+			display: -webkit-flex
+			display: -moz-flex
+			display: -ms-flex
+			display: -o-flex
+			display: flex
+			justify-content: space-between
+				
+		.btn
+			width: 210px
+	&__btn-close
+		position: absolute
+		width: 24px
+		height: 24px
+		top: 21px
+		right: 21px
+		z-index: 101
+		padding: 5px
+		cursor: pointer
+		svg
+			fill: #8B8B8B
+			width: 14px
+			height: 14px
+
+	&__modal--first,
+	&__modal--second,
+	&__modal-delete
+		display: none
+
+.projects
+	+r(1200)
+		min-height: auto
+.projects__modal-block .btn-icon
+	+r(1200)
+		margin-top: 20px

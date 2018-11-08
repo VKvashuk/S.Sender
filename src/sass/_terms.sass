@@ -1,0 +1,83 @@
+.terms
+
+	&__container
+		margin: 0 auto
+		width: 90%
+		+font-family($open-reg)
+		font-size: 14px
+	&__row
+		width: 100%
+		margin-top: 10px
+		margin-bottom: 10px
+		display: flex
+		&-column
+			flex-direction: column
+			p
+				width: 90%
+				margin: 24px auto
+			h2
+				text-align: center
+				font-weight: 400
+				width: 90%
+				margin: 24px auto
+			h3
+				font-weight: 400
+				width: 90%
+				margin: 24px auto
+			ul
+				font-weight: 400
+				width: 90%
+				margin: 24px auto
+				padding-left: 25px
+				li
+					position: relative
+					margin: 14px
+					&:before
+						content: ""
+						display: block
+						position: absolute
+						top: 40%
+						left: -17px
+						width: 7px
+						height: 7px
+						background: #1380F6
+						border-radius: 50%
+			ol
+				font-weight: 400
+				width: 90%
+				margin: 24px auto
+				padding-left: 25px
+				list-style-type: decimal
+				li
+					color: #1380F6
+					margin: 14px
+
+					span
+						color: #000
+
+		&-polyci
+			margin-left: 20px
+			margin-top: 10px
+			text-decoration: none
+			color: #A3A6A9	
+		&-important
+			font-weight: 600
+		&-italic
+			font-style: italic
+
+	&__controlLink
+		display: flex
+		width: 20%
+		justify-content: flex-start
+		align-items: center
+		a
+			text-decoration: none
+			color: #A3A6A9	
+		.icon-back-icon
+			width: 18px
+			height: 12px
+			fill: #A3A6A9
+			margin-right: 24px
+	&__header
+		width: 60%
+		text-align: center

@@ -1,0 +1,174 @@
+.access-out
+	main
+		background: #F1F3F5
+	.header__save.btn 
+		width: 200px
+.access
+	&__top-block
+		background: #fff
+		padding: 17px 10px
+		border-radius: 8px
+		box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.12)
+		min-height: 100px
+		display: -webkit-flex
+		display: -moz-flex
+		display: -ms-flex
+		display: -o-flex
+		display: flex
+		align-items: center
+		margin-bottom: 10px
+		img
+			width: 40px
+			height: 40px
+			object-fit: cover
+			border-radius: 50px
+	.label-text
+		margin-right: 20px
+	&__user-text
+		margin-left: 15px
+	&__user-name
+		+font-family($mont-semibld)
+		font-size: 14px
+	&__user-descript
+		+font-family($open-reg)
+		font-size: 13px
+	&__status
+		margin-left: auto
+		i 
+			margin-right: 10px
+	.btn-icon
+		margin-left: 40px
+		color: #2F2F30
+		width: 126px
+		+font-family($mont-md)
+		svg
+			fill: #F03E3E
+			width: 16px
+			height: 15px
+	&__blocks
+		padding: 20px
+		padding-top: 30px
+		background: #fff
+		border-radius: 8px
+		box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.12)
+		.title-line
+			margin-top: 25px
+	&__block
+		margin-bottom: 10px
+		&--open
+			.access__block-body
+				display: block
+			.access__roll-up
+				display: none
+			.access__roll-off
+				display: inline-block
+	&__block-main
+		ul
+			display: -webkit-flex
+			display: -moz-flex
+			display: -ms-flex
+			display: -o-flex
+			display: flex
+			flex-wrap: wrap
+		li 
+			width: 273px
+			border-right: 1px solid #E9ECEF
+			border-bottom: 1px solid #E9ECEF
+			padding-right: 19px
+			padding-bottom: 19px
+			margin-right: 20px
+			box-sizing: content-box
+			position: relative
+			&:before,
+			&:after
+				position: absolute
+				content: ""
+				width: 21px
+				height: 21px
+				background: #fff
+				bottom: -1px
+				right: -1px
+			&:after
+				top: 0
+			&:nth-child(3n)
+				margin-right: 0
+				padding-right: 0
+				border-right: none
+		.label-checkbox
+			padding-left: 30px
+			span
+				left: 0
+		p 
+			margin-left: 30px
+	&__block-head
+		background: #F1F3F5
+		min-height: 40px
+		border-radius: 40px
+		display: -webkit-flex
+		display: -moz-flex
+		display: -ms-flex
+		display: -o-flex
+		display: flex
+		align-items: center
+		padding: 8px 20px
+		i 
+			margin-right: 20px
+		p 
+			color: #303131
+			+font-family($mont-md)
+	&__roll-up,
+	&__roll-off
+		background: none		
+		color: #78797A
+		+font-family($open-reg)
+		font-size: 13px
+		margin-left: auto
+		svg
+			margin-left: 20px
+			width: 20px
+			height: 20px
+			fill: #909192
+			vertical-align: middle
+	&__roll-off
+		display: none
+	&__block-body
+		display: none
+		ul
+			display: -webkit-flex
+			display: -moz-flex
+			display: -ms-flex
+			display: -o-flex
+			display: flex
+			flex-wrap: wrap
+		li
+			width: 272px
+			border-right: 1px solid #E9ECEF
+			padding: 19px
+			padding-top: 17px
+			box-sizing: content-box
+			&:nth-child(3n)
+				margin-right: 0
+				padding-right: 0
+				border-right: none
+			&:nth-child(3n-2)
+				padding-left: 0px
+			&:nth-child(n+4)
+				border-top: 1px solid #E9ECEF
+			p 
+				+font-family($open-reg)
+				font-size: 13px
+			.access__item-name
+				font-size: 14px
+				+font-family($mont-semibld)
+				margin-bottom: 8px
+	&__ratios
+		padding-top: 20px
+		.label-radio
+			margin: 4px 0
+	&__btns
+		padding: 30px 0
+		.btn
+			width: 150px
+			margin-right: 10px
+
+

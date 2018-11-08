@@ -1,0 +1,354 @@
+---
+css: app
+classOut: payments-out
+title: payments
+---
+{% extends "layouts/_layout.html" %}
+
+{% block styles %}
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/css/select2.min.css" rel="stylesheet" />
+{% endblock %}
+
+{% block content %}
+
+	{% include "partials/_sidebar.html" %}
+	<main class="main-home">
+
+		<header class="header">
+			<div class="header__title">
+				<h2 class="title">Платежные системы</h2>
+			</div>
+			
+			<div class="header__add-product">
+				<button class="btn btn--border header__save">Добавить</button>
+				<div class="header__add-wrp">
+					<i>{{mixins.icon('social-cross')}}</i>
+					
+					<span>Выбрано: 3</span>
+					<i>{{mixins.icon('power')}}</i> 
+					<i>{{mixins.icon('bin')}}
+						<span>Удалить</span>
+					</i>
+					
+				</div>
+			</div>
+			
+			<div class="header__user-wrp">
+				{{mixins.icon('apps')}} 
+				<i class="icon-bell"></i>
+				
+				<img src="img/user.png" alt="user">
+			</div>
+		</header>
+		
+		<section class="payments">
+			<div class="container">
+				<table>
+					<tr>
+						<th>
+							<label class="label-checkbox">
+					            <input class="checkbox" type="checkbox">
+					            <span class="input-circle"></span>
+
+					            Название
+					        </label>
+						</th>
+						<th>
+							Тип
+						</th>
+						<th>
+							Статус
+						</th>
+						<th>
+							Платежных систем: 4
+						</th>
+					</tr>
+					<tr class="payments--check">
+						<td>
+							<label class="label-checkbox">
+					            <input class="checkbox" type="checkbox">
+					            <span class="input-circle"></span>
+
+					            Рюкзаки - Палка
+					        </label>
+						</td>
+						<td>
+							PayPal
+						</td>
+						<td>
+							<i class="circle circle--green"></i>
+							Активен 
+						</td>
+						<td>
+							<a>{{mixins.icon('setting')}}
+							Параметры</a>
+							<a>
+							{{mixins.icon('statistic')}}
+							Статистика</a>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<label class="label-checkbox">
+					            <input class="checkbox" type="checkbox">
+					            <span class="input-circle"></span>
+
+					            Рюкзаки - Палка
+					        </label>
+						</td>
+						<td>
+							PayPal
+						</td>
+						<td>
+							<i class="circle circle--green"></i>
+							Активен
+						</td>
+						<td>
+							<a>{{mixins.icon('setting')}}
+							Параметры</a>
+							<a>
+							{{mixins.icon('statistic')}}
+							Статистика</a>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<label class="label-checkbox">
+					            <input class="checkbox" type="checkbox">
+					            <span class="input-circle"></span>
+
+					            Рюкзаки - Палка
+					        </label>
+						</td>
+						<td>
+							PayPal
+						</td>
+						<td>
+							<i class="circle circle--red"></i>
+							Ошибка подключения
+						</td>
+						<td>
+							<a>{{mixins.icon('setting')}}
+							Параметры</a>
+							<a>
+							{{mixins.icon('statistic')}}
+							Статистика</a>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<label class="label-checkbox">
+					            <input class="checkbox" type="checkbox">
+					            <span class="input-circle"></span>
+
+					            Рюкзаки - Stripe
+					        </label>
+						</td>
+						<td>
+							Stripe
+						</td>
+						<td>
+							<i class="circle circle--grey"></i>
+							Выключен
+						</td>
+						<td>
+							<a>{{mixins.icon('setting')}}
+							Параметры</a>
+							<a>
+							{{mixins.icon('statistic')}}
+							Статистика</a>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<label class="label-checkbox">
+					            <input class="checkbox" type="checkbox">
+					            <span class="input-circle"></span>
+
+					            Рюкзаки - Stripe
+					        </label>
+						</td>
+						<td>
+							Stripe
+						</td>
+						<td>
+							<i class="circle circle--grey"></i>
+							Выключен
+						</td>
+						<td>
+							<a>{{mixins.icon('setting')}}
+							Параметры</a>
+							<a>
+							{{mixins.icon('statistic')}}
+							Статистика</a>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<label class="label-checkbox">
+					            <input class="checkbox" type="checkbox">
+					            <span class="input-circle"></span>
+
+					            Рюкзаки - Stripe
+					        </label>
+						</td>
+						<td>
+							Stripe
+						</td>
+						<td>
+							<i class="circle circle--grey"></i>
+							Выключен
+						</td>
+						<td>
+							<a>{{mixins.icon('setting')}}
+							Параметры</a>
+							<a>
+							{{mixins.icon('statistic')}}
+							Статистика</a>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<label class="label-checkbox">
+					            <input class="checkbox" type="checkbox">
+					            <span class="input-circle"></span>
+
+					            Рюкзаки - Stripe
+					        </label>
+						</td>
+						<td>
+							Stripe
+						</td>
+						<td>
+							<i class="circle circle--grey"></i>
+							Выключен
+						</td>
+						<td>
+							<a>{{mixins.icon('setting')}}
+							Параметры</a>
+							<a>
+							{{mixins.icon('statistic')}}
+							Статистика</a>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<label class="label-checkbox">
+					            <input class="checkbox" type="checkbox">
+					            <span class="input-circle"></span>
+
+					            Рюкзаки - Stripe
+					        </label>
+						</td>
+						<td>
+							Stripe
+						</td>
+						<td>
+							<i class="circle circle--grey"></i>
+							Выключен
+						</td>
+						<td>
+							<a>{{mixins.icon('setting')}}
+							Параметры</a>
+							<a>
+							{{mixins.icon('statistic')}}
+							Статистика</a>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<label class="label-checkbox">
+					            <input class="checkbox" type="checkbox">
+					            <span class="input-circle"></span>
+
+					            Рюкзаки - Stripe
+					        </label>
+						</td>
+						<td>
+							Stripe
+						</td>
+						<td>
+							<i class="circle circle--grey"></i>
+							Выключен
+						</td>
+						<td>
+							<a>{{mixins.icon('setting')}}
+							Параметры</a>
+							<a>
+							{{mixins.icon('statistic')}}
+							Статистика</a>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<label class="label-checkbox">
+					            <input class="checkbox" type="checkbox">
+					            <span class="input-circle"></span>
+
+					            Рюкзаки - Stripe
+					        </label>
+						</td>
+						<td>
+							Stripe
+						</td>
+						<td>
+							<i class="circle circle--grey"></i>
+							Выключен
+						</td>
+						<td>
+							<a>{{mixins.icon('setting')}}
+							Параметры</a>
+							<a>
+							{{mixins.icon('statistic')}}
+							Статистика</a>
+						</td>
+					</tr>
+				</table>
+
+		     	<div class="payments__nav">
+		     		<button class="btn-numb btn-numb--active">1</button>
+				    <button class="btn-numb btn--border">2</button>
+				    <button class="btn-next btn--border">Следующая</button>
+		     	</div>
+			</div>
+		</section>
+		
+
+		<div class="mod__modal-delete">
+          <div class="mod__delete-block">
+            <span class="mod__btn-close">
+              <svg class="icon icon-close">
+                <use xlink:href="img/sprite.svg#icon-close"></use>
+              </svg>
+            </span>
+            <h2 class="title">Внимание</h2>
+            <p>Вы действительно хотите удалить элемент(ы)?</p>
+            <div class="mod__modal-btns">
+              <button class="btn btn--border">Отменить </button>
+              <button class="btn btn--blue">Удалить</button>
+            </div>
+          </div>
+        </div>
+
+
+
+	{% include "partials/_social.html" %}
+		
+	</main>
+	
+	<script src="js/jquery-3.2.1.min.js"></script>
+	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/js/select2.min.js"></script>
+
+    <script src="js/jquery.slimscroll.js"></script>
+
+    <script>
+    	$(document).ready(function() {
+		    $('.sidebar').slimScroll({
+				height: '100%'
+			});
+		});
+    </script>
+   
+
+{% endblock %}

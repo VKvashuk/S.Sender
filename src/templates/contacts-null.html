@@ -1,0 +1,87 @@
+---
+css: app
+classOut: contacts-out
+title: contacts
+---
+{% extends "layouts/_layout.html" %}
+
+{% block styles %}
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/css/select2.min.css" rel="stylesheet" />
+{% endblock %}
+
+{% block content %}
+
+	{% include "partials/_sidebar-5.html" %}
+	<main class="main-home">
+
+		<header class="header">
+			<div class="header__title">
+				<h2 class="title">Контакты</h2>
+			</div>
+			<button class="btn btn--blue header__save">Добавить</button>
+			<div class="search__select-wrp">
+				<p>Сортировка:</p>
+    			<select name="" id="" class="select2" >
+        			<option value="">По алфавиту (А-Я)</option>
+        			<option value="">По алфавиту (А-Я)v</option>
+        			<option value="">По алфавиту (А-Я)v</option>
+        			<option value="">По алфавиту (А-Я)v</option>
+        			<option value="">По алфавиту (А-Я)v</option>
+        			<option value="">По алфавиту (А-Я)v</option>
+        			<option value="">По алфавиту (А-Я)v</option>
+        		</select>
+    		</div>
+			<div class="header__user-wrp">
+				{{mixins.icon('search')}} 
+				{{mixins.icon('apps')}} 
+				<i class="icon-bell"></i>
+				<img src="img/user.png" alt="user">
+			</div>
+		</header>
+		
+		<section class="contacts-null">
+			<div class="container">
+				<div class="contacts-null__wrp">
+					<img src="img/products-null.png" alt="products-null">
+					<h3 class="subtitle">Упс, здесь еще ничего нет</h3>
+					<button class="btn btn--blue">Добавить продукт</button>
+				</div>
+			</div>
+		</section>
+
+		<footer class="home__footer">
+			<div class="container">
+				<a href="#">Политика конфиденциальности</a>
+			</div>
+		</footer>
+	
+	{% include "partials/_social.html" %}
+
+
+	</main>
+
+	<script src="js/jquery-3.2.1.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/js/select2.min.js"></script>
+    <script src="js/jquery.slimscroll.js"></script>
+
+    <script>
+    	$(document).ready(function() {
+		    $('.sidebar').slimScroll({
+				height: '100%'
+			});
+		});
+    </script>
+    <script>
+    	$(document).ready(function() {
+        	$('.select2').select2();
+	    });
+    </script>
+    <script>
+    	$(document).ready(function(){
+	        $(".select2").on('select2:open', function () {
+	        	$('.select2-results__options').slimScroll();
+	  		});
+    	});
+    </script>
+
+{% endblock %}

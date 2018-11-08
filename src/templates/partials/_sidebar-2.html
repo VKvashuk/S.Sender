@@ -1,0 +1,50 @@
+<aside class="sidebar">
+  <div class="sidebar__wrp">
+	<img src="img/logo.png" class="sidebar-cart" alt="sidebar-cart">
+	<ul class="sidebar__link-back line-bottom">
+		<li><a href="#">{{mixins.icon('back-icon')}} Вернуться назад</a></li>
+	</ul>
+	<ul>
+		<li class="sidebar__block-name"> 
+			КАТЕГОРИИ
+		</li>
+		<li class="sidebar__link-active"> 
+			<a href="#">{{mixins.icon('folder-open')}} Все продукты
+				<span>
+					{{mixins.icon('pen')}} 
+					{{mixins.icon('basket-2')}} 
+				</span>
+			</a>
+		</li>
+		<ul>
+			<li><a href="#">{{mixins.icon('folder')}} Смартфоны и моби...</a></li>
+			<li><a href="#">{{mixins.icon('folder')}} Планшеты</a></li>
+			<li><a href="#">{{mixins.icon('folder')}} Ноутбуки</a></li>
+			<li class="sidebar__show-all"><a href="#"> Показать все (8) {{mixins.icon('arrow-down ')}}</a></li>
+		</ul>
+	</ul>
+
+	<ul>
+		<li class="sidebar__block-name"> 
+			МЕТКИ
+			{{mixins.icon('add-circle')}}
+		</li>
+		<li><a href="#"><i class="circle circle--green"></i> Новые товары</a></li>
+		<li><a href="#"><i class="circle circle--red"></i> Скидки</a></li>
+		<li><a href="#"><i class="circle circle--blue"></i> Ожидаем поставки</a></li>
+	</ul>
+
+	<ul class="brdr-lines">
+		<li><a href="#">{{mixins.icon('support')}} Помощь</a></li>
+		<li><a href="#">{{mixins.icon('video-camera')}} Видеоуроки</a></li>
+	</ul>
+
+	<ul>
+
+		<li><a href="#">
+			<!-- {{mixins.icon('support')}}  -->
+			<i class="icon-russia"></i> Русский</a></li>
+	</ul>
+  	
+  </div>
+</aside>

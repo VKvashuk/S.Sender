@@ -1,0 +1,101 @@
+.out.invoice-out
+	flex-direction: column
+.invoice
+
+	&__container
+		margin: 0 auto
+		width: 80%
+		display: block
+		+font-family($open-reg)
+		font-size: 14px
+	&__row
+		display: flex
+		&-column,
+		&-between,
+		&-end
+			width: 100%
+			display: flex
+		&-end
+			justify-content: flex-end
+		&-column
+			flex-direction: column
+		&-between
+			justify-content: space-between
+			align-items: center
+			&-tbl
+				width: 100%
+				display: flex
+				justify-content: space-between
+				border-bottom: 1px solid #BFBFBF
+				&:first-child
+					border-color: #000
+					+font-family($mont-semibld)
+					.invoice-payment
+						border-left: 1px solid #fff
+
+				&:last-child
+					border: 0px
+				div
+					padding: 10px 0px 10px 17px
+			&:first-child
+				padding-top: 50px
+				padding-bottom: 50px
+	&-title
+		width: 50%
+		margin-right: 100px
+	&-quantity,
+	&-price
+		width: 200px
+	&-payment
+		width: 150px
+		padding-left: 17px
+		border-left: 1px solid #E2E2E2
+	&-result
+		font-size: 18px
+		+font-family($mont-semibld)
+	&__header
+		&-left
+			display: flex
+			flex-direction: column
+			justify-content: flex-start
+			img
+				width: 143px
+				height: 60px
+			p
+				+font-family($mont-semibld)
+				&:last-child
+					color: #6E6E6E
+					+font-family($mont-md)
+		&-right
+			justify-content: flex-end
+
+		&-left,
+		&-right
+			width: 50%
+			display: flex
+	&-info
+		width: 60%
+		display: flex
+		flex-direction: column
+		+font-family($mont-semibld)
+	&__variable
+		width: 50%
+		text-align: right
+	&__value
+		width: 50%
+		text-align: left
+		padding-left: 20px
+		padding-bottom: 5px
+		+font-family($mont-md)
+
+	&-contakts
+		text-align: right
+		padding-left: 20px
+		padding-bottom: 5px
+		+font-family($open-reg)
+	&-hr
+		width: 100%;
+		height: 1px
+		margin-top: 50px
+		background-color: #DEDEDE
+		border: 0px

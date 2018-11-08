@@ -1,0 +1,832 @@
+---
+css: app
+classOut: emails-out
+title: emails
+---
+{% extends "layouts/_layout.html" %}
+
+{% block styles %}
+	
+{% endblock %}
+
+{% block content %}
+
+	{% include "partials/_sidebar-3.html" %}
+	<main>
+
+		<header class="header">
+			<div class="header__title">
+				<h2 class="title">Email-подписки</h2>
+			</div>
+			<button class="btn btn--blue header__save">Сохранить</button>
+			<div class="header__user-wrp">
+				{{mixins.icon('apps')}} 
+				<i class="icon-bell"></i>
+				<img src="img/user.png" alt="user">
+			</div>
+		</header>
+		
+		<section class="emails">
+			<div class="container">
+				<div class="emails__container">
+					<div class="emails__block ">
+						<div class="emails__top">
+							<p>a.serdiuk@gmail.com</p>
+							
+							<div class="emails__marks">
+								<span>
+								Smart Messenger
+								</span>
+								<span>
+									Новости обновлений
+								</span>
+								<span>
+									Счета
+								</span>
+							</div>
+							
+							<div class="emails__icons">
+								<a href="#" class="mails__icon-apply">
+									{{mixins.icon('check-3')}} 
+									Применить
+								</a>
+								<a href="#" class="mails__icon-setting">
+									{{mixins.icon('setting')}} 
+									Параметры
+								</a>
+								<a href="#">
+									{{mixins.icon('bin')}} 
+									Удалить
+								</a>
+							</div>
+							
+						</div>
+						<div class="emails__items">
+							<div class="emails__item">
+								<p class="title-line">
+						        	<span>СЕРВИСЫ</span>
+						        </p>
+						        <label class="label-checkbox label-checkbox--line">
+						            <input class="checkbox" type="checkbox">
+						            <span class="input-circle"></span>
+						            Все сообщения
+						        </label>
+						        <label class="label-checkbox">
+						            <input class="checkbox" type="checkbox">
+						            <span class="input-circle"></span>
+						            Smart Messenger
+						        </label>
+						        <label class="label-checkbox">
+						            <input class="checkbox" type="checkbox">
+						            <span class="input-circle"></span>
+						            Smart Push
+						        </label>
+						        <label class="label-checkbox">
+						            <input class="checkbox" type="checkbox">
+						            <span class="input-circle"></span>
+						            Smart Mail
+						        </label>
+						        <label class="label-checkbox">
+						            <input class="checkbox" type="checkbox">
+						            <span class="input-circle"></span>
+						            Smart Short Messages
+						        </label>
+							</div>
+							<div class="emails__item">
+								<p class="title-line">
+						        	<span>НАСТРОЙКИ</span>
+						        </p>
+						        <label class="label-checkbox label-checkbox--line">
+						            <input class="checkbox" type="checkbox">
+						            <span class="input-circle"></span>
+						            Все сообщения
+						        </label>
+						        <label class="label-checkbox">
+						            <input class="checkbox" type="checkbox">
+						            <span class="input-circle"></span>
+						            Счета
+						        </label>
+						        <label class="label-checkbox">
+						            <input class="checkbox" type="checkbox">
+						            <span class="input-circle"></span>
+						            Изменение тарифного плана
+						        </label>
+						        <label class="label-checkbox">
+						            <input class="checkbox" type="checkbox">
+						            <span class="input-circle"></span>
+						            Изменение настроек
+						        </label>
+						        <label class="label-checkbox">
+						            <input class="checkbox" type="checkbox">
+						            <span class="input-circle"></span>
+						            Изменение прав доступа
+						        </label>
+							</div>
+							<div class="emails__item">
+								<p class="title-line">
+						        	<span>ОСТАЛЬНОЕ</span>
+						        </p>
+						        <label class="label-checkbox label-checkbox--line">
+						            <input class="checkbox" type="checkbox">
+						            <span class="input-circle"></span>
+						            Все сообщения
+						        </label>
+						        <label class="label-checkbox">
+						            <input class="checkbox" type="checkbox">
+						            <span class="input-circle"></span>
+						            Новости обновлений
+						        </label>
+						        <label class="label-checkbox">
+						            <input class="checkbox" type="checkbox">
+						            <span class="input-circle"></span>
+						            Акции и скидки
+						        </label>
+						        <label class="label-checkbox">
+						            <input class="checkbox" type="checkbox">
+						            <span class="input-circle"></span>
+						            Реферальная программа
+						        </label>
+						        <label class="label-checkbox">
+						            <input class="checkbox" type="checkbox">
+						            <span class="input-circle"></span>
+						            Полезные советы
+						        </label>
+							</div>
+						</div>
+					</div>
+					<div class="emails__block ">
+						<div class="emails__top">
+							<p>a.serdiuk@gmail.com</p>
+							
+							<div class="emails__marks">
+								<span>
+								Smart Messenger
+								</span>
+								<span>
+									Новости обновлений
+								</span>
+								<span>
+									Счета
+								</span>
+							</div>
+							
+							<div class="emails__icons">
+								<a href="#" class="mails__icon-apply">
+									{{mixins.icon('check-3')}} 
+									Применить
+								</a>
+								<a href="#" class="mails__icon-setting">
+									{{mixins.icon('setting')}} 
+									Параметры
+								</a>
+								<a href="#">
+									{{mixins.icon('bin')}} 
+									Удалить
+								</a>
+							</div>
+							
+						</div>
+						<div class="emails__items">
+							<div class="emails__item">
+								<p class="title-line">
+						        	<span>СЕРВИСЫ</span>
+						        </p>
+						        <label class="label-checkbox label-checkbox--line">
+						            <input class="checkbox" type="checkbox">
+						            <span class="input-circle"></span>
+						            Все сообщения
+						        </label>
+						        <label class="label-checkbox">
+						            <input class="checkbox" type="checkbox">
+						            <span class="input-circle"></span>
+						            Smart Messenger
+						        </label>
+						        <label class="label-checkbox">
+						            <input class="checkbox" type="checkbox">
+						            <span class="input-circle"></span>
+						            Smart Push
+						        </label>
+						        <label class="label-checkbox">
+						            <input class="checkbox" type="checkbox">
+						            <span class="input-circle"></span>
+						            Smart Mail
+						        </label>
+						        <label class="label-checkbox">
+						            <input class="checkbox" type="checkbox">
+						            <span class="input-circle"></span>
+						            Smart Short Messages
+						        </label>
+							</div>
+							<div class="emails__item">
+								<p class="title-line">
+						        	<span>НАСТРОЙКИ</span>
+						        </p>
+						        <label class="label-checkbox label-checkbox--line">
+						            <input class="checkbox" type="checkbox">
+						            <span class="input-circle"></span>
+						            Все сообщения
+						        </label>
+						        <label class="label-checkbox">
+						            <input class="checkbox" type="checkbox">
+						            <span class="input-circle"></span>
+						            Счета
+						        </label>
+						        <label class="label-checkbox">
+						            <input class="checkbox" type="checkbox">
+						            <span class="input-circle"></span>
+						            Изменение тарифного плана
+						        </label>
+						        <label class="label-checkbox">
+						            <input class="checkbox" type="checkbox">
+						            <span class="input-circle"></span>
+						            Изменение настроек
+						        </label>
+						        <label class="label-checkbox">
+						            <input class="checkbox" type="checkbox">
+						            <span class="input-circle"></span>
+						            Изменение прав доступа
+						        </label>
+							</div>
+							<div class="emails__item">
+								<p class="title-line">
+						        	<span>ОСТАЛЬНОЕ</span>
+						        </p>
+						        <label class="label-checkbox label-checkbox--line">
+						            <input class="checkbox" type="checkbox">
+						            <span class="input-circle"></span>
+						            Все сообщения
+						        </label>
+						        <label class="label-checkbox">
+						            <input class="checkbox" type="checkbox">
+						            <span class="input-circle"></span>
+						            Новости обновлений
+						        </label>
+						        <label class="label-checkbox">
+						            <input class="checkbox" type="checkbox">
+						            <span class="input-circle"></span>
+						            Акции и скидки
+						        </label>
+						        <label class="label-checkbox">
+						            <input class="checkbox" type="checkbox">
+						            <span class="input-circle"></span>
+						            Реферальная программа
+						        </label>
+						        <label class="label-checkbox">
+						            <input class="checkbox" type="checkbox">
+						            <span class="input-circle"></span>
+						            Полезные советы
+						        </label>
+							</div>
+						</div>
+					</div>
+					<div class="emails__block ">
+						<div class="emails__top">
+							<p>a.serdiuk@gmail.com</p>
+							
+							<div class="emails__marks">
+								<span>
+								Smart Messenger
+								</span>
+								<span>
+									Новости обновлений
+								</span>
+								<span>
+									Счета
+								</span>
+							</div>
+							
+							<div class="emails__icons">
+								<a href="#" class="mails__icon-apply">
+									{{mixins.icon('check-3')}} 
+									Применить
+								</a>
+								<a href="#" class="mails__icon-setting">
+									{{mixins.icon('setting')}} 
+									Параметры
+								</a>
+								<a href="#">
+									{{mixins.icon('bin')}} 
+									Удалить
+								</a>
+							</div>
+							
+						</div>
+						<div class="emails__items">
+							<div class="emails__item">
+								<p class="title-line">
+						        	<span>СЕРВИСЫ</span>
+						        </p>
+						        <label class="label-checkbox label-checkbox--line">
+						            <input class="checkbox" type="checkbox">
+						            <span class="input-circle"></span>
+						            Все сообщения
+						        </label>
+						        <label class="label-checkbox">
+						            <input class="checkbox" type="checkbox">
+						            <span class="input-circle"></span>
+						            Smart Messenger
+						        </label>
+						        <label class="label-checkbox">
+						            <input class="checkbox" type="checkbox">
+						            <span class="input-circle"></span>
+						            Smart Push
+						        </label>
+						        <label class="label-checkbox">
+						            <input class="checkbox" type="checkbox">
+						            <span class="input-circle"></span>
+						            Smart Mail
+						        </label>
+						        <label class="label-checkbox">
+						            <input class="checkbox" type="checkbox">
+						            <span class="input-circle"></span>
+						            Smart Short Messages
+						        </label>
+							</div>
+							<div class="emails__item">
+								<p class="title-line">
+						        	<span>НАСТРОЙКИ</span>
+						        </p>
+						        <label class="label-checkbox label-checkbox--line">
+						            <input class="checkbox" type="checkbox">
+						            <span class="input-circle"></span>
+						            Все сообщения
+						        </label>
+						        <label class="label-checkbox">
+						            <input class="checkbox" type="checkbox">
+						            <span class="input-circle"></span>
+						            Счета
+						        </label>
+						        <label class="label-checkbox">
+						            <input class="checkbox" type="checkbox">
+						            <span class="input-circle"></span>
+						            Изменение тарифного плана
+						        </label>
+						        <label class="label-checkbox">
+						            <input class="checkbox" type="checkbox">
+						            <span class="input-circle"></span>
+						            Изменение настроек
+						        </label>
+						        <label class="label-checkbox">
+						            <input class="checkbox" type="checkbox">
+						            <span class="input-circle"></span>
+						            Изменение прав доступа
+						        </label>
+							</div>
+							<div class="emails__item">
+								<p class="title-line">
+						        	<span>ОСТАЛЬНОЕ</span>
+						        </p>
+						        <label class="label-checkbox label-checkbox--line">
+						            <input class="checkbox" type="checkbox">
+						            <span class="input-circle"></span>
+						            Все сообщения
+						        </label>
+						        <label class="label-checkbox">
+						            <input class="checkbox" type="checkbox">
+						            <span class="input-circle"></span>
+						            Новости обновлений
+						        </label>
+						        <label class="label-checkbox">
+						            <input class="checkbox" type="checkbox">
+						            <span class="input-circle"></span>
+						            Акции и скидки
+						        </label>
+						        <label class="label-checkbox">
+						            <input class="checkbox" type="checkbox">
+						            <span class="input-circle"></span>
+						            Реферальная программа
+						        </label>
+						        <label class="label-checkbox">
+						            <input class="checkbox" type="checkbox">
+						            <span class="input-circle"></span>
+						            Полезные советы
+						        </label>
+							</div>
+						</div>
+					</div>
+					<div class="emails__block ">
+						<div class="emails__top">
+							<p>a.serdiuk@gmail.com</p>
+							
+							<div class="emails__marks">
+								<span>
+								Smart Messenger
+								</span>
+								<span>
+									Новости обновлений
+								</span>
+								<span>
+									Счета
+								</span>
+							</div>
+							
+							<div class="emails__icons">
+								<a href="#" class="mails__icon-apply">
+									{{mixins.icon('check-3')}} 
+									Применить
+								</a>
+								<a href="#" class="mails__icon-setting">
+									{{mixins.icon('setting')}} 
+									Параметры
+								</a>
+								<a href="#">
+									{{mixins.icon('bin')}} 
+									Удалить
+								</a>
+							</div>
+							
+						</div>
+						<div class="emails__items">
+							<div class="emails__item">
+								<p class="title-line">
+						        	<span>СЕРВИСЫ</span>
+						        </p>
+						        <label class="label-checkbox label-checkbox--line">
+						            <input class="checkbox" type="checkbox">
+						            <span class="input-circle"></span>
+						            Все сообщения
+						        </label>
+						        <label class="label-checkbox">
+						            <input class="checkbox" type="checkbox">
+						            <span class="input-circle"></span>
+						            Smart Messenger
+						        </label>
+						        <label class="label-checkbox">
+						            <input class="checkbox" type="checkbox">
+						            <span class="input-circle"></span>
+						            Smart Push
+						        </label>
+						        <label class="label-checkbox">
+						            <input class="checkbox" type="checkbox">
+						            <span class="input-circle"></span>
+						            Smart Mail
+						        </label>
+						        <label class="label-checkbox">
+						            <input class="checkbox" type="checkbox">
+						            <span class="input-circle"></span>
+						            Smart Short Messages
+						        </label>
+							</div>
+							<div class="emails__item">
+								<p class="title-line">
+						        	<span>НАСТРОЙКИ</span>
+						        </p>
+						        <label class="label-checkbox label-checkbox--line">
+						            <input class="checkbox" type="checkbox">
+						            <span class="input-circle"></span>
+						            Все сообщения
+						        </label>
+						        <label class="label-checkbox">
+						            <input class="checkbox" type="checkbox">
+						            <span class="input-circle"></span>
+						            Счета
+						        </label>
+						        <label class="label-checkbox">
+						            <input class="checkbox" type="checkbox">
+						            <span class="input-circle"></span>
+						            Изменение тарифного плана
+						        </label>
+						        <label class="label-checkbox">
+						            <input class="checkbox" type="checkbox">
+						            <span class="input-circle"></span>
+						            Изменение настроек
+						        </label>
+						        <label class="label-checkbox">
+						            <input class="checkbox" type="checkbox">
+						            <span class="input-circle"></span>
+						            Изменение прав доступа
+						        </label>
+							</div>
+							<div class="emails__item">
+								<p class="title-line">
+						        	<span>ОСТАЛЬНОЕ</span>
+						        </p>
+						        <label class="label-checkbox label-checkbox--line">
+						            <input class="checkbox" type="checkbox">
+						            <span class="input-circle"></span>
+						            Все сообщения
+						        </label>
+						        <label class="label-checkbox">
+						            <input class="checkbox" type="checkbox">
+						            <span class="input-circle"></span>
+						            Новости обновлений
+						        </label>
+						        <label class="label-checkbox">
+						            <input class="checkbox" type="checkbox">
+						            <span class="input-circle"></span>
+						            Акции и скидки
+						        </label>
+						        <label class="label-checkbox">
+						            <input class="checkbox" type="checkbox">
+						            <span class="input-circle"></span>
+						            Реферальная программа
+						        </label>
+						        <label class="label-checkbox">
+						            <input class="checkbox" type="checkbox">
+						            <span class="input-circle"></span>
+						            Полезные советы
+						        </label>
+							</div>
+						</div>
+					</div>
+					<div class="emails__block emails__block--open">
+						<div class="emails__top">
+							<p>a.serdiuk@gmail.com</p>
+							<div class="emails__marks">
+								<span>
+								Smart Messenger
+								</span>
+								<span>
+									Новости обновлений
+								</span>
+								<span>
+									Счета
+								</span>
+							</div>
+								
+							
+							<div class="emails__icons">
+								<a href="#" class="mails__icon-apply">
+									{{mixins.icon('check-3')}} 
+									Применить
+								</a>
+								<a href="#" class="mails__icon-setting">
+									{{mixins.icon('setting')}} 
+									Параметры
+								</a>
+								<a href="#">
+									{{mixins.icon('bin')}} 
+									Удалить
+								</a>
+							</div>
+							
+						</div>
+						<div class="emails__items">
+							<div class="emails__item">
+								<p class="title-line">
+						        	<span>СЕРВИСЫ</span>
+						        </p>
+						        <label class="label-checkbox label-checkbox--line">
+						            <input class="checkbox" type="checkbox">
+						            <span class="input-circle"></span>
+						            Все сообщения
+						        </label>
+						        <label class="label-checkbox">
+						            <input class="checkbox" type="checkbox">
+						            <span class="input-circle"></span>
+						            Smart Messenger
+						        </label>
+						        <label class="label-checkbox">
+						            <input class="checkbox" type="checkbox">
+						            <span class="input-circle"></span>
+						            Smart Push
+						        </label>
+						        <label class="label-checkbox">
+						            <input class="checkbox" type="checkbox">
+						            <span class="input-circle"></span>
+						            Smart Mail
+						        </label>
+						        <label class="label-checkbox">
+						            <input class="checkbox" type="checkbox">
+						            <span class="input-circle"></span>
+						            Smart Short Messages
+						        </label>
+							</div>
+							<div class="emails__item">
+								<p class="title-line">
+						        	<span>НАСТРОЙКИ</span>
+						        </p>
+						        <label class="label-checkbox label-checkbox--line">
+						            <input class="checkbox" type="checkbox">
+						            <span class="input-circle"></span>
+						            Все сообщения
+						        </label>
+						        <label class="label-checkbox">
+						            <input class="checkbox" type="checkbox">
+						            <span class="input-circle"></span>
+						            Счета
+						        </label>
+						        <label class="label-checkbox">
+						            <input class="checkbox" type="checkbox">
+						            <span class="input-circle"></span>
+						            Изменение тарифного плана
+						        </label>
+						        <label class="label-checkbox">
+						            <input class="checkbox" type="checkbox">
+						            <span class="input-circle"></span>
+						            Изменение настроек
+						        </label>
+						        <label class="label-checkbox">
+						            <input class="checkbox" type="checkbox">
+						            <span class="input-circle"></span>
+						            Изменение прав доступа
+						        </label>
+							</div>
+							<div class="emails__item">
+								<p class="title-line">
+						        	<span>ОСТАЛЬНОЕ</span>
+						        </p>
+						        <label class="label-checkbox label-checkbox--line">
+						            <input class="checkbox" type="checkbox">
+						            <span class="input-circle"></span>
+						            Все сообщения
+						        </label>
+						        <label class="label-checkbox">
+						            <input class="checkbox" type="checkbox">
+						            <span class="input-circle"></span>
+						            Новости обновлений
+						        </label>
+						        <label class="label-checkbox">
+						            <input class="checkbox" type="checkbox">
+						            <span class="input-circle"></span>
+						            Акции и скидки
+						        </label>
+						        <label class="label-checkbox">
+						            <input class="checkbox" type="checkbox">
+						            <span class="input-circle"></span>
+						            Реферальная программа
+						        </label>
+						        <label class="label-checkbox">
+						            <input class="checkbox" type="checkbox">
+						            <span class="input-circle"></span>
+						            Полезные советы
+						        </label>
+							</div>
+						</div>
+					</div>
+					<div class="emails__block ">
+						<div class="emails__top">
+							<p>a.serdiuk@gmail.com</p>
+							
+							<div class="emails__marks">
+								<span>
+								Smart Messenger
+								</span>
+								<span>
+									Новости обновлений
+								</span>
+								<span>
+									Счета
+								</span>
+							</div>
+							
+							<div class="emails__icons">
+								<a href="#" class="mails__icon-apply">
+									{{mixins.icon('check-3')}} 
+									Применить
+								</a>
+								<a href="#" class="mails__icon-setting">
+									{{mixins.icon('setting')}} 
+									Параметры
+								</a>
+								<a href="#">
+									{{mixins.icon('bin')}} 
+									Удалить
+								</a>
+							</div>
+							
+						</div>
+						<div class="emails__items">
+							<div class="emails__item">
+								<p class="title-line">
+						        	<span>СЕРВИСЫ</span>
+						        </p>
+						        <label class="label-checkbox label-checkbox--line">
+						            <input class="checkbox" type="checkbox">
+						            <span class="input-circle"></span>
+						            Все сообщения
+						        </label>
+						        <label class="label-checkbox">
+						            <input class="checkbox" type="checkbox">
+						            <span class="input-circle"></span>
+						            Smart Messenger
+						        </label>
+						        <label class="label-checkbox">
+						            <input class="checkbox" type="checkbox">
+						            <span class="input-circle"></span>
+						            Smart Push
+						        </label>
+						        <label class="label-checkbox">
+						            <input class="checkbox" type="checkbox">
+						            <span class="input-circle"></span>
+						            Smart Mail
+						        </label>
+						        <label class="label-checkbox">
+						            <input class="checkbox" type="checkbox">
+						            <span class="input-circle"></span>
+						            Smart Short Messages
+						        </label>
+							</div>
+							<div class="emails__item">
+								<p class="title-line">
+						        	<span>НАСТРОЙКИ</span>
+						        </p>
+						        <label class="label-checkbox label-checkbox--line">
+						            <input class="checkbox" type="checkbox">
+						            <span class="input-circle"></span>
+						            Все сообщения
+						        </label>
+						        <label class="label-checkbox">
+						            <input class="checkbox" type="checkbox">
+						            <span class="input-circle"></span>
+						            Счета
+						        </label>
+						        <label class="label-checkbox">
+						            <input class="checkbox" type="checkbox">
+						            <span class="input-circle"></span>
+						            Изменение тарифного плана
+						        </label>
+						        <label class="label-checkbox">
+						            <input class="checkbox" type="checkbox">
+						            <span class="input-circle"></span>
+						            Изменение настроек
+						        </label>
+						        <label class="label-checkbox">
+						            <input class="checkbox" type="checkbox">
+						            <span class="input-circle"></span>
+						            Изменение прав доступа
+						        </label>
+							</div>
+							<div class="emails__item">
+								<p class="title-line">
+						        	<span>ОСТАЛЬНОЕ</span>
+						        </p>
+						        <label class="label-checkbox label-checkbox--line">
+						            <input class="checkbox" type="checkbox">
+						            <span class="input-circle"></span>
+						            Все сообщения
+						        </label>
+						        <label class="label-checkbox">
+						            <input class="checkbox" type="checkbox">
+						            <span class="input-circle"></span>
+						            Новости обновлений
+						        </label>
+						        <label class="label-checkbox">
+						            <input class="checkbox" type="checkbox">
+						            <span class="input-circle"></span>
+						            Акции и скидки
+						        </label>
+						        <label class="label-checkbox">
+						            <input class="checkbox" type="checkbox">
+						            <span class="input-circle"></span>
+						            Реферальная программа
+						        </label>
+						        <label class="label-checkbox">
+						            <input class="checkbox" type="checkbox">
+						            <span class="input-circle"></span>
+						            Полезные советы
+						        </label>
+							</div>
+						</div>
+					</div>
+					<div class="emails__add-block">
+						<a href="#">
+						{{mixins.icon('add-border')}}
+		        		Добавить email</a>
+					</div>
+				</div>
+
+			</div>
+		</section>
+
+		<footer class="footer">
+			<div class="container">
+				<a href="/">Политика конфиденциальности</a>
+			</div>
+		</footer>
+
+		<div class="mod__modal-delete">
+          <div class="mod__delete-block">
+            <span class="mod__btn-close">
+              <svg class="icon icon-close">
+                <use xlink:href="img/sprite.svg#icon-close"></use>
+              </svg>
+            </span>
+            <h2 class="title">Внимание</h2>
+            <p>Вы действительно хотите удалить email?</p>
+            <div class="mod__modal-btns">
+              <button class="btn btn--border">Отменить </button>
+              <button class="btn btn--blue">Удалить</button>
+            </div>
+          </div>
+        </div>
+
+
+
+
+	{% include "partials/_social.html" %}
+		
+	</main>
+	
+	<script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/jquery.slimscroll.js"></script>
+    <script>
+    	$(document).ready(function() {
+		    $('.sidebar').slimScroll({
+				height: '100%'
+			});
+		});
+    </script>
+    
+
+{% endblock %}

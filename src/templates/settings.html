@@ -1,0 +1,663 @@
+---
+css: app
+classOut: settings-out
+title: settings
+---
+{% extends "layouts/_layout.html" %}
+
+{% block styles %}
+	
+{% endblock %}
+
+{% block content %}
+
+	{% include "partials/_sidebar-3.html" %}
+	<main>
+
+		<header class="header">
+			<div class="header__title">
+				<h2 class="title">Права доступа</h2>
+			</div>
+			<button class="btn btn--blue header__save">Добавить пользователя</button>
+
+			<div class="header__user-wrp">
+				{{mixins.icon('search')}} 
+				{{mixins.icon('apps')}} 
+				<i class="icon-bell"></i>
+				<img src="img/user.png" alt="user">
+			</div>
+		</header>
+		
+		<section class="settings">
+			<div class="container">
+				<div class="settings__top">
+					<h3 class="subtitle">API key</h3>
+					<p class="settings__description">
+						Ваш персональный ключ для доступа к API Smart Sender
+					</p>
+					<div class="settings__top-box">
+						<input type="text" value="c351eb5a7b0d926ce674b90967984c0302c11ca9b1e7ba1092aad9750a15">
+						{{mixins.icon('copy')}} 
+	                </div>
+	                <button class="btn btn--blue">Скрыть ключ</button>
+	                <button class="btn ">Сгеренировать новый</button>
+				</div>
+
+				<br>
+
+				<div class="settings__top">
+					<h3 class="subtitle">API key</h3>
+					<p class="settings__description">
+						Ваш персональный ключ для доступа к API Smart Sender
+					</p>
+					<div class="settings__top-box">
+						<input type="password" value="c351eb5a7b0d926ce674b90967984c0302c11ca9b1e7ba1092aad9750a15">
+						<!-- {{mixins.icon('copy')}}  -->
+	                </div>
+	                <button class="btn btn--blue">Показать ключ</button>
+				</div>
+				<p class="title-line">
+		        	<span>ПОДКЛЮЧЕННЫЕ ПОЛЬЗОВАТЕЛИ (3)</span>
+		        </p>
+		        <div class="settings__block">
+		        	<div class="settings__block-top">
+		        		<div class="settings__img">
+				        	<img src="img/user.png" alt="user">
+				        </div>
+				        <div class="settings__text">
+				        	<p class="settings__name">
+				        		Александр Сердюк
+				        	</p>
+				        	<p class="settings__email">
+				        		a.serdiuk@gmail.com
+				        	</p>
+				        </div>
+				        <p class="settings__access">
+				        	<i class="circle circle--red"></i>
+				        	Доступ не активирован
+				        </p>
+				        <button class="btn-small btn-icon">
+							{{mixins.icon('setting-2')}} Параметры
+						</button>
+						<button class="btn-small btn-icon">
+							{{mixins.icon('bin')}} Удалить
+						</button>
+		        	</div>
+		        	<table>
+		        		<tr class="settings__row1">
+		        			<td>
+		        				<p>Сервисы</p>
+		        			</td>
+		        			<td>
+		        				<p>Smart Messenger</p>
+		        			</td>
+		        		</tr>
+		        		<tr class="settings__row2">
+		        			<td>
+		        				<p>Настройки</p>
+		        			</td>
+		        			<td>
+		        				<p>Биллинг</p>
+		        				<p>Тарифные планы</p>
+		        				<p>Email-подписки</p>
+		        				<p>Права доступа</p>
+		        			</td>
+		        		</tr>
+		        		<tr class="settings__row3">
+		        			<td>
+		        				<p>Продукты</p>
+		        			</td>
+		        			<td>
+		        				<p>Продукт</p>
+		        				<p class="settings__nothing">Ничего не выбрано</p>
+		        			</td>
+		        		</tr>
+		        	</table>
+		        </div>
+		        <div class="settings__block">
+		        	<div class="settings__block-top">
+		        		<div class="settings__img">
+				        	<img src="img/user.png" alt="user">
+				        </div>
+				        <div class="settings__text">
+				        	<p class="settings__name">
+				        		Александр Сердюк
+				        	</p>
+				        	<p class="settings__email">
+				        		a.serdiuk@gmail.com
+				        	</p>
+				        </div>
+				        <p class="settings__access">
+				        	<i class="circle circle--red"></i>
+				        	Доступ не активирован
+				        </p>
+				        <button class="btn-small btn-icon">
+							{{mixins.icon('setting-2')}} Параметры
+						</button>
+						<button class="btn-small btn-icon">
+							{{mixins.icon('bin')}} Удалить
+						</button>
+		        	</div>
+		        	<table>
+		        		<tr class="settings__row1">
+		        			<td>
+		        				<p>Сервисы</p>
+		        			</td>
+		        			<td>
+		        				<p>Smart Messenger</p>
+		        			</td>
+		        		</tr>
+		        		<tr class="settings__row2">
+		        			<td>
+		        				<p>Настройки</p>
+		        			</td>
+		        			<td>
+		        				<p>Биллинг</p>
+		        				<p>Тарифные планы</p>
+		        				<p>Email-подписки</p>
+		        				<p>Права доступа</p>
+		        			</td>
+		        		</tr>
+		        		<tr class="settings__row3">
+		        			<td>
+		        				<p>Продукты</p>
+		        			</td>
+		        			<td>
+		        				<p>Продукт</p>
+		        				<p class="settings__nothing">Ничего не выбрано</p>
+		        			</td>
+		        		</tr>
+		        	</table>
+		        </div>
+		        <div class="settings__block">
+		        	<div class="settings__block-top">
+		        		<div class="settings__img">
+				        	<img src="img/user.png" alt="user">
+				        </div>
+				        <div class="settings__text">
+				        	<p class="settings__name">
+				        		Александр Сердюк
+				        	</p>
+				        	<p class="settings__email">
+				        		a.serdiuk@gmail.com
+				        	</p>
+				        </div>
+				        <p class="settings__access">
+				        	<i class="circle circle--red"></i>
+				        	Доступ не активирован
+				        </p>
+				        <button class="btn-small btn-icon">
+							{{mixins.icon('setting-2')}} Параметры
+						</button>
+						<button class="btn-small btn-icon">
+							{{mixins.icon('bin')}} Удалить
+						</button>
+		        	</div>
+		        	<table>
+		        		<tr class="settings__row1">
+		        			<td>
+		        				<p>Сервисы</p>
+		        			</td>
+		        			<td>
+		        				<p>Smart Messenger</p>
+		        			</td>
+		        		</tr>
+		        		<tr class="settings__row2">
+		        			<td>
+		        				<p>Настройки</p>
+		        			</td>
+		        			<td>
+		        				<p>Биллинг</p>
+		        				<p>Тарифные планы</p>
+		        				<p>Email-подписки</p>
+		        				<p>Права доступа</p>
+		        			</td>
+		        		</tr>
+		        		<tr class="settings__row3">
+		        			<td>
+		        				<p>Продукты</p>
+		        			</td>
+		        			<td>
+		        				<p>Продукт</p>
+		        				<p class="settings__nothing">Ничего не выбрано</p>
+		        			</td>
+		        		</tr>
+		        	</table>
+		        </div>
+		        <div class="settings__block">
+		        	<div class="settings__block-top">
+		        		<div class="settings__img">
+				        	<img src="img/user.png" alt="user">
+				        </div>
+				        <div class="settings__text">
+				        	<p class="settings__name">
+				        		Александр Сердюк
+				        	</p>
+				        	<p class="settings__email">
+				        		a.serdiuk@gmail.com
+				        	</p>
+				        </div>
+				        <p class="settings__access">
+				        	<i class="circle circle--red"></i>
+				        	Доступ не активирован
+				        </p>
+				        <button class="btn-small btn-icon">
+							{{mixins.icon('setting-2')}} Параметры
+						</button>
+						<button class="btn-small btn-icon">
+							{{mixins.icon('bin')}} Удалить
+						</button>
+		        	</div>
+		        	<table>
+		        		<tr class="settings__row1">
+		        			<td>
+		        				<p>Сервисы</p>
+		        			</td>
+		        			<td>
+		        				<p>Smart Messenger</p>
+		        			</td>
+		        		</tr>
+		        		<tr class="settings__row2">
+		        			<td>
+		        				<p>Настройки</p>
+		        			</td>
+		        			<td>
+		        				<p>Биллинг</p>
+		        				<p>Тарифные планы</p>
+		        				<p>Email-подписки</p>
+		        				<p>Права доступа</p>
+		        			</td>
+		        		</tr>
+		        		<tr class="settings__row3">
+		        			<td>
+		        				<p>Продукты</p>
+		        			</td>
+		        			<td>
+		        				<p>Продукт</p>
+		        				<p class="settings__nothing">Ничего не выбрано</p>
+		        			</td>
+		        		</tr>
+		        	</table>
+		        </div>
+		        <div class="settings__block">
+		        	<div class="settings__block-top">
+		        		<div class="settings__img">
+				        	<img src="img/user.png" alt="user">
+				        </div>
+				        <div class="settings__text">
+				        	<p class="settings__name">
+				        		Александр Сердюк
+				        	</p>
+				        	<p class="settings__email">
+				        		a.serdiuk@gmail.com
+				        	</p>
+				        </div>
+				        <p class="settings__access">
+				        	<i class="circle circle--red"></i>
+				        	Доступ не активирован
+				        </p>
+				        <button class="btn-small btn-icon">
+							{{mixins.icon('setting-2')}} Параметры
+						</button>
+						<button class="btn-small btn-icon">
+							{{mixins.icon('bin')}} Удалить
+						</button>
+		        	</div>
+		        	<table>
+		        		<tr class="settings__row1">
+		        			<td>
+		        				<p>Сервисы</p>
+		        			</td>
+		        			<td>
+		        				<p>Smart Messenger</p>
+		        			</td>
+		        		</tr>
+		        		<tr class="settings__row2">
+		        			<td>
+		        				<p>Настройки</p>
+		        			</td>
+		        			<td>
+		        				<p>Биллинг</p>
+		        				<p>Тарифные планы</p>
+		        				<p>Email-подписки</p>
+		        				<p>Права доступа</p>
+		        			</td>
+		        		</tr>
+		        		<tr class="settings__row3">
+		        			<td>
+		        				<p>Продукты</p>
+		        			</td>
+		        			<td>
+		        				<p>Продукт</p>
+		        				<p class="settings__nothing">Ничего не выбрано</p>
+		        			</td>
+		        		</tr>
+		        	</table>
+		        </div>
+		        <div class="settings__block">
+		        	<div class="settings__block-top">
+		        		<div class="settings__img">
+				        	<img src="img/user.png" alt="user">
+				        </div>
+				        <div class="settings__text">
+				        	<p class="settings__name">
+				        		Александр Сердюк
+				        	</p>
+				        	<p class="settings__email">
+				        		a.serdiuk@gmail.com
+				        	</p>
+				        </div>
+				        <p class="settings__access">
+				        	<i class="circle circle--red"></i>
+				        	Доступ не активирован
+				        </p>
+				        <button class="btn-small btn-icon">
+							{{mixins.icon('setting-2')}} Параметры
+						</button>
+						<button class="btn-small btn-icon">
+							{{mixins.icon('bin')}} Удалить
+						</button>
+		        	</div>
+		        	<table>
+		        		<tr class="settings__row1">
+		        			<td>
+		        				<p>Сервисы</p>
+		        			</td>
+		        			<td>
+		        				<p>Smart Messenger</p>
+		        			</td>
+		        		</tr>
+		        		<tr class="settings__row2">
+		        			<td>
+		        				<p>Настройки</p>
+		        			</td>
+		        			<td>
+		        				<p>Биллинг</p>
+		        				<p>Тарифные планы</p>
+		        				<p>Email-подписки</p>
+		        				<p>Права доступа</p>
+		        			</td>
+		        		</tr>
+		        		<tr class="settings__row3">
+		        			<td>
+		        				<p>Продукты</p>
+		        			</td>
+		        			<td>
+		        				<p>Продукт</p>
+		        				<p class="settings__nothing">Ничего не выбрано</p>
+		        			</td>
+		        		</tr>
+		        	</table>
+		        </div>
+		        <div class="settings__block">
+		        	<div class="settings__block-top">
+		        		<div class="settings__img">
+				        	<img src="img/user.png" alt="user">
+				        </div>
+				        <div class="settings__text">
+				        	<p class="settings__name">
+				        		Александр Сердюк
+				        	</p>
+				        	<p class="settings__email">
+				        		a.serdiuk@gmail.com
+				        	</p>
+				        </div>
+				        <p class="settings__access">
+				        	<i class="circle circle--red"></i>
+				        	Доступ не активирован
+				        </p>
+				        <button class="btn-small btn-icon">
+							{{mixins.icon('setting-2')}} Параметры
+						</button>
+						<button class="btn-small btn-icon">
+							{{mixins.icon('bin')}} Удалить
+						</button>
+		        	</div>
+		        	<table>
+		        		<tr class="settings__row1">
+		        			<td>
+		        				<p>Сервисы</p>
+		        			</td>
+		        			<td>
+		        				<p>Smart Messenger</p>
+		        			</td>
+		        		</tr>
+		        		<tr class="settings__row2">
+		        			<td>
+		        				<p>Настройки</p>
+		        			</td>
+		        			<td>
+		        				<p>Биллинг</p>
+		        				<p>Тарифные планы</p>
+		        				<p>Email-подписки</p>
+		        				<p>Права доступа</p>
+		        			</td>
+		        		</tr>
+		        		<tr class="settings__row3">
+		        			<td>
+		        				<p>Продукты</p>
+		        			</td>
+		        			<td>
+		        				<p>Продукт</p>
+		        				<p class="settings__nothing">Ничего не выбрано</p>
+		        			</td>
+		        		</tr>
+		        	</table>
+		        </div>
+		        <div class="settings__block">
+		        	<div class="settings__block-top">
+		        		<div class="settings__img">
+				        	<img src="img/user.png" alt="user">
+				        </div>
+				        <div class="settings__text">
+				        	<p class="settings__name">
+				        		Александр Сердюк
+				        	</p>
+				        	<p class="settings__email">
+				        		a.serdiuk@gmail.com
+				        	</p>
+				        </div>
+				        <p class="settings__access">
+				        	<i class="circle circle--red"></i>
+				        	Доступ не активирован
+				        </p>
+				        <button class="btn-small btn-icon">
+							{{mixins.icon('setting-2')}} Параметры
+						</button>
+						<button class="btn-small btn-icon">
+							{{mixins.icon('bin')}} Удалить
+						</button>
+		        	</div>
+		        	<table>
+		        		<tr class="settings__row1">
+		        			<td>
+		        				<p>Сервисы</p>
+		        			</td>
+		        			<td>
+		        				<p>Smart Messenger</p>
+		        			</td>
+		        		</tr>
+		        		<tr class="settings__row2">
+		        			<td>
+		        				<p>Настройки</p>
+		        			</td>
+		        			<td>
+		        				<p>Биллинг</p>
+		        				<p>Тарифные планы</p>
+		        				<p>Email-подписки</p>
+		        				<p>Права доступа</p>
+		        			</td>
+		        		</tr>
+		        		<tr class="settings__row3">
+		        			<td>
+		        				<p>Продукты</p>
+		        			</td>
+		        			<td>
+		        				<p>Продукт</p>
+		        				<p class="settings__nothing">Ничего не выбрано</p>
+		        			</td>
+		        		</tr>
+		        	</table>
+		        </div>
+		        <div class="settings__block">
+		        	<div class="settings__block-top">
+		        		<div class="settings__img">
+				        	<img src="img/user.png" alt="user">
+				        </div>
+				        <div class="settings__text">
+				        	<p class="settings__name">
+				        		Александр Сердюк
+				        	</p>
+				        	<p class="settings__email">
+				        		a.serdiuk@gmail.com
+				        	</p>
+				        </div>
+				        <p class="settings__access">
+				        	<i class="circle circle--red"></i>
+				        	Доступ не активирован
+				        </p>
+				        <button class="btn-small btn-icon">
+							{{mixins.icon('setting-2')}} Параметры
+						</button>
+						<button class="btn-small btn-icon">
+							{{mixins.icon('bin')}} Удалить
+						</button>
+		        	</div>
+		        	<table>
+		        		<tr class="settings__row1">
+		        			<td>
+		        				<p>Сервисы</p>
+		        			</td>
+		        			<td>
+		        				<p>Smart Messenger</p>
+		        			</td>
+		        		</tr>
+		        		<tr class="settings__row2">
+		        			<td>
+		        				<p>Настройки</p>
+		        			</td>
+		        			<td>
+		        				<p>Биллинг</p>
+		        				<p>Тарифные планы</p>
+		        				<p>Email-подписки</p>
+		        				<p>Права доступа</p>
+		        			</td>
+		        		</tr>
+		        		<tr class="settings__row3">
+		        			<td>
+		        				<p>Продукты</p>
+		        			</td>
+		        			<td>
+		        				<p>Продукт</p>
+		        				<p class="settings__nothing">Ничего не выбрано</p>
+		        			</td>
+		        		</tr>
+		        	</table>
+		        </div>
+		        <div class="settings__block">
+		        	<div class="settings__block-top">
+		        		<div class="settings__img">
+				        	<img src="img/user.png" alt="user">
+				        </div>
+				        <div class="settings__text">
+				        	<p class="settings__name">
+				        		Александр Сердюк
+				        	</p>
+				        	<p class="settings__email">
+				        		a.serdiuk@gmail.com
+				        	</p>
+				        </div>
+				        <p class="settings__access">
+				        	<i class="circle circle--red"></i>
+				        	Доступ не активирован
+				        </p>
+				        <button class="btn-small btn-icon">
+							{{mixins.icon('setting-2')}} Параметры
+						</button>
+						<button class="btn-small btn-icon">
+							{{mixins.icon('bin')}} Удалить
+						</button>
+		        	</div>
+		        	<table>
+		        		<tr class="settings__row1">
+		        			<td>
+		        				<p>Сервисы</p>
+		        			</td>
+		        			<td>
+		        				<p>Smart Messenger</p>
+		        			</td>
+		        		</tr>
+		        		<tr class="settings__row2">
+		        			<td>
+		        				<p>Настройки</p>
+		        			</td>
+		        			<td>
+		        				<p>Биллинг</p>
+		        				<p>Тарифные планы</p>
+		        				<p>Email-подписки</p>
+		        				<p>Права доступа</p>
+		        			</td>
+		        		</tr>
+		        		<tr class="settings__row3">
+		        			<td>
+		        				<p>Продукты</p>
+		        			</td>
+		        			<td>
+		        				<p>Продукт</p>
+		        				<p class="settings__nothing">Ничего не выбрано</p>
+		        			</td>
+		        		</tr>
+		        	</table>
+		        </div>
+					<div class="settings__btns">
+						<button class="btn-numb btn-numb--active">1</button>
+					    <button class="btn-numb">2</button>
+					    <button class="btn-next">Следующая</button>
+					</div>
+			</div>
+		</section>
+
+		
+
+		<footer class="footer">
+			<div class="container">
+				<a href="/">Политика конфиденциальности</a>
+			</div>
+		</footer>
+
+		<div class="mod__modal-delete">
+          <div class="mod__delete-block">
+            <span class="mod__btn-close">
+              <svg class="icon icon-close">
+                <use xlink:href="img/sprite.svg#icon-close"></use>
+              </svg>
+            </span>
+            <h2 class="title">Внимание</h2>
+            <p>Вы действительно хотите удалить пользователя?</p>
+            <div class="mod__modal-btns">
+              <button class="btn btn--blue">Удалить</button>
+              <button class="btn">Отменить </button>
+            </div>
+          </div>
+        </div>
+		
+	{% include "partials/_social.html" %}
+		
+	</main>
+	
+	<script src="js/jquery-3.2.1.min.js"></script>
+	
+	
+
+    <script src="js/jquery.slimscroll.js"></script>
+
+    <script>
+    	$(document).ready(function() {
+		    $('.sidebar').slimScroll({
+				height: '100%'
+			});
+		});
+    </script>
+    
+
+{% endblock %}

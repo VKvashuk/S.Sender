@@ -1,0 +1,225 @@
+.contacts
+	.container
+		padding-top: 20px
+	&__letters-wrp
+		display: -webkit-flex
+		display: -moz-flex
+		display: -ms-flex
+		display: -o-flex
+		display: flex
+		justify-content: space-between
+		background: #F1F3F5
+		border-radius: 100px
+		overflow: hidden
+		margin-bottom: 20px
+		button
+			padding: 12px 20px
+			color: #000
+			+font-family($mont-semibld)
+	&__letters
+		padding: 12px
+		display: -webkit-flex
+		display: -moz-flex
+		display: -ms-flex
+		display: -o-flex
+		display: flex
+		justify-content: space-between
+		flex-grow: 1
+		a 
+			display: block
+			color: #7F8488
+			+font-family($mont-semibld)
+			font-size: 13px
+			text-decoration: none
+		.active
+			+font-family($mont-bld)
+			color: #1380F6
+		.disabled
+			color: #C1C5C7
+	tr 
+		border-bottom: 1px solid #E9ECEF
+	td
+		padding: 20px
+		&:nth-child(1)
+			width: 560px
+			padding-left: 0
+		&:nth-child(2)
+			width: 180px
+			i 
+				display: block
+				margin: 5px
+		&:nth-child(3)
+			width: 200px
+			button
+				color: #595959
+				+font-family($open-reg)
+				font-size: 15px
+				background: none
+				padding: 5px
+			svg
+				fill: #8b8b8b
+				width: 16px
+				height: 16px
+				margin-right: 19px
+	&__contact
+		display: -webkit-flex
+		display: -moz-flex
+		display: -ms-flex
+		display: -o-flex
+		display: flex
+	&__text
+		div
+			p
+				display: inline-block
+				margin-right: 20px
+				+font-family($open-reg)
+				font-size: 13px
+	&__name
+		+font-family($mont-semibld)
+		font-size: 14px
+	&__img
+		width: 40px
+		height: 40px
+		border-radius: 100px
+		margin-right: 15px
+		img
+			object-fit: cover
+	&__marks
+		display: -webkit-flex
+		display: -moz-flex
+		display: -ms-flex
+		display: -o-flex
+		display: flex
+		justify-content: flex-start
+		margin: 5px
+	&__nav
+		margin-top: 30px
+	.btn-numb
+		width: 42px
+		height: 42px
+		margin: 0 5px
+	.btn-next
+		height: 42px
+.contacts-null
+	&__wrp
+		text-align: center
+		padding-top: 77px
+		img
+			margin-bottom: 36px
+		button
+			+font-family($mont-md)
+			margin-top: 36px
+.m-contacts
+	position: fixed
+	z-index: 100
+	width: 100%
+	height: 100%
+	background: rgba(0, 0, 0, 0.35)
+	top: 0
+	left: 0
+	right: 0
+	display: -webkit-flex
+	display: -moz-flex
+	display: -ms-flex
+	display: -o-flex
+	display: flex
+	&__block
+		width: 400px
+		background: #fff
+		margin-left: auto
+		position: relative
+		// padding: 25px
+		// padding-top: 25px
+		// padding-bottom: 50px
+		display: -webkit-flex
+		display: -moz-flex
+		display: -ms-flex
+		display: -o-flex
+		display: flex
+		flex-direction: column
+	&__btn-close
+		position: absolute
+		width: 24px
+		height: 24px
+		top: 21px
+		right: 21px
+		z-index: 101
+		padding: 5px
+		cursor: pointer
+		svg
+			fill: #8B8B8B
+			width: 14px
+			height: 14px
+	&__top
+		padding: 25px
+		padding-right: 40px
+		border-bottom: 1px solid  #E9ECEF
+	&__main
+		padding: 25px
+		input
+			width: 100%
+			background: #F1F3F5
+			padding: 10px 20px
+			padding-right: 45px
+			border-radius: 100px
+			color: #868E96
+			+font-family($mont-md)
+			font-size: 14px
+		label
+			position: relative
+			svg
+				position: absolute
+				top: 0px
+				right: 18px
+				width: 22px
+				padding: 3px
+				height: 22px
+				fill: #ADB5BD
+				cursor: pointer
+	&__title
+		padding: 12px 64px
+		color: #85898C
+		+font-family($mont-semibld)
+		font-size: 13px
+		padding-top: 35px
+	&__list
+		.checkbox+.input-circle
+			top: 8px
+		.label-checkbox
+			display: flex
+			align-items: center
+			width: 100%
+			+font-family($mont-md)
+			font-size: 14px
+			i 
+				margin-left: auto
+				width: 12px
+				height: 12px
+		a
+			+font-family($mont-md)
+			font-size: 14px
+			display: block
+			text-decoration: none
+			color: #000
+			padding: 11px
+			p
+			padding-left: 13px
+			b 
+				+font-family($mont-md)
+				font-size: 14px
+				color: #868E96
+			svg
+				width: 12px
+				height: 8px
+				margin-right: 10px
+	.btn
+		margin: 40px 26px
+		width: 348px
+	.slimScrollDiv
+		width: 400px !important
+		right: 0
+		top: 0
+
+
+
+

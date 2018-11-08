@@ -1,0 +1,42 @@
+---
+css: service
+title: Preloader
+---
+{% extends "layouts/_layout.html" %}
+
+{% block content %}
+
+<div class="preloader">
+	<div class="preloader__wrp">
+		<div class="logo"><img id="logo" src="img/preloader_logo.png" alt=""></div>
+		<div class="loading">
+			<div id="bar" class="bar"></div>
+		</div>
+	</div>
+</div>
+<script>
+		let p = 0;
+		let force = true;
+		let way = "right";
+		function move(way){
+				if(way=="right"){
+					p=p+2;
+					document.getElementById('bar').style.margin = "18px 0px 0px "+p+"px";
+
+				}else if(way=="left"){
+					p=p-2;
+					document.getElementById('bar').style.margin = "18px 0px 0px "+p+"px";
+
+				}
+			}
+		setInterval(function(){
+			if(p==0){
+				force=true;
+			}else if(p==320){
+				force=false;
+			}
+			force==true?move("right"):move("left");
+		},5);
+</script>
+
+{% endblock %}

@@ -1,0 +1,129 @@
+.payments
+	&__nav
+		margin-top: 30px
+	.btn-numb
+		width: 42px
+		height: 42px
+		margin: 0 5px
+	.btn-next
+		height: 42px
+	th 
+		color: #595959
+		+font-family($mont-semibld)
+		font-size: 14px
+		&:nth-child(4)
+			color: #000
+	tr 
+		border-bottom: 1px solid #E9ECEF
+		svg
+			fill: #878888
+			width: 18px
+			height: 18px
+			margin-right: 16px
+			margin-left: 30px
+			vertical-align: middle
+	td
+		+font-family($open-reg)
+		font-size: 15px
+		color: #000
+		padding-top: 5px
+		padding-bottom: 5px
+		&:nth-child(4)
+			fill: #595959
+	th, td 
+		&:nth-child(1)
+			text-align: left
+			width: 220px
+
+		&:nth-child(2)
+			text-align: center
+			width: 200px
+
+		&:nth-child(3)
+			text-align: left
+			width: 220px
+
+		&:nth-child(4)
+			text-align: right
+			width: 300px
+			padding-right: 15px
+			a
+				text-decoration: none
+				cursor: pointer
+				color: #575757
+				+font-family($open-reg)
+				font-size: 15px
+				margin-left: 25px
+			svg
+				margin-left: 0
+	&--check
+		background: #F8F9FA
+	&__logo-list
+		display: -webkit-flex
+		display: -moz-flex
+		display: -ms-flex
+		display: -o-flex
+		display: flex
+		width: 100%
+		height: 70px
+		border-radius: 10px
+		border: 1px solid #E9ECEF
+
+	&__logo
+		display: -webkit-flex
+		display: -moz-flex
+		display: -ms-flex
+		display: -o-flex
+		display: flex
+		width: 25%
+		border-right: 1px solid #E9ECEF
+		cursor: pointer
+		&--active
+			background: #D0EBFF
+		&:last-child
+			border: none
+		i
+			display: inline-block
+			margin: auto
+	.title-line
+		margin-bottom: 8px
+		margin-top: 37px
+	&__subtitle
+		+font-family($mont-semibld)
+		font-size: 14px
+		margin-bottom: 28px
+	&__item-name
+		margin-bottom: 15px
+	&__item-box
+		margin-bottom: 22px
+	&__item-box
+		width: 454px
+		padding: 12px
+		background: #F1F3F5
+		position: relative
+		svg 
+			position: absolute
+			content: ''
+			top: 12px
+			right: 12px
+			fill: #838485
+			width: 18px
+			height: 18px
+			cursor: pointer
+	&__inputs
+		.label-text
+			width: 730px
+			margin-bottom: 21px
+	&__btns
+		margin-top: 31px
+		margin-bottom: 20px
+		width: 440px
+		display: -webkit-flex
+		display: -moz-flex
+		display: -ms-flex
+		display: -o-flex
+		display: flex
+		justify-content: space-between
+		button
+			width: 210px
+

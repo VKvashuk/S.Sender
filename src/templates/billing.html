@@ -1,0 +1,315 @@
+---
+css: app
+classOut: billing-out
+title: billing
+---
+{% extends "layouts/_layout.html" %}
+
+{% block styles %}
+	
+{% endblock %}
+
+{% block content %}
+
+	{% include "partials/_sidebar-3.html" %}
+	<main>
+
+		<header class="header">
+			<div class="header__title">
+				<h2 class="title">Биллинг</h2>
+			</div>
+			<button class="btn btn--blue header__save">Сохранить</button>
+			<div class="header__user-wrp">
+				{{mixins.icon('apps')}} 
+				<i class="icon-bell"></i>
+				<img src="img/user.png" alt="user">
+			</div>
+		</header>
+		
+		<section class="billing">
+			<div class="container">
+				<div class="billing__top-blocks">
+					<div class="billing__top-left">
+						<p class="billing__top-title">19 апреля 2018</p>
+						<p>Счет будет выставлен когда вы потратите 100.00 $</p>
+						<button class="btn btn--border">Изменить </button>
+						<div class="billing__set-wrp">
+							<label class="label-text ">
+					            <input class="input-text" type="text" placeholder="&nbsp;">
+					            <span class="span-input-text">Выставлять счет при</span>
+					            <span class="input-text-error">Некорректный формат ввода</span>
+					            <span class="input-text-success">Password is strong</span>
+					        </label>
+					        <button class="btn btn--border">Установить</button>
+						</div>
+					</div>
+					<div class="billing__top-right">
+						<p class="billing__top-title">22.15 $</p>
+						<p>Сумма к оплате на данный момент</p>
+						<button class="btn btn--border">Оплатить </button>
+
+					</div>
+				</div>
+				<p class="title-line">
+		        	<span>ПЛАТЕЖНАЯ ИНФОРМАЦИЯ</span>
+		        </p>
+		        <div class="billing__carts">
+		        	<div class="billing__cart">
+		        		<i class="icon-mastercard"></i>
+		        		<div>
+		        			<span>Mastercard*1234</span>
+		        			<span>Истекает 09/24</span>
+		        		</div>
+		        		<p class="billing__cart-type">Основная</p>
+		        		{{mixins.icon('basket-2')}}
+		        	</div>
+		        	<div class="billing__cart">
+		        		<i class="icon-visa"></i>
+		        		<div>
+		        			<span>Visa*1225</span>
+		        			<span>Истекает 09/24</span>
+		        		</div>
+		        		<p class="billing__cart-type ">
+		        			<a href="#">Сделать основной</a>
+		        		</p>
+		        		{{mixins.icon('basket-2')}}
+		        	</div>
+
+		        	<div class="billing__cart billing__cart--add">
+		        		<a href="#">
+		        			{{mixins.icon('add-border')}} 
+		        			Добавить способ оплаты
+		        		</a>
+		        	</div>
+		        </div>
+		        <div class="billing__settings">
+		        	<p class="title-line">
+			        	<span>УВЕДОМЛЕНИЯ О ЛИМИТЕ</span>
+			        </p>
+			        <label class="label-checkbox">
+			            <input class="checkbox" type="checkbox">
+			            <span class="input-circle"></span>
+			            Присылать мне письмо на email, если затраты на использование превысили указанную ниже сумму
+			        </label>
+			        <label class="label-text ">
+			            <input class="input-text" type="text" placeholder="&nbsp;">
+			            <span class="span-input-text">Условный лимит</span>
+			            <span class="input-text-error">Некорректный формат ввода</span>
+			            <span class="input-text-success">Password is strong</span>
+			        </label>
+			        <p class="title-line">
+			        	<span>ПРОМОКОД</span>
+			        </p>
+			        <p>Если у вас есть промокод на скидку — введите его ниже</p>
+			        <label class="label-text ">
+			            <input class="input-text" type="text" placeholder="&nbsp;">
+			            <span class="span-input-text">Промокод</span>
+			            <span class="input-text-error">Некорректный формат ввода</span>
+			            <span class="input-text-success">Password is strong</span>
+			        </label>
+			        <button class="btn btn-arrow-r btn--blue">Применить</button>
+		        </div>
+		        	
+		        <p class="title-line">
+		        	<span>ИСТОРИЯ ОПЛАТ</span>
+		        </p>
+		        <table>
+		        	<tr>
+		        		<th>Дата</th>
+		        		<th>Пояснение</th>
+		        		<th>Сумма</th>
+		        		<th>Статус</th>
+		        	</tr>
+		        	<tr>
+		        		<td>01.04.2018</td>
+		        		<td>Оплата (Карта XX-1234)</td>
+		        		<td>-15 $</td>
+		        		<td><i class="circle circle--green"></i>
+							Успешная</td>
+		        	</tr>
+		        	<tr>
+		        		<td>01.04.2018</td>
+		        		<td>Счет за Март 2017</td>
+		        		<td>15 $</td>
+		        		<td>
+		        			<a href="#">
+							{{mixins.icon('shop-check')}} 
+		        			Скачать</a>
+		        		</td>
+		        	</tr>
+		        	<tr>
+		        		<td>01.04.2018</td>
+		        		<td>Оплата (Карта XX-1234)</td>
+		        		<td>-15 $</td>
+		        		<td><i class="circle circle--green"></i>
+							Успешная</td>
+		        	</tr>
+		        	<tr>
+		        		<td>01.04.2018</td>
+		        		<td>Счет за Март 2017</td>
+		        		<td>15 $</td>
+		        		<td>
+		        			<a href="#">
+							{{mixins.icon('shop-check')}} 
+		        			Скачать</a>
+		        		</td>
+		        	</tr>
+		        	<tr>
+		        		<td>01.04.2018</td>
+		        		<td>Оплата (Карта XX-1234)</td>
+		        		<td>-15 $</td>
+		        		<td><i class="circle circle--red"></i>
+							Неуспешная</td>
+		        	</tr>
+		        	<tr>
+		        		<td>01.04.2018</td>
+		        		<td>Счет за Март 2017</td>
+		        		<td>15 $</td>
+		        		<td>
+		        			<a href="#">
+							{{mixins.icon('shop-check')}} 
+		        			Скачать</a>
+		        		</td>
+		        	</tr>
+		        	<tr>
+		        		<td>01.04.2018</td>
+		        		<td>Оплата (Карта XX-1234)</td>
+		        		<td>-15 $</td>
+		        		<td><i class="circle circle--red"></i>
+							Неуспешная</td>
+		        	</tr>
+		        	<tr>
+		        		<td>01.04.2018</td>
+		        		<td>Счет за Март 2017</td>
+		        		<td>15 $</td>
+		        		<td>
+		        			<a href="#">
+							{{mixins.icon('shop-check')}} 
+		        			Скачать</a>
+		        		</td>
+		        	</tr>
+		        	<tr>
+		        		<td>01.04.2018</td>
+		        		<td>Оплата (Карта XX-1234)</td>
+		        		<td>-15 $</td>
+		        		<td><i class="circle circle--green"></i>
+							Успешная</td>
+		        	</tr>
+		        	<tr>
+		        		<td>01.04.2018</td>
+		        		<td>Счет за Март 2017</td>
+		        		<td>15 $</td>
+		        		<td>
+		        			<a href="#">
+							{{mixins.icon('shop-check')}} 
+		        			Скачать</a>
+		        		</td>
+		        	</tr>
+		        </table>
+
+		        <div class="billing__nav">
+		     		<button class="btn-numb btn-numb--active">1</button>
+				    <button class="btn-numb btn--border">2</button>
+				    <button class="btn-next btn--border">Следующая</button>
+		     	</div>
+
+			</div>
+		</section>
+
+		
+
+		<footer class="home__footer">
+			<div class="container">
+				<a href="/">Политика конфиденциальности</a>
+			</div>
+		</footer>
+		
+
+		<div class="mod__modal-delete">
+          <div class="mod__delete-block">
+            <span class="mod__btn-close">
+              <svg class="icon icon-close">
+                <use xlink:href="img/sprite.svg#icon-close"></use>
+              </svg>
+            </span>
+            <h2 class="title">Внимание</h2>
+            <p>Вы действительно хотите удалить способ оплаты?</p>
+            <div class="mod__modal-btns">
+              <button class="btn btn--border">Отменить </button>
+              <button class="btn btn--blue">Удалить</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="mod__modal-info" style="display: none;">
+			<div class="mod__info-block">
+				<span class="mod__btn-close">
+					{{mixins.icon('close')}}
+				</span>
+				<h2 class="title">Изменение настроек</h2>
+				<p>Пожалуйста, введите ваш пароль <br>
+				чтобы сохранить изменения</p>
+				<label class="label-text label-text--password">
+		            <input class="input-text" type="password" placeholder="&nbsp;">
+
+		            <span class="span-input-text">Пароль</span>
+					
+		        </label>
+				<button class="btn btn-arrow-r btn--blue">Сохранить</button>
+			</div>
+		</div>
+
+		<div class="mod__modal-info" style="display: none;">
+			<div class="mod__info-block">
+				<span class="mod__btn-close">
+					{{mixins.icon('close')}}
+				</span>
+				<h2 class="title">Ошибка привязки карты</h2>
+				<p>Произошла ошибка при добавлении карты, <br>
+				попробуйте снова или используйте другую карту</p>
+				
+				<button class="btn btn-arrow-r btn--blue">Повторить</button>
+			</div>
+		</div>
+ 
+		<div class="mod__modal-info" style="display: none;">
+			<div class="mod__info-block">
+				<span class="mod__btn-close">
+					{{mixins.icon('close')}}
+				</span>
+				<h2 class="title">Внимание</h2>
+				<p>Для привязки карты <span>с вашего счета будет списано 1$.</span><br>
+				Эти средства будут возвращены в течении суток.</p>
+				
+				<button class="btn btn-arrow-r btn--blue">Продолжить</button>
+			</div>
+		</div>
+
+		<div class="mod__modal-info" style="display: none;">
+			<div class="mod__info-block">
+				<span class="mod__btn-close">
+					{{mixins.icon('close')}}
+				</span>
+				<h2 class="title">Поздравляем</h2>
+				<img src="img/congratulations.png" alt="congratulations">
+				<p>Промокод успешно активирован!</p>
+				<button class="btn btn-arrow-r btn--blue">Продолжить</button>
+			</div>
+		</div>
+
+	{% include "partials/_social.html" %}
+		
+	</main>
+	
+	<script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/jquery.slimscroll.js"></script>
+    <script>
+    	$(document).ready(function() {
+		    $('.sidebar').slimScroll({
+				height: '100%'
+			});
+		});
+    </script>
+    
+
+{% endblock %}

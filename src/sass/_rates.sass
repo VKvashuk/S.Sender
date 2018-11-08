@@ -1,0 +1,236 @@
+.rates-out
+	main 
+		background: #F1F3F5
+.rates
+	&__wrp
+		background: #fff
+		box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.12)
+		border-radius: 4px
+	&__container
+		padding: 30px 20px
+		padding-bottom: 7px
+		&--top
+			width: 580px
+			h2
+				padding-bottom: 17px
+	.title
+		span
+			color: #1380F6
+	&__services
+		display: -webkit-flex
+		display: -moz-flex
+		display: -ms-flex
+		display: -o-flex
+		display: flex
+		flex-wrap: wrap
+		border-top: 1px solid #E9ECEF
+	&__service
+		width: 33.3333%
+		padding: 26px 20px
+		padding-bottom: 11px
+		border-top: 1px solid #E9ECEF
+		border-bottom: 1px solid #E9ECEF
+		position: relative
+		&:nth-child(3n-1)
+			border: 1px solid #E9ECEF
+		&--add
+			padding: 20px
+		.icon-pen
+			width: 14px
+			height: 14px
+			fill: #BEBEBE
+			position: absolute
+			top: 20px
+			right: 20px
+			cursor: pointer
+	&__mark-block
+		display: -webkit-flex
+		display: -moz-flex
+		display: -ms-flex
+		display: -o-flex
+		display: flex
+		align-items: center
+		padding-bottom: 27px
+		border-bottom: 1px solid #E9ECEF
+		i 
+			display: block
+			margin-right: 19px
+	&__mark-text 
+		p
+			&:nth-child(1)
+				+font-family($mont-semibld)
+				font-size: 14px
+			&:nth-child(2)
+				+font-family($open-reg)
+				font-size: 13px
+				color: #333333
+	&__price-block
+		display: -webkit-flex
+		display: -moz-flex
+		display: -ms-flex
+		display: -o-flex
+		display: flex
+		padding-top: 7px
+		p
+			+font-family($open-reg)
+			font-size: 13px
+			color: #333333
+	&__space-between
+		justify-content: space-between
+	&__center
+		justify-content: center
+	&__mark-add
+		height: 100%
+		padding: 28px 34px
+		background: #F1F3F5
+		border-radius: 8px
+		display: -webkit-flex
+		display: -moz-flex
+		display: -ms-flex
+		display: -o-flex
+		display: flex
+		align-items: center
+		justify-content: space-between
+		color: #838485
+		+font-family($mont-semibld)
+		font-size: 14px
+		cursor: pointer
+		.icon-add-border
+			width: 26px
+			height: 26px
+			fill: #AAABAD
+	.title-line--offer	
+		&:before
+			border-bottom: 1px solid #DEE2E6
+		span
+			background: #F1F3F5
+	&__items
+		padding: 20px
+		padding-top: 30px
+	&__item
+		width: 302px
+		padding: 17px
+		padding-top: 10px
+		padding-bottom: 40px
+		border: 1px solid #fff
+		border-bottom: 1px solid #E9ECEF
+		h3 
+			text-align: center
+		ul
+			min-height: 185px
+			border-bottom: 1px solid #e9ecf0
+			margin-bottom: 18px
+		li
+			font-size: 13px
+			padding: 5px 0
+			padding-left: 30px
+			position: relative
+			&:before
+				position: absolute
+				content: ''
+				background: url('../img/check-blue.png') no-repeat
+				width: 16px
+				height: 12px
+				display: block
+				top: 8px
+				left: 0
+		.label-radio
+			padding-top: 4px
+			padding-bottom: 4px
+	&__marks
+		display: -webkit-flex
+		display: -moz-flex
+		display: -ms-flex
+		display: -o-flex
+		display: flex
+		justify-content: center
+		padding-top: 17px
+		padding-bottom: 14px
+		i
+			display: inline-block
+			margin: 0 5px
+	&__btns
+		padding-top: 25px
+		.btn
+			width: 100%
+			margin-bottom: 8px
+			svg
+				width: 18px
+				height: 18px
+				fill: #5C5E5F
+		.btn--blue
+			svg
+				fill: #fff
+.slick-dots
+	li 
+	button
+		font-size: 0
+		line-height: 0
+		display: block
+		width: 20px
+		height: 20px
+		padding: 5px
+		cursor: pointer
+		color: transparent
+		border: 0
+		outline: none
+		background: transparent
+		&:before
+			position: absolute
+			content: ''
+			width: 8px
+			height: 8px
+			border-radius: 100px
+			background: #D0D0D0
+			transition: all 500ms
+	.slick-active
+		button
+			&:before
+				width: 16px
+				background: #1380F6
+.slick-arrow
+	font-size: 0
+	background: #fff
+	display: block
+	position: relative
+	width: 40px
+	height: 40px
+	border-radius: 100px
+	box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.12)
+	position: absolute
+	z-index: 10
+.slick-prev
+	display: block
+	top: 40%
+	left: -20px
+	&:before
+		position: absolute
+		content: ''
+		width: 20px
+		height: 20px
+		top: 13px
+		left: 12px
+		background: url('../img/slider-prev.png') no-repeat
+.slick-next
+	display: block
+	top: 40%
+	right: -20px
+	&:before
+		position: absolute
+		content: ''
+		top: 14px
+		left: 12px
+		width: 17px
+		height: 14px
+		background: url('../img/slider-next.png') no-repeat
+.slick-track .slick-active
+	border-right: 1px solid #E9ECEF
+	border-left: 1px solid #E9ECEF	
+.slick-dots
+	padding-top: 10px
+	display: -webkit-flex
+	display: -moz-flex
+	display: -ms-flex
+	display: -o-flex
+	display: flex
+	justify-content: center

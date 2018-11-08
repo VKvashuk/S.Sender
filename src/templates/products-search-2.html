@@ -1,0 +1,432 @@
+---
+css: app
+classOut: products-search-out
+title: products-search
+---
+{% extends "layouts/_layout.html" %}
+
+{% block styles %}
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/css/select2.min.css" rel="stylesheet" />
+{% endblock %}
+
+{% block content %}
+
+	{% include "partials/_sidebar-2.html" %}
+	<main class="main-home">
+
+		<header class="header">
+			<div class="header__title">
+				<h2 class="title">Продукты</h2>
+			</div>
+			
+			<div class="header__add-product">
+				<button class="btn btn--blue header__save">Добавить</button>
+				<div class="header__add-wrp">
+					<i>{{mixins.icon('social-cross')}}</i>
+					
+					<span>Выбрано: 3</span>
+					<i>{{mixins.icon('Combined-Shape-1')}}</i>
+
+					<i>{{mixins.icon('folder-5')}}</i>
+					<i>{{mixins.icon('Combined-Shape')}}</i>
+					<i>{{mixins.icon('box-3')}}</i>
+					<i>{{mixins.icon('bin')}}
+						<span>Удалить</span>
+					</i>
+					
+				</div>
+			</div>
+			<!-- <div class="header__search">
+				<label class="">
+					<input type="text" placeholder="Поиск по продуктам">
+					{{mixins.icon('search')}}
+				</label>
+				<button>Расширенный поиск 
+					{{mixins.icon('arrow-down')}}
+				</button>
+			</div> -->
+			
+
+			<!-- <div class="header__name-product title">
+				Xiaomi Mi Notebook...
+			</div> -->
+			
+			<div class="header__user-wrp">
+				<!-- {{mixins.icon('search')}}  -->
+				{{mixins.icon('apps')}} 
+				<i class="icon-bell"></i>
+				<!-- <div class="header__user-text">
+					<span class="header__user-name">Андрей Збруцкий</span> <br>
+					<span class="header__user-descript">Проекты и параметры</span>
+				</div> -->
+				<img src="img/user.png" alt="user">
+			</div>
+		</header>
+		
+		<section class="products">
+			<div class="container">
+				<table class="products__table-list">
+					<tr>
+						<th>
+							<label class="label-checkbox">
+					            <input class="checkbox" type="checkbox">
+					            <span class="input-circle"></span>
+
+					            Название
+					        </label>  
+					    </th>
+						<th class="products__bld">
+							<div class="products__select-wrp">
+			        			<select name="" id="" class="select2" >
+				        			<option value="">Создан</option>
+				        			<option value="">Создан</option>
+				        			<option value="">Создан</option>
+				        			<option value="">Создан</option>
+				        			<option value="">Создан</option>
+				        			<option value="">Создан</option>
+				        			<option value="">Создан</option>
+				        			<option value="">Создан</option>
+				        		</select>
+			        		</div>
+						</th>
+						<th>Цена</th>
+						<th>Метка</th>
+						<th>Категория</th>
+						<th class="products__bld">Товаров: 56</th>
+					</tr>
+					<tr>
+						<td>
+							<label class="label-checkbox">
+					            <input class="checkbox" type="checkbox">
+					            <span class="input-circle"></span>
+					            Xiaomi Mi Notebook...
+					        </label>  
+
+						</td>
+						<td>15.04.2018</td>
+						<td>$ 20.55</td>
+						<td>
+							<i class="circle circle--green"></i>
+							Новые товары
+						</td>
+						<td>Ноутбуки</td>
+						<td>
+							<a href="#">
+								{{mixins.icon('edit-write')}} 
+								Редактировать
+							</a>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<label class="label-checkbox">
+					            <input class="checkbox" type="checkbox">
+					            <span class="input-circle"></span>
+					            Xiaomi Mi Notebook...
+					        </label>  
+
+						</td>
+						<td>15.04.2018</td>
+						<td>$ 20.55</td>
+						<td>
+							<i class="circle circle--green"></i>
+							Новые товары
+						</td>
+						<td>Ноутбуки</td>
+						<td>
+							<a href="#">
+								{{mixins.icon('edit-write')}} 
+								Редактировать
+							</a>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<label class="label-checkbox">
+					            <input class="checkbox" type="checkbox">
+					            <span class="input-circle"></span>
+					            Xiaomi Mi Notebook...
+					        </label>  
+
+						</td>
+						<td>15.04.2018</td>
+						<td>$ 20.55</td>
+						<td>
+							<i class="circle circle--green"></i>
+							Новые товары
+						</td>
+						<td>Ноутбуки</td>
+						<td>
+							<a href="#">
+								{{mixins.icon('edit-write')}} 
+								Редактировать
+							</a>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<label class="label-checkbox">
+					            <input class="checkbox" type="checkbox">
+					            <span class="input-circle"></span>
+					            Xiaomi Mi Notebook...
+					        </label>  
+
+						</td>
+						<td>15.04.2018</td>
+						<td>$ 20.55</td>
+						<td>
+							<i class="circle circle--green"></i>
+							Новые товары
+						</td>
+						<td>Ноутбуки</td>
+						<td>
+							<a href="#">
+								{{mixins.icon('edit-write')}} 
+								Редактировать
+							</a>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<label class="label-checkbox">
+					            <input class="checkbox" type="checkbox">
+					            <span class="input-circle"></span>
+					            Xiaomi Mi Notebook...
+					        </label>  
+
+						</td>
+						<td>15.04.2018</td>
+						<td>$ 20.55</td>
+						<td>
+							<i class="circle circle--green"></i>
+							Новые товары
+						</td>
+						<td>Ноутбуки</td>
+						<td>
+							<a href="#">
+								{{mixins.icon('edit-write')}} 
+								Редактировать
+							</a>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<label class="label-checkbox">
+					            <input class="checkbox" type="checkbox">
+					            <span class="input-circle"></span>
+					            Xiaomi Mi Notebook...
+					        </label>  
+
+						</td>
+						<td>15.04.2018</td>
+						<td>$ 20.55</td>
+						<td>
+							<i class="circle circle--green"></i>
+							Новые товары
+						</td>
+						<td>Ноутбуки</td>
+						<td>
+							<a href="#">
+								{{mixins.icon('edit-write')}} 
+								Редактировать
+							</a>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<label class="label-checkbox">
+					            <input class="checkbox" type="checkbox">
+					            <span class="input-circle"></span>
+					            Xiaomi Mi Notebook...
+					        </label>  
+
+						</td>
+						<td>15.04.2018</td>
+						<td>$ 20.55</td>
+						<td>
+							<i class="circle circle--green"></i>
+							Новые товары
+						</td>
+						<td>Ноутбуки</td>
+						<td>
+							<a href="#">
+								{{mixins.icon('edit-write')}} 
+								Редактировать
+							</a>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<label class="label-checkbox">
+					            <input class="checkbox" type="checkbox">
+					            <span class="input-circle"></span>
+					            Xiaomi Mi Notebook...
+					        </label>  
+
+						</td>
+						<td>15.04.2018</td>
+						<td>$ 20.55</td>
+						<td>
+							<i class="circle circle--green"></i>
+							Новые товары
+						</td>
+						<td>Ноутбуки</td>
+						<td>
+							<a href="#">
+								{{mixins.icon('edit-write')}} 
+								Редактировать
+							</a>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<label class="label-checkbox">
+					            <input class="checkbox" type="checkbox">
+					            <span class="input-circle"></span>
+					            Xiaomi Mi Notebook...
+					        </label>  
+
+						</td>
+						<td>15.04.2018</td>
+						<td>$ 20.55</td>
+						<td>
+							<i class="circle circle--green"></i>
+							Новые товары
+						</td>
+						<td>Ноутбуки</td>
+						<td>
+							<a href="#">
+								{{mixins.icon('edit-write')}} 
+								Редактировать
+							</a>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<label class="label-checkbox">
+					            <input class="checkbox" type="checkbox">
+					            <span class="input-circle"></span>
+					            Xiaomi Mi Notebook...
+					        </label>  
+
+						</td>
+						<td>15.04.2018</td>
+						<td>$ 20.55</td>
+						<td>
+							<i class="circle circle--green"></i>
+							Новые товары
+						</td>
+						<td>Ноутбуки</td>
+						<td>
+							<a href="#">
+								{{mixins.icon('edit-write')}} 
+								Редактировать
+							</a>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<label class="label-checkbox">
+					            <input class="checkbox" type="checkbox">
+					            <span class="input-circle"></span>
+					            Xiaomi Mi Notebook...
+					        </label>  
+
+						</td>
+						<td>15.04.2018</td>
+						<td>$ 20.55</td>
+						<td>
+							<i class="circle circle--green"></i>
+							Новые товары
+						</td>
+						<td>Ноутбуки</td>
+						<td>
+							<a href="#">
+								{{mixins.icon('edit-write')}} 
+								Редактировать
+							</a>
+						</td>
+					</tr>
+				</table>
+
+		     	<div class="products__nav">
+		     		<button class="btn-numb btn-numb--active">1</button>
+				    <button class="btn-numb btn--border">2</button>
+				    <button class="btn-numb btn--border">3</button>
+				    <button class="btn-numb btn--border">4</button>
+				    <button class="btn-numb btn--border">5</button>
+				    <button class="btn-numb btn--border">6</button>
+				    <button class="btn-next btn--border">Следующая</button>
+		     	</div>
+		        
+
+		       
+		     
+			</div>
+		</section>
+		
+
+		<div class="mod__modal-delete">
+          <div class="mod__delete-block">
+            <span class="mod__btn-close">
+              <svg class="icon icon-close">
+                <use xlink:href="img/sprite.svg#icon-close"></use>
+              </svg>
+            </span>
+            <h2 class="title">Внимание</h2>
+            <p>Вы действительно хотите удалить продукт(ы)?</p>
+            <div class="mod__modal-btns">
+              <button class="btn btn--border">Отменить </button>
+              <button class="btn btn--blue">Удалить</button>
+            </div>
+          </div>
+        </div>
+
+
+		<!-- <footer class="home__footer">
+			<div class="container">
+				<a href="#">Политика конфиденциальности</a>
+			</div>
+		</footer> -->
+
+		
+
+		
+	
+	{% include "partials/_social.html" %}
+		
+	</main>
+	
+	<script src="js/jquery-3.2.1.min.js"></script>
+	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/js/select2.min.js"></script>
+
+    <script src="js/jquery.slimscroll.js"></script>
+
+    <script>
+    	$(document).ready(function() {
+		    $('.sidebar').slimScroll({
+				height: '100%'
+			});
+		});
+    </script>
+    <script>
+    	$(document).ready(function() {
+        $('.select2').select2();
+
+	    // $('.select2').styler();  
+	    });
+    </script>
+    <script>
+    	$(document).ready(function(){
+         // $(".select2-container--default .select2-results>.select2-results__options").nanoScroller();
+
+        $(".select2").on('select2:open', function () {
+        	$('.select2-results__options').slimScroll();
+
+
+  	});
+    });
+    </script>
+
+{% endblock %}

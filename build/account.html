@@ -1,0 +1,328 @@
+<!doctype html>
+<html>
+
+  <head>
+    <meta charset="utf-8">
+    <title>account</title>
+    <!--   <meta http-equiv="X-UA-Compatible" content="IE=Edge"> -->
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1"> -->
+    <link rel="stylesheet" media="all" href="css/app.css">
+    <link rel="stylesheet" href="fonts/fontawesome/css/all.css">
+  </head>
+
+  <body>
+    <!-- BEGIN content -->
+    <div class="out account-out">
+      <aside class="sidebar">
+        <div class="sidebar__wrp">
+          <img src="img/logo.png" class="sidebar-cart" alt="sidebar-cart">
+          <ul class="sidebar__link-back line-bottom">
+            <li><a href="#">
+                <svg class="icon icon-back-icon">
+                  <use xlink:href="img/sprite.svg#icon-back-icon"></use>
+                </svg> Вернуться назад</a></li>
+          </ul>
+          <ul class="">
+            <li class="sidebar__link-active"><a href="#">
+                <svg class="icon icon-user">
+                  <use xlink:href="img/sprite.svg#icon-user"></use>
+                </svg> Настройки аккаунта</a></li>
+            <li><a href="#">
+                <svg class="icon icon-wallet">
+                  <use xlink:href="img/sprite.svg#icon-wallet"></use>
+                </svg> Реферальная програ...</a></li>
+          </ul>
+          <ul class="sidebar__shops">
+            <li>
+              <div class="sidebar__shops-img">
+                <!-- <img src="" alt=""> -->
+              </div>
+              <div class="sidebar__shops-text">
+                <p>Интернет-магазин "Пят...</p>
+                <a href="#">Перейти к настройкам проекта</a>
+              </div>
+            </li>
+            <li>
+              <div class="sidebar__shops-img">
+                <!-- <img src="" alt=""> -->
+              </div>
+              <div class="sidebar__shops-text">
+                <p>Интернет-магазин "Пят...</p>
+                <a href="#">Перейти к настройкам проекта</a>
+              </div>
+            </li>
+            <li>
+              <div class="sidebar__shops-img">
+                <!-- <img src="" alt=""> -->
+              </div>
+              <div class="sidebar__shops-text">
+                <p>Интернет-магазин "Пят...</p>
+                <a href="#">Перейти к настройкам проекта</a>
+              </div>
+            </li>
+            <li>
+              <div class="sidebar__shops-img">
+                <!-- <img src="" alt=""> -->
+              </div>
+              <div class="sidebar__shops-text">
+                <p>Интернет-магазин "Пят...</p>
+                <a href="#">Перейти к настройкам проекта</a>
+              </div>
+            </li>
+            <li>
+              <div class="sidebar__shops-img">
+                <!-- <img src="" alt=""> -->
+              </div>
+              <div class="sidebar__shops-text">
+                <p>Интернет-магазин "Пят...</p>
+                <a href="#">Перейти к настройкам проекта</a>
+              </div>
+            </li>
+          </ul>
+          <ul class="brdr-lines">
+            <li><a href="#">
+                <svg class="icon icon-support">
+                  <use xlink:href="img/sprite.svg#icon-support"></use>
+                </svg> Помощь</a></li>
+            <li><a href="#">
+                <svg class="icon icon-video-camera">
+                  <use xlink:href="img/sprite.svg#icon-video-camera"></use>
+                </svg> Видеоуроки</a></li>
+          </ul>
+          <ul>
+            <li><a href="#">
+                <!-- 
+<svg class="icon icon-support"><use xlink:href="img/sprite.svg#icon-support"></use></svg>
+  -->
+                <i class="icon-russia"></i> Русский</a></li>
+          </ul>
+        </div>
+      </aside>
+      <main>
+        <header class="header">
+          <div class="header__title">
+            <h2 class="title">Настройки аккаунта</h2>
+          </div>
+          <button class="btn btn--blue header__save">Сохранить</button>
+          <button class="btn header__save">Отменить</button>
+          <div class="header__user-wrp">
+            <svg class="icon icon-apps">
+              <use xlink:href="img/sprite.svg#icon-apps"></use>
+            </svg>
+            <i class="icon-bell"></i>
+            <img src="img/user.png" alt="user">
+          </div>
+        </header>
+        <section class="account">
+          <div class="container">
+            <div class="account__basic">
+              <h3 class="subtitle">Основное</h3>
+              <label class="label-text ">
+                <input class="input-text" type="text" placeholder="&nbsp;">
+                <span class="span-input-text">Имя</span>
+                <span class="input-text-error">Некорректный формат ввода</span>
+                <span class="input-text-success">Success</span>
+              </label>
+              <label class="label-text ">
+                <input class="input-text" type="text" placeholder="&nbsp;">
+                <span class="span-input-text">Фамилия</span>
+                <span class="input-text-error">Некорректный формат ввода</span>
+                <span class="input-text-success">Success</span>
+              </label>
+              <label class="label-text ">
+                <input class="input-text" type="text" placeholder="&nbsp;">
+                <span class="span-input-text">Телефон</span>
+                <span class="input-text-error">Некорректный формат ввода</span>
+                <span class="input-text-success">Success</span>
+              </label>
+              <label class="label-text ">
+                <input class="input-text" type="text" placeholder="&nbsp;">
+                <span class="span-input-text">Часовой пояс</span>
+                <span class="input-text-error">Некорректный формат ввода</span>
+                <span class="input-text-success">Success</span>
+              </label>
+              <label class="label-checkbox">
+                <input class="checkbox" type="checkbox">
+                <span class="input-circle"></span> Показывать всплывающие уведомления </label>
+            </div>
+            <div class="account__email">
+              <h3 class="subtitle">Email & пароль</h3>
+              <div class="account__email-blocks">
+                <div class="account__email-left">
+                  <p> Для безопасности мы вышлем письмо с подтверждением </p>
+                  <label class="label-text ">
+                    <input class="input-text" type="text" placeholder="&nbsp;">
+                    <span class="span-input-text">Email</span>
+                    <span class="input-text-error">Некорректный формат ввода</span>
+                    <span class="input-text-success">Success</span>
+                  </label>
+                  <button class="btn btn-icon btn--blue"> Сменить email <svg class="icon icon-mail-at">
+                      <use xlink:href="img/sprite.svg#icon-mail-at"></use>
+                    </svg>
+                  </button>
+                </div>
+                <div class="account__email-right">
+                  <label class="label-text ">
+                    <input class="input-text" type="password" placeholder="&nbsp;">
+                    <span class="span-input-text">Пароль</span>
+                    <span class="input-text-error">Некорректный формат ввода</span>
+                    <span class="input-text-success">Success</span>
+                  </label>
+                  <label class="label-text ">
+                    <input class="input-text" type="password" placeholder="&nbsp;">
+                    <span class="span-input-text">Пароль (еще раз)</span>
+                    <span class="input-text-error">Некорректный формат ввода</span>
+                    <span class="input-text-success">Success</span>
+                  </label>
+                  <button class="btn btn-icon btn--blue"> Сменить пароль <svg class="icon icon-lock">
+                      <use xlink:href="img/sprite.svg#icon-lock"></use>
+                    </svg>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="account__autrz">
+              <h3 class="subtitle">Двухфакторная авторизация</h3>
+              <div class="account__autrz-items">
+                <button class="btn"> Google Auth </button>
+                <button class="btn"> Authy </button>
+                <button class="btn"> Использовать TOTP </button>
+              </div>
+            </div>
+            <div class="account__autrz">
+              <div class="account__autrz-wrp">
+                <div class="account__autrz-left">
+                  <h3 class="subtitle">Двухфакторная авторизация</h3>
+                  <p>Подключено, Google Auth</p>
+                </div>
+                <button class="btn-small btn-icon ">
+                  <svg class="icon icon-error-3">
+                    <use xlink:href="img/sprite.svg#icon-error-3"></use>
+                  </svg> Отключить </button>
+              </div>
+            </div>
+            <div class="account__social">
+              <div class="account__social-wrp">
+                <h3 class="subtitle">Социальные сети</h3>
+                <p>Привяжите аккаунты соцсетей для быстрого и простого входа в систему</p>
+              </div>
+              <div class="account__social-items">
+                <div class="account__social-item">
+                  <img src="img/fb-logo.png" alt="fb-logo">
+                  <div>
+                    <span>Facebook</span>
+                    <span>Подключен</span>
+                  </div>
+                  <svg class="icon icon-basket-2">
+                    <use xlink:href="img/sprite.svg#icon-basket-2"></use>
+                  </svg>
+                </div>
+                <div class="account__social-item">
+                  <img src="img/Twitter-logo.png" alt="Twitter-logo">
+                  <div>
+                    <span>Twitter</span>
+                    <span>Подключен</span>
+                  </div>
+                  <svg class="icon icon-basket-2">
+                    <use xlink:href="img/sprite.svg#icon-basket-2"></use>
+                  </svg>
+                </div>
+                <div class="account__social-item account__social-add">
+                  <div class="account__social-new">
+                    <img src="img/google-logo.png" alt="google-logo">
+                    <div>
+                      <span>Google</span>
+                      <span><a href="#">Добавить аккаунт</a></span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <footer class="footer">
+          <div class="container">
+            <a href="/">Политика конфиденциальности</a>
+          </div>
+        </footer>
+        <div class="social">
+          <div class="social__wrp">
+            <ul>
+              <li>
+                <button class="btn-social btn-social--massenger">
+                  <svg class="icon icon-messenger">
+                    <use xlink:href="img/sprite.svg#icon-messenger"></use>
+                  </svg>
+                </button>
+                <button class="btn-social btn-social--massenger">
+                  <svg class="icon icon-messenger">
+                    <use xlink:href="img/sprite.svg#icon-messenger"></use>
+                  </svg>
+                </button>
+              </li>
+              <li>
+                <button class="btn-social btn-social--viber">
+                  <svg class="icon icon-viber">
+                    <use xlink:href="img/sprite.svg#icon-viber"></use>
+                  </svg>
+                </button>
+                <button class="btn-social btn-social--viber">
+                  <svg class="icon icon-viber">
+                    <use xlink:href="img/sprite.svg#icon-viber"></use>
+                  </svg>
+                </button>
+              </li>
+              <li>
+                <button class="btn-social btn-social--whatsapp">
+                  <svg class="icon icon-whatsapp">
+                    <use xlink:href="img/sprite.svg#icon-whatsapp"></use>
+                  </svg>
+                </button>
+                <button class="btn-social btn-social--whatsapp">
+                  <svg class="icon icon-whatsapp">
+                    <use xlink:href="img/sprite.svg#icon-whatsapp"></use>
+                  </svg>
+                </button>
+              </li>
+              <li>
+                <button class="btn-social btn-social--telegram">
+                  <svg class="icon icon-telegram">
+                    <use xlink:href="img/sprite.svg#icon-telegram"></use>
+                  </svg>
+                </button>
+                <button class="btn-social btn-social--telegram">
+                  <svg class="icon icon-telegram">
+                    <use xlink:href="img/sprite.svg#icon-telegram"></use>
+                  </svg>
+                </button>
+              </li>
+            </ul>
+          </div>
+          <button class="btn-social btn-social--open">
+            <svg class="icon icon-social-open">
+              <use xlink:href="img/sprite.svg#icon-social-open"></use>
+            </svg>
+            <svg class="icon icon-social-cross">
+              <use xlink:href="img/sprite.svg#icon-social-cross"></use>
+            </svg>
+          </button>
+        </div>
+      </main>
+      <script src="js/jquery-3.2.1.min.js"></script>
+      <script src="js/jquery.slimscroll.js"></script>
+      <script>
+        $(document).ready(function()
+        {
+          $('.sidebar').slimScroll(
+          {
+            height: '100%'
+          });
+        });
+
+      </script>
+    </div>
+    <!-- END content -->
+    <!-- BEGIN scripts -->
+    <!--  <script type="text/javascript" src="js/app.js"></script> -->
+    <!-- END scripts -->
+  </body>
